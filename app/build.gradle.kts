@@ -4,17 +4,17 @@ plugins {
     id("calendar.kotlin-jvm")
 }
 
-/** 실행 진입점과 배포 문서 생성. 계층을 조립하는 자리라 셋 모두에 의존한다. */
+/** 설정을 읽고 계층을 조립해 한 번의 실행을 진행한다. 조립하는 자리라 모든 모듈에 의존한다. */
 dependencies {
+    implementation(project(":core"))
     implementation(project(":domain"))
-    implementation(project(":data"))
     implementation(project(":datasource"))
+    implementation(project(":data"))
+    implementation(project(":publish"))
     implementation(libs.kotlinx.coroutines.core)
 
     // Ktor 가 SLF4J 로 로그를 보낸다. 구현이 없으면 실행마다 경고가 찍히므로 조용한 구현을 넣는다.
     runtimeOnly(libs.slf4j.nop)
-
-    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 /** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */

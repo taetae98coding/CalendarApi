@@ -1,13 +1,14 @@
 package io.github.taetae98coding.calendar.data.cache
 
+import io.github.taetae98coding.calendar.core.file.JsonFiles
 import io.github.taetae98coding.calendar.data.source.SourceApi
-import io.github.taetae98coding.calendar.datasource.file.JsonFiles
 import kotlinx.serialization.json.JsonElement
 
 /**
  * `cache/{provider}/{api}/` 를 읽고 쓴다.
  *
  * 응답 원본은 기계만 읽으므로 공백 없이, 갱신 기록은 diff 로 확인하므로 들여쓴다.
+ * 파일이 깨졌으면 예외를 그대로 낸다. 어떻게 다룰지는 호출자([CacheReader])가 정한다.
  */
 class CacheStore(
     private val paths: CachePaths,

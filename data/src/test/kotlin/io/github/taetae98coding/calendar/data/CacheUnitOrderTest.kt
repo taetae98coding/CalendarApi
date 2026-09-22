@@ -1,10 +1,10 @@
 package io.github.taetae98coding.calendar.data
 
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
-import io.github.taetae98coding.calendar.data.cache.CacheUnit
-import io.github.taetae98coding.calendar.data.cache.oldestFirst
 import io.github.taetae98coding.calendar.data.source.Granularity
 import io.github.taetae98coding.calendar.data.source.SourceApi
+import io.github.taetae98coding.calendar.data.update.CacheUnit
+import io.github.taetae98coding.calendar.data.update.oldestFirst
 import io.github.taetae98coding.calendar.domain.CalendarYears
 import kotlin.test.Test
 import kotlin.test.assertEquals

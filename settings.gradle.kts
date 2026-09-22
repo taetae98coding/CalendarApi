@@ -21,7 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "CalendarApi"
 
+include(":core")
 include(":domain")
 include(":datasource")
 include(":data")
+include(":publish")
 include(":app")

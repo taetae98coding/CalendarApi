@@ -17,7 +17,7 @@ interface KasiDataSource {
      * 존재하지 않는 범위를 요청해도 갱신 시각은 찍혀야 순번이 돌아간다.
      * `solDay` 를 생략하므로 해당 양력 월 전체를 한 번에 받는다.
      */
-    suspend fun get(service: KasiService, api: String, yearMonth: YearMonth): Result<JsonElement?>
+    suspend fun get(api: KasiApi, yearMonth: YearMonth): Result<JsonElement?>
 
     /** 해당 서비스에 활용신청이 되어 있는가. 활용신청 문제가 아닌 일시적 실패는 신청된 것으로 본다. */
     suspend fun isRegistered(service: KasiService): Boolean

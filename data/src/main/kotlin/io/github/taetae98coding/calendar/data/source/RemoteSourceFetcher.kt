@@ -16,7 +16,7 @@ class RemoteSourceFetcher(
 ) : SourceFetcher {
     override suspend fun fetch(api: SourceApi, period: CachePeriod): Result<JsonElement?> {
         return when (val remote = api.remote) {
-            is Remote.Kasi -> kasi.get(remote.kasiService, remote.api, period.yearMonth)
+            is Remote.Kasi -> kasi.get(remote.api, period.yearMonth)
             is Remote.Nager -> nager.getHolidays(period.year, remote.countryCode)
         }
     }

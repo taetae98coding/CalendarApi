@@ -1,5 +1,6 @@
 package io.github.taetae98coding.calendar.datasource.kasi
 
+import io.github.taetae98coding.calendar.datasource.SourceException
 import io.github.taetae98coding.calendar.datasource.http.HttpClients
 import io.github.taetae98coding.calendar.datasource.http.Throttle
 import io.ktor.client.HttpClient
@@ -19,13 +20,12 @@ class KtorKasiDataSource(
     private val client: HttpClient,
     private val throttle: Throttle,
 ) : KasiDataSource {
-    override suspend fun get(service: KasiService, api: String, yearMonth: YearMonth): Result<JsonElement?> {
-        val path = "${service.path}/$api"
-        val description = "KASI $path $yearMonth"
+    override suspend fun get(api: KasiApi, yearMonth: YearMonth): Result<JsonElement?> {
+        val description = "KASI ${api.route} $yearMonth"
 
         return runCatching {
             val response = throttle.withPermit {
-                client.get(path) {
+                client.get(api.route) {
                     parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
                     parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
                 }
@@ -50,9 +50,9 @@ class KtorKasiDataSource(
     }
 
     override suspend fun isRegistered(service: KasiService): Boolean {
-        val result = get(service, service.probeApi, PROBE_YEAR_MONTH)
+        val result = get(service.probe, PROBE_YEAR_MONTH)
 
-        return (result.exceptionOrNull() as? OpenApiException)?.isNotRegistered != true
+        return (result.exceptionOrNull() as? SourceException)?.isNotRegistered != true
     }
 
     companion object {

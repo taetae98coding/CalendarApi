@@ -1,7 +1,7 @@
 package io.github.taetae98coding.calendar.data.source
 
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
-import io.github.taetae98coding.calendar.datasource.kasi.KasiService
+import io.github.taetae98coding.calendar.datasource.kasi.KasiApi
 import io.github.taetae98coding.calendar.domain.Country
 
 /**
@@ -12,12 +12,12 @@ import io.github.taetae98coding.calendar.domain.Country
 enum class SourceApi(
     val remote: Remote,
 ) {
-    KASI_REST_DE(Remote.Kasi(KasiService.SPCDE, "getRestDeInfo")),
-    KASI_HOLI_DE(Remote.Kasi(KasiService.SPCDE, "getHoliDeInfo")),
-    KASI_ANNIVERSARY(Remote.Kasi(KasiService.SPCDE, "getAnniversaryInfo")),
-    KASI_24_DIVISIONS(Remote.Kasi(KasiService.SPCDE, "get24DivisionsInfo")),
-    KASI_SUNDRY_DAY(Remote.Kasi(KasiService.SPCDE, "getSundryDayInfo")),
-    KASI_LUN_CAL(Remote.Kasi(KasiService.LUNAR, "getLunCalInfo")),
+    KASI_REST_DE(Remote.Kasi(KasiApi.REST_DE)),
+    KASI_HOLI_DE(Remote.Kasi(KasiApi.HOLI_DE)),
+    KASI_ANNIVERSARY(Remote.Kasi(KasiApi.ANNIVERSARY)),
+    KASI_24_DIVISIONS(Remote.Kasi(KasiApi.TWENTY_FOUR_DIVISIONS)),
+    KASI_SUNDRY_DAY(Remote.Kasi(KasiApi.SUNDRY_DAY)),
+    KASI_LUN_CAL(Remote.Kasi(KasiApi.LUN_CAL)),
     NAGER_KOREA(Remote.Nager(Country.KOREA)),
     NAGER_UNITED_STATES(Remote.Nager(Country.UNITED_STATES)),
     ;

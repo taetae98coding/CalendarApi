@@ -1,6 +1,7 @@
 package io.github.taetae98coding.calendar.datasource
 
 import io.github.taetae98coding.calendar.datasource.http.Throttle
+import io.github.taetae98coding.calendar.datasource.kasi.KasiApi
 import io.github.taetae98coding.calendar.datasource.kasi.KasiService
 import io.github.taetae98coding.calendar.datasource.kasi.KtorKasiDataSource
 import io.github.taetae98coding.calendar.datasource.kasi.OpenApiException
@@ -38,7 +39,7 @@ class KtorKasiDataSourceTest {
     fun `서비스 경로와 인증키, 연월을 붙여 요청한다`() = runTest {
         var url = ""
 
-        dataSource(body = envelope(), onRequest = { url = it }).get(KasiService.SPCDE, "getRestDeInfo", yearMonth)
+        dataSource(body = envelope(), onRequest = { url = it }).get(KasiApi.REST_DE, yearMonth)
 
         assertTrue(url.startsWith("https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo?"), url)
         assertTrue("serviceKey=KEY" in url)
@@ -50,7 +51,7 @@ class KtorKasiDataSourceTest {
     fun `항목이 있으면 원본을 그대로 돌려준다`() = runTest {
         val body = envelope(items = """{"item":{"dateKind":"01","dateName":"1월1일","isHoliday":"Y","locdate":20250101}}""", count = 1)
 
-        val raw = dataSource(body = body).get(KasiService.SPCDE, "getRestDeInfo", yearMonth).getOrThrow()
+        val raw = dataSource(body = body).get(KasiApi.REST_DE, yearMonth).getOrThrow()
 
         assertNotNull(raw)
         assertEquals(1, raw.jsonObjectPath("response", "body", "totalCount"))
@@ -58,14 +59,14 @@ class KtorKasiDataSourceTest {
 
     @Test
     fun `404 와 자료 없음, 0건은 성공이면서 null 이다`() = runTest {
-        assertNull(dataSource(HttpStatusCode.NotFound, "").get(KasiService.SPCDE, "getRestDeInfo", yearMonth).getOrThrow())
-        assertNull(dataSource(body = envelope(code = "03")).get(KasiService.SPCDE, "getRestDeInfo", yearMonth).getOrThrow())
-        assertNull(dataSource(body = envelope(count = 0)).get(KasiService.LUNAR, "getLunCalInfo", yearMonth).getOrThrow())
+        assertNull(dataSource(HttpStatusCode.NotFound, "").get(KasiApi.REST_DE, yearMonth).getOrThrow())
+        assertNull(dataSource(body = envelope(code = "03")).get(KasiApi.REST_DE, yearMonth).getOrThrow())
+        assertNull(dataSource(body = envelope(count = 0)).get(KasiApi.LUN_CAL, yearMonth).getOrThrow())
     }
 
     @Test
     fun `오류 봉투는 실패로 돌려주고 코드를 보존한다`() = runTest {
-        val result = dataSource(body = envelope(code = "22")).get(KasiService.SPCDE, "getRestDeInfo", yearMonth)
+        val result = dataSource(body = envelope(code = "22")).get(KasiApi.REST_DE, yearMonth)
 
         val exception = result.exceptionOrNull()
 

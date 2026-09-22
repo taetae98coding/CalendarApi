@@ -4,11 +4,11 @@ import io.github.taetae98coding.calendar.data.cache.CacheMeta
 import io.github.taetae98coding.calendar.data.cache.CachePaths
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
 import io.github.taetae98coding.calendar.data.cache.CacheStore
-import io.github.taetae98coding.calendar.data.cache.CacheUpdater
 import io.github.taetae98coding.calendar.data.source.FetchService
 import io.github.taetae98coding.calendar.data.source.SourceApi
 import io.github.taetae98coding.calendar.data.source.SourceFetcher
-import io.github.taetae98coding.calendar.datasource.kasi.OpenApiException
+import io.github.taetae98coding.calendar.data.update.CacheUpdater
+import io.github.taetae98coding.calendar.datasource.SourceException
 import java.io.File
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.test.AfterTest
@@ -103,7 +103,7 @@ class CacheUpdaterTest {
 
     @Test
     fun `일일 트래픽을 다 쓰면 서비스를 멈추고 예산을 돌려준다`() = runTest {
-        val fetcher = FakeFetcher { _, _ -> Result.failure(OpenApiException(OpenApiException.QUOTA_EXCEEDED_CODE, "quota")) }
+        val fetcher = FakeFetcher { _, _ -> Result.failure(SourceException(SourceException.Kind.QUOTA_EXCEEDED, "quota")) }
 
         val report = updater(fetcher).update(fetchBudget = 100, skip = setOf(FetchService.KASI_SPCDE, FetchService.NAGER)).getValue(FetchService.KASI_LUNAR)
 
@@ -116,7 +116,7 @@ class CacheUpdaterTest {
 
     @Test
     fun `속도 초과는 예산을 돌려주고 한 번만 알린다`() = runTest {
-        val fetcher = FakeFetcher { _, _ -> Result.failure(OpenApiException(OpenApiException.RATE_LIMIT_CODE, "rate")) }
+        val fetcher = FakeFetcher { _, _ -> Result.failure(SourceException(SourceException.Kind.RATE_LIMITED, "rate")) }
 
         val report = updater(fetcher).update(fetchBudget = 100, skip = setOf(FetchService.KASI_SPCDE, FetchService.NAGER)).getValue(FetchService.KASI_LUNAR)
 

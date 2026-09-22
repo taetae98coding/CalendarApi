@@ -1,6 +1,6 @@
 package io.github.taetae98coding.calendar.data.source
 
-import io.github.taetae98coding.calendar.datasource.kasi.KasiService
+import io.github.taetae98coding.calendar.datasource.kasi.KasiApi
 import io.github.taetae98coding.calendar.domain.Country
 
 /**
@@ -15,14 +15,13 @@ sealed interface Remote {
     val service: FetchService
     val granularity: Granularity
 
-    /** 한국천문연구원. 서비스 안의 API 하나가 캐시 폴더 하나다. 월 단위로 응답한다. */
+    /** 한국천문연구원. API 하나가 캐시 폴더 하나다. 월 단위로 응답한다. */
     data class Kasi(
-        val kasiService: KasiService,
-        val api: String,
+        val api: KasiApi,
     ) : Remote {
         override val provider: CacheProvider = CacheProvider.KASI
-        override val id: String = api
-        override val service: FetchService = FetchService.of(kasiService)
+        override val id: String = api.path
+        override val service: FetchService = FetchService.of(api.service)
         override val granularity: Granularity = Granularity.MONTH
     }
 

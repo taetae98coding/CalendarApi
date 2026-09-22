@@ -1,13 +1,14 @@
 package io.github.taetae98coding.calendar
 
-import io.github.taetae98coding.calendar.data.Logger
+import io.github.taetae98coding.calendar.core.Logger
 import io.github.taetae98coding.calendar.data.cache.CachePaths
 import io.github.taetae98coding.calendar.data.cache.CachePruner
+import io.github.taetae98coding.calendar.data.cache.CacheReader
 import io.github.taetae98coding.calendar.data.cache.CacheStore
-import io.github.taetae98coding.calendar.data.cache.CacheUpdater
-import io.github.taetae98coding.calendar.data.holiday.DefaultHolidayRepository
-import io.github.taetae98coding.calendar.data.lunar.DefaultLunarRepository
+import io.github.taetae98coding.calendar.data.holiday.CachedHolidayRepository
+import io.github.taetae98coding.calendar.data.lunar.CachedLunarRepository
 import io.github.taetae98coding.calendar.data.source.RemoteSourceFetcher
+import io.github.taetae98coding.calendar.data.update.CacheUpdater
 import io.github.taetae98coding.calendar.datasource.http.Throttle
 import io.github.taetae98coding.calendar.datasource.kasi.KtorKasiDataSource
 import io.github.taetae98coding.calendar.datasource.nager.KtorNagerDataSource
@@ -36,10 +37,9 @@ class CalendarApp(
         val start = TimeSource.Monotonic.markNow()
         logger.log("[CalendarApi] ${CalendarYears.START_YEAR} ~ ${CalendarYears.END_INCLUSIVE_YEAR} (서비스당 예산 ${config.fetchBudget}건)")
 
+        // 수집 : 원천 -> 캐시
         val cachePaths = CachePaths(config.cacheRoot)
         val store = CacheStore(cachePaths)
-        val holidayRepository = DefaultHolidayRepository(store, logger)
-        val lunarRepository = DefaultLunarRepository(store, logger)
 
         // 특일·음력 요청이 함께 돌기 때문에 호스트마다 하나의 제한을 공유한다.
         val fetcher = RemoteSourceFetcher(
@@ -47,10 +47,15 @@ class CalendarApp(
             nager = KtorNagerDataSource(KtorNagerDataSource.client(), throttle()),
         )
 
+        // 배포 : 캐시 -> 저장소 -> 문서
+        val reader = CacheReader(store, logger)
+        val holidayRepository = CachedHolidayRepository(reader)
+        val lunarRepository = CachedLunarRepository(reader)
+        val docPaths = DocPaths(config.docsRoot)
+
         val unavailable = fetcher.unavailable()
         unavailable.forEach { service -> logger.log("[CalendarApi] '${service.displayName}' 가 활용신청되지 않았습니다. 신청 : ${service.applyUrl}") }
 
-        val docPaths = DocPaths(config.docsRoot)
         CachePruner(cachePaths, logger).prune()
         DocsPruner(docPaths, logger).prune()
 
@@ -60,7 +65,7 @@ class CalendarApp(
         val coverage = DocsUpdater(docPaths, holidayRepository, lunarRepository).update()
         logger.log("[CalendarApi] 문서 생성 완료 (${start.elapsedNow()})")
 
-        val meta = MetaWriter(docPaths).write(coverage)
+        val meta = MetaWriter(docPaths, CalendarSources).write(coverage)
         IndexPage(docPaths).write(meta)
         logger.log("[CalendarApi] 전체 완료 (${start.elapsedNow()})")
     }
