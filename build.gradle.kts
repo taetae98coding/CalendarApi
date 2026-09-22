@@ -1,59 +1,20 @@
-import java.util.Properties
-
 plugins {
-    alias(libs.plugins.kotlin.jvm)
-    alias(libs.plugins.kotlin.plugin.serialization)
+    alias(libs.plugins.kotlin.jvm) apply false
+    alias(libs.plugins.kotlin.plugin.serialization) apply false
 }
-
-dependencies {
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.datetime)
-
-    implementation(ktorLibs.client.okhttp)
-    implementation(ktorLibs.client.contentNegotiation)
-    implementation(ktorLibs.serialization.kotlinx.json)
-
-    testImplementation(kotlin("test"))
-    testImplementation(libs.kotlinx.coroutines.test)
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
-
-/** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */
-fun env(name: String): String? = System.getenv(name)?.takeIf(String::isNotBlank)
 
 /**
- * CI 는 환경 변수(저장소 시크릿)로, 로컬은 secrets.properties 로 인증키를 넘긴다.
- * secrets.properties 는 .gitignore 대상이라 커밋되지 않는다. 템플릿은 secrets.properties.example 참고.
+ * 계층은 Gradle 모듈로 강제한다. 의존 방향은 아래 한 줄로 고정이고, 거꾸로 부르면 컴파일이 실패한다.
+ *
+ * `:domain` <- `:data` -> `:datasource`, 그리고 `:app` 이 셋을 조립한다.
+ *
+ * - `:domain` : 달력 자체의 개념. 다른 모듈을 모른다.
+ * - `:datasource` : 원천에서 조회만 한다. 응답 원본을 그대로 돌려주고 도메인을 모른다.
+ * - `:data` : 캐시를 성공/실패로 관리하고 갱신 우선순위와 동시성을 맡는다. 원본을 도메인으로 옮긴다.
+ * - `:app` : 실행 진입점과 배포 문서 생성.
  */
-val secretsProperties = Properties().apply {
-    rootProject.file("secrets.properties")
-        .takeIf(File::exists)
-        ?.inputStream()
-        ?.use(::load)
-}
-
-fun secret(name: String): String? = (env(name) ?: secretsProperties.getProperty(name))?.takeIf(String::isNotBlank)
-
-tasks.register<JavaExec>("updateCalendar") {
-    group = "calendar"
-    description = "Refresh the response cache and regenerate the static API under docs/"
-    classpath = sourceSets["main"].runtimeClasspath
-    mainClass.set("io.github.taetae98coding.calendar.AppKt")
-
-    // 제공 범위(1998 ~ 2050)는 Config 에 고정되어 있다. 환경 변수로 바꾸지 않는다.
-    // 한 번의 실행에서 다 받을 수는 없으므로, 서비스마다 이 개수만큼만 요청하고
-    // 가장 오래 갱신되지 않은 폴더부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
-    val fetchBudget = env("FETCH_BUDGET") ?: "3000"
-
-    val maxConcurrency = env("MAX_CONCURRENCY") ?: "8"
-    val maxRequestsPerSecond = env("MAX_REQUESTS_PER_SECOND") ?: "20"
-    val serviceKey = secret("DATA_GO_KR_SERVICE_KEY").orEmpty()
-
-    environment("FETCH_BUDGET", fetchBudget)
-    environment("MAX_CONCURRENCY", maxConcurrency)
-    environment("MAX_REQUESTS_PER_SECOND", maxRequestsPerSecond)
-    environment("DATA_GO_KR_SERVICE_KEY", serviceKey)
+subprojects {
+    repositories {
+        mavenCentral()
+    }
 }

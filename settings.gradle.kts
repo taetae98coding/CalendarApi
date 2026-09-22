@@ -1,5 +1,3 @@
-rootProject.name = "CalendarApi"
-
 pluginManagement {
     repositories {
         mavenCentral()
@@ -20,3 +18,10 @@ dependencyResolutionManagement {
         }
     }
 }
+
+rootProject.name = "CalendarApi"
+
+include(":domain")
+include(":datasource")
+include(":data")
+include(":app")
