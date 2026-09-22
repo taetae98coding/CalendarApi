@@ -1,6 +1,7 @@
 package io.github.taetae98coding.calendar.openapi.nager
 
 import io.github.taetae98coding.calendar.openapi.OpenApiClient
+import io.github.taetae98coding.calendar.openapi.RateLimiter
 import io.ktor.client.call.body
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.request.get
@@ -24,6 +25,7 @@ data object NagerDataSource {
     const val MAX_YEAR = 2076
 
     private val semaphore = Semaphore(OpenApiClient.maxConcurrency)
+    private val rateLimiter = RateLimiter(OpenApiClient.maxRequestsPerSecond)
 
     private val client by lazy {
         OpenApiClient.create {
@@ -37,7 +39,11 @@ data object NagerDataSource {
     suspend fun getHoliday(year: Int, countryCode: String): JsonElement? {
         if (year !in MIN_YEAR..MAX_YEAR) return null
 
-        val response = semaphore.withPermit { client.get("$year/$countryCode") }
+        val response = semaphore.withPermit {
+            rateLimiter.acquire()
+
+            client.get("$year/$countryCode")
+        }
 
         return when {
             response.status == HttpStatusCode.NotFound -> null

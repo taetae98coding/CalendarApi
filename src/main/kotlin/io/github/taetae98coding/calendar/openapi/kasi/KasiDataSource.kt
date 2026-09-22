@@ -1,6 +1,7 @@
 package io.github.taetae98coding.calendar.openapi.kasi
 
 import io.github.taetae98coding.calendar.openapi.OpenApiClient
+import io.github.taetae98coding.calendar.openapi.RateLimiter
 import io.github.taetae98coding.calendar.openapi.entity.OpenApiException
 import io.github.taetae98coding.calendar.openapi.entity.OpenApiResult
 import io.ktor.client.call.body
@@ -35,6 +36,9 @@ data object KasiDataSource {
 
     /** 특일·음력 요청이 함께 돌기 때문에 data.go.kr 로 나가는 총 동시 요청 수를 여기서 묶어 제한한다. */
     private val semaphore = Semaphore(OpenApiClient.maxConcurrency)
+
+    /** 동시 요청 수만 막으면 응답이 빠를 때 초당 수십 건이 나가 429 를 맞는다. 속도도 함께 제한한다. */
+    private val rateLimiter = RateLimiter(OpenApiClient.maxRequestsPerSecond)
 
     private val client by lazy {
         OpenApiClient.create {
@@ -91,6 +95,8 @@ data object KasiDataSource {
         val description = "KASI $path $yearMonth"
 
         val response = semaphore.withPermit {
+            rateLimiter.acquire()
+
             client.get(path) {
                 parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
                 parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))

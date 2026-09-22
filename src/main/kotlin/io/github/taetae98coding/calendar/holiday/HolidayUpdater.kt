@@ -106,7 +106,7 @@ data object HolidayUpdater {
 
         return runCatching {
             val raw = KasiDataSource.getSpcde(api, yearMonth)
-            FileDataSource.write(raw, file)
+            FileDataSource.writeCache(raw, file)
 
             KasiDataSource.parseItems<KasiSpcdeItem>(raw, description)
         }
@@ -148,7 +148,7 @@ data object HolidayUpdater {
 
     private suspend fun fetchNager(country: Country, year: Int, file: File): JsonElement? {
         return runCatching { NagerDataSource.getHoliday(year, country.nagerCode) }
-            .onSuccess { raw -> if (raw != null) FileDataSource.write(raw, file) }
+            .onSuccess { raw -> if (raw != null) FileDataSource.writeCache(raw, file) }
             .getOrElse { throwable ->
                 println("[Holiday] Nager.Date ${country.nagerCode} $year 조회 실패: ${throwable.message}")
                 null

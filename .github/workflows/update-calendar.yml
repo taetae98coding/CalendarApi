@@ -25,6 +25,10 @@ on:
         required: false
         description: 이번 실행에서 새로 호출할 음력 월의 최대 개수 (기본 3000)
         type: string
+      MAX_REQUESTS_PER_SECOND:
+        required: false
+        description: 외부 API 한 곳으로 나가는 초당 요청 수 (기본 20)
+        type: string
       FETCH_ENFORCE:
         required: false
         description: 캐시를 무시하고 모두 다시 호출
@@ -62,6 +66,7 @@ jobs:
           LUNAR_START_YEAR: ${{ inputs.LUNAR_START_YEAR }}
           LUNAR_END_INCLUSIVE_YEAR: ${{ inputs.LUNAR_END_INCLUSIVE_YEAR }}
           LUNAR_FETCH_BUDGET: ${{ inputs.LUNAR_FETCH_BUDGET }}
+          MAX_REQUESTS_PER_SECOND: ${{ inputs.MAX_REQUESTS_PER_SECOND }}
           FETCH_ENFORCE: ${{ inputs.FETCH_ENFORCE }}
         run: ./gradlew updateCalendar
 

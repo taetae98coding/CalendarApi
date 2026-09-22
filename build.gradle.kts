@@ -15,6 +15,7 @@ dependencies {
     implementation(ktorLibs.serialization.kotlinx.json)
 
     testImplementation(kotlin("test"))
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 tasks.test {
@@ -57,6 +58,8 @@ tasks.register<JavaExec>("updateCalendar") {
     val lunarFetchBudget = env("LUNAR_FETCH_BUDGET") ?: "3000"
 
     val fetchEnforce = env("FETCH_ENFORCE") ?: "false"
+    val maxConcurrency = env("MAX_CONCURRENCY") ?: "8"
+    val maxRequestsPerSecond = env("MAX_REQUESTS_PER_SECOND") ?: "20"
     val serviceKey = secret("DATA_GO_KR_SERVICE_KEY").orEmpty()
 
     environment("START_YEAR", startYear)
@@ -65,5 +68,7 @@ tasks.register<JavaExec>("updateCalendar") {
     environment("LUNAR_END_INCLUSIVE_YEAR", lunarEndInclusiveYear)
     environment("LUNAR_FETCH_BUDGET", lunarFetchBudget)
     environment("FETCH_ENFORCE", fetchEnforce)
+    environment("MAX_CONCURRENCY", maxConcurrency)
+    environment("MAX_REQUESTS_PER_SECOND", maxRequestsPerSecond)
     environment("DATA_GO_KR_SERVICE_KEY", serviceKey)
 }

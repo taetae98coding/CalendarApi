@@ -128,8 +128,12 @@ GitHub Pages 는 `Access-Control-Allow-Origin: *` 를 내려주므로 웹에서�
 - 공휴일은 국가 × 연도 × 월 × API 를 모두 동시에 호출합니다.
 - 음력은 `Semaphore` 로 4개 연도씩 처리하고, 한 연도 안에서 12개 월을 동시에 호출합니다.
   `Semaphore` 가 FIFO 라 "가까운 연도 먼저" 순서가 유지됩니다.
-- 외부 API 한 곳으로 동시에 나가는 요청 수는 `MAX_CONCURRENCY`(기본 8) 로 제한하고,
-  서버 오류·타임아웃은 Ktor `HttpRequestRetry` 가 지수 백오프로 3회까지 재시도합니다.
+- 외부 API 한 곳으로 나가는 요청은 동시 수(`MAX_CONCURRENCY`, 기본 8)와 초당 수
+  (`MAX_REQUESTS_PER_SECOND`, 기본 20)를 함께 제한합니다.
+  data.go.kr 은 짧은 시간에 요청이 몰리면 HTTP 429 와 함께 `code=23` 을 돌려주는데,
+  동시 요청 수만 막으면 응답이 빠를 때 초당 100건까지 나가 이 제한에 걸립니다.
+- 429·5xx·타임아웃은 Ktor `HttpRequestRetry` 가 지수 백오프로 5회까지 재시도합니다.
+- 일일 트래픽을 다 쓰면(`code=22`) 남은 호출을 멈추고 다음 실행에서 이어서 채웁니다.
 
 ## 로컬 실행
 
@@ -159,6 +163,7 @@ DATA_GO_KR_SERVICE_KEY='발급받은 인증키' ./gradlew updateCalendar
 | `LUNAR_FETCH_BUDGET` | `3000` | 한 번의 실행에서 새로 호출할 음력 월 수 |
 | `FETCH_ENFORCE` | `false` | 캐시를 무시하고 모두 다시 호출 |
 | `MAX_CONCURRENCY` | `8` | 외부 API 한 곳으로 나가는 동시 요청 수 |
+| `MAX_REQUESTS_PER_SECOND` | `20` | 외부 API 한 곳으로 나가는 초당 요청 수 |
 
 테스트는 인증키 없이 실행할 수 있습니다.
 
