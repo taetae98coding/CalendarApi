@@ -27,9 +27,20 @@ data class KasiLunarItem(
     @Serializable(KasiLeapMonthSerializer::class)
     @SerialName("lunLeapmonth")
     val isLeapMonth: Boolean,
+    @SerialName("solJd")
+    val solarJulianDay: JsonPrimitive? = null,
 ) {
+    /**
+     * 양력 날짜.
+     *
+     * KASI 는 그레고리력 도입(1582-10-15) 이전 구간을 율리우스력으로 준다.
+     * 율리우스력에서는 윤년이던 1500-02-29 같은 날짜가 있어 solYear/solMonth/solDay 를 그대로
+     * [LocalDate] 로 만들면 실패한다. 달력 종류와 무관한 율리우스 적일(solJd)로 만들어 ISO-8601
+     * (proleptic Gregorian) 날짜로 통일한다.
+     */
     val solarDate: LocalDate
-        get() = LocalDate(solarYear.toIntValue(), solarMonth.toIntValue(), solarDay.toIntValue())
+        get() = solarJulianDay?.let { julianDay -> LocalDate.fromEpochDays(julianDay.toIntValue() - JULIAN_DAY_OF_EPOCH) }
+            ?: LocalDate(solarYear.toIntValue(), solarMonth.toIntValue(), solarDay.toIntValue())
 
     val lunarYearValue: Int
         get() = lunarYear.toIntValue()
@@ -41,4 +52,9 @@ data class KasiLunarItem(
         get() = lunarDay.toIntValue()
 
     private fun JsonPrimitive.toIntValue(): Int = content.trim().toInt()
+
+    companion object {
+        /** 1970-01-01 의 율리우스 적일. */
+        private const val JULIAN_DAY_OF_EPOCH = 2440588
+    }
 }

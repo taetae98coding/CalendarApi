@@ -106,14 +106,16 @@ data object LunarUpdater {
                 }
         }
 
-        val lunarDates = runCatching { KasiDataSource.parseItems<KasiLunarItem>(raw, description) }
+        val lunarDates = runCatching {
+            KasiDataSource.parseItems<KasiLunarItem>(raw, description)
+                .map { item -> item.toLunarDate() }
+                .sortedBy(LunarDate::solar)
+        }
             .getOrElse { throwable ->
                 println("[Lunar] $yearMonth 해석 실패: ${throwable.message}")
 
                 return null
             }
-            .map { item -> item.toLunarDate() }
-            .sortedBy(LunarDate::solar)
 
         if (lunarDates.isEmpty()) return null
 

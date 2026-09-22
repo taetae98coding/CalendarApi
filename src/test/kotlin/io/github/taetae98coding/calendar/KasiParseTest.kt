@@ -72,6 +72,36 @@ class KasiParseTest {
     }
 
     @Test
+    fun `그레고리력 이전 날짜는 율리우스 적일로 변환한다`() {
+        // KASI 는 1582-10-15 이전을 율리우스력으로 준다. 1500-02-29 는 율리우스력에만 있는 날짜다.
+        val items = lunarItems(
+            """
+            {"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":{"item":
+            {"lunDay":"01","lunLeapmonth":"평","lunMonth":"02","lunYear":1500,"solDay":29,"solJd":2268992,"solMonth":"02","solYear":1500}
+            },"numOfRows":100,"pageNo":1,"totalCount":1}}}
+            """.trimIndent(),
+        )
+
+        assertEquals(LocalDate(1500, 3, 10), items[0].solarDate)
+        assertEquals(1500, items[0].lunarYearValue)
+        assertEquals(2, items[0].lunarMonthValue)
+        assertEquals(1, items[0].lunarDayValue)
+    }
+
+    @Test
+    fun `solJd 가 없으면 연월일로 날짜를 만든다`() {
+        val items = lunarItems(
+            """
+            {"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":{"item":
+            {"lunDay":"02","lunLeapmonth":"평","lunMonth":"12","lunYear":"2024","solDay":"01","solMonth":"01","solYear":"2025"}
+            },"numOfRows":100,"pageNo":1,"totalCount":1}}}
+            """.trimIndent(),
+        )
+
+        assertEquals(LocalDate(2025, 1, 1), items[0].solarDate)
+    }
+
+    @Test
     fun `결과가 없으면 빈 목록이다`() {
         val items = lunarItems(
             """{"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":"","numOfRows":100,"pageNo":1,"totalCount":0}}}""",
