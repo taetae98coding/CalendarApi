@@ -1,63 +1,39 @@
 package io.github.taetae98coding.calendar.data.holiday
 
+import io.github.taetae98coding.calendar.data.Logger
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
 import io.github.taetae98coding.calendar.data.cache.CacheStore
-import io.github.taetae98coding.calendar.data.cache.CacheUnit
-import io.github.taetae98coding.calendar.data.cache.SourceApi
-import io.github.taetae98coding.calendar.data.cache.SourceUpdater
-import io.github.taetae98coding.calendar.data.cache.hasKasiItems
-import io.github.taetae98coding.calendar.datasource.openapi.kasi.KasiDataSource
-import io.github.taetae98coding.calendar.datasource.openapi.kasi.KasiSpcdeItem
-import io.github.taetae98coding.calendar.datasource.openapi.nager.NagerDataSource
-import io.github.taetae98coding.calendar.domain.holiday.Country
+import io.github.taetae98coding.calendar.data.source.SourceApi
+import io.github.taetae98coding.calendar.datasource.kasi.KasiResponse
+import io.github.taetae98coding.calendar.datasource.kasi.KasiSpcdeItem
+import io.github.taetae98coding.calendar.datasource.nager.NagerResponse
+import io.github.taetae98coding.calendar.domain.Country
 import io.github.taetae98coding.calendar.domain.holiday.Holiday
 import io.github.taetae98coding.calendar.domain.holiday.HolidayRepository
-import io.github.taetae98coding.calendar.domain.holiday.holidayDistinct
-import io.github.taetae98coding.calendar.domain.holiday.holidayFold
-import io.github.taetae98coding.calendar.domain.holiday.holidaySorted
+import io.github.taetae98coding.calendar.domain.holiday.normalized
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
 import kotlinx.datetime.YearMonth
-import kotlinx.datetime.number
 import kotlinx.serialization.json.JsonElement
 
 /**
- * 공휴일 저장소.
- *
- * 읽기([get])는 캐시에 쌓인 원본만 본다. 네트워크를 타지 않는다.
- * 쓰기([fetch])는 갱신 단위 한 건을 받아 오는 것까지만 하고, 예산과 순서는 UpdateScheduler 가 정한다.
+ * 공휴일 저장소. 캐시에 쌓인 원본만 읽는다. 네트워크를 타지 않는다.
  *
  * 공휴일은 출처가 둘이다. 어느 쪽을 쓸지 아는 것이 이 클래스의 책임이고, 그 사실은 바깥으로 새지 않는다.
+ * 캐시가 없거나 깨진 구간은 비어 있는 것으로 보고 로그만 남긴다. 다음 갱신이 다시 채운다.
  */
-data object DefaultHolidayRepository : HolidayRepository, SourceUpdater {
-    override val subject: String = "공휴일"
-
-    override val apis: List<SourceApi> = SourceApi.spcde + Country.entries.map(SourceApi::nager)
-
+class DefaultHolidayRepository(
+    private val store: CacheStore,
+    private val logger: Logger,
+) : HolidayRepository {
     override suspend fun get(country: Country, year: Int): List<Holiday> {
         val holidays = when (country) {
             Country.KOREA -> korea(year)
             Country.UNITED_STATES -> nager(country, year)
         }
 
-        return holidays.holidayDistinct()
-            .holidayFold()
-            .holidaySorted()
-    }
-
-    override suspend fun fetch(unit: CacheUnit): Result<JsonElement?> {
-        val country = unit.api.country
-
-        return if (country == null) {
-            KasiDataSource.getSpcde(unit.api.id, unit.period.yearMonth)
-        } else {
-            NagerDataSource.getHoliday(unit.period.year, country.nagerCode)
-        }
-    }
-
-    override fun hasItems(api: SourceApi, raw: JsonElement): Boolean {
-        return if (api.country == null) hasKasiItems(api, raw) else NagerDataSource.parseHolidays(raw).isNotEmpty()
+        return holidays.normalized()
     }
 
     /**
@@ -81,28 +57,22 @@ data object DefaultHolidayRepository : HolidayRepository, SourceUpdater {
     }
 
     private suspend fun spcdeItems(api: SourceApi, yearMonth: YearMonth): List<KasiSpcdeItem> {
-        val raw = CacheStore.read(api, CachePeriod(yearMonth.year, yearMonth.month.number)) ?: return emptyList()
-
-        return runCatching { KasiDataSource.parseItems<KasiSpcdeItem>(raw, "${api.id} $yearMonth") }
-            .getOrElse { throwable ->
-                println("[Data] ${api.id} $yearMonth 해석 실패: ${throwable.message}")
-
-                emptyList()
-            }
+        return read(api, CachePeriod.of(yearMonth)) { raw -> KasiResponse.items(raw, "${api.id} $yearMonth") }
     }
 
     /** Nager.Date 는 연 단위 응답이라 캐시도 연 단위 파일 하나다. */
     private suspend fun nager(country: Country, year: Int): List<Holiday> {
-        val api = SourceApi.nager(country)
-        val raw = CacheStore.read(api, CachePeriod(year)) ?: return emptyList()
-
-        val items = runCatching { NagerDataSource.parseHolidays(raw) }
-            .getOrElse { throwable ->
-                println("[Data] ${api.id} $year 해석 실패: ${throwable.message}")
-
-                return emptyList()
-            }
+        val items = read(SourceApi.nager(country), CachePeriod(year), NagerResponse::holidays)
 
         return NagerHolidayMapper.toHolidays(items, country)
+    }
+
+    private suspend fun <T> read(api: SourceApi, period: CachePeriod, parse: (raw: JsonElement) -> List<T>): List<T> {
+        return runCatching { store.read(api, period)?.let(parse).orEmpty() }
+            .getOrElse { throwable ->
+                logger.log("[Data] ${api.id} ${period.key} 해석 실패: ${throwable.message}")
+
+                emptyList()
+            }
     }
 }

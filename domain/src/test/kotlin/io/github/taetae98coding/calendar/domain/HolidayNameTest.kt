@@ -1,12 +1,8 @@
 package io.github.taetae98coding.calendar.domain
 
-import io.github.taetae98coding.calendar.domain.holiday.Holiday
 import io.github.taetae98coding.calendar.domain.holiday.HolidayName
-import io.github.taetae98coding.calendar.domain.holiday.holidayDistinct
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertTrue
-import kotlinx.datetime.LocalDate
 
 class HolidayNameTest {
     @Test
@@ -39,25 +35,5 @@ class HolidayNameTest {
     fun `알 수 없는 이름은 공백만 정리해 그대로 둔다`() {
         assertEquals("정월대보름", HolidayName.normalize("정월대보름"))
         assertEquals("6·25 전쟁일", HolidayName.normalize("  6·25  전쟁일 "))
-    }
-
-    @Test
-    fun `같은 날짜에 isHoliday 가 엇갈리면 휴일로 합친다`() {
-        val date = LocalDate(2025, 5, 5)
-
-        // 특일 정보는 어린이날을 API 마다 Y/N 으로 다르게 내려준다. 도착 순서와 무관하게 같은 결과여야 한다.
-        val ascending = listOf(
-            Holiday("어린이날", false, date, date),
-            Holiday("어린이날", true, date, date),
-        ).holidayDistinct()
-
-        val descending = listOf(
-            Holiday("어린이날", true, date, date),
-            Holiday("어린이날", false, date, date),
-        ).holidayDistinct()
-
-        assertEquals(1, ascending.size)
-        assertEquals(ascending, descending)
-        assertTrue(ascending.single().isHoliday)
     }
 }

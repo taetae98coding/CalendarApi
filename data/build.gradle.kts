@@ -1,6 +1,5 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
-    alias(libs.plugins.kotlin.plugin.serialization)
+    id("calendar.kotlin-jvm")
 }
 
 /**
@@ -12,13 +11,8 @@ plugins {
  */
 dependencies {
     api(project(":domain"))
-    implementation(project(":datasource"))
+    api(project(":datasource"))
     implementation(libs.kotlinx.coroutines.core)
 
-    testImplementation(kotlin("test"))
     testImplementation(libs.kotlinx.coroutines.test)
-}
-
-tasks.test {
-    useJUnitPlatform()
 }

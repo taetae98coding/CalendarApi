@@ -1,36 +1,23 @@
 package io.github.taetae98coding.calendar.data.cache
 
-import io.github.taetae98coding.calendar.datasource.file.FileDataSource
-import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
+import io.github.taetae98coding.calendar.data.source.SourceApi
+import io.github.taetae98coding.calendar.datasource.file.JsonFiles
 import kotlinx.serialization.json.JsonElement
 
 /**
- * API 하나의 갱신 기록. 키는 [CachePeriod.key] 다.
+ * `cache/{provider}/{api}/` 를 읽고 쓴다.
  *
- * 구간마다 파일을 따로 두면 수천 개가 되고 실행할 때마다 그만큼 diff 가 생기므로 API 당 하나로 모은다.
+ * 응답 원본은 기계만 읽으므로 공백 없이, 갱신 기록은 diff 로 확인하므로 들여쓴다.
  */
-@Serializable
-data class CacheMeta(
-    @SerialName("lastUpdatedAt")
-    val lastUpdatedAt: Map<String, String> = emptyMap(),
-)
+class CacheStore(
+    private val paths: CachePaths,
+) {
+    suspend fun meta(api: SourceApi): CacheMeta = JsonFiles.pretty.readOrNull(paths.meta(api)) ?: CacheMeta()
 
-/** `cache/{provider}/{api}/` 를 읽고 쓴다. */
-data object CacheStore {
-    suspend fun meta(api: SourceApi): CacheMeta {
-        return FileDataSource.readOrNull<CacheMeta>(CachePaths.meta(api)) ?: CacheMeta()
-    }
+    suspend fun writeMeta(api: SourceApi, meta: CacheMeta) = JsonFiles.pretty.write(meta, paths.meta(api))
 
-    suspend fun writeMeta(api: SourceApi, meta: CacheMeta) {
-        FileDataSource.write(meta, CachePaths.meta(api))
-    }
+    /** 캐시가 없으면 null. 있는데 깨졌으면 예외가 난다. */
+    suspend fun read(api: SourceApi, period: CachePeriod): JsonElement? = JsonFiles.compact.readOrNull(paths.file(api, period))
 
-    suspend fun read(api: SourceApi, period: CachePeriod): JsonElement? {
-        return FileDataSource.readOrNull(CachePaths.file(api, period))
-    }
-
-    suspend fun write(api: SourceApi, period: CachePeriod, raw: JsonElement) {
-        FileDataSource.writeCache(raw, CachePaths.file(api, period))
-    }
+    suspend fun write(api: SourceApi, period: CachePeriod, raw: JsonElement) = JsonFiles.compact.write(raw, paths.file(api, period))
 }

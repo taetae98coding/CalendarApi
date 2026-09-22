@@ -1,15 +1,15 @@
 pluginManagement {
+    includeBuild("build-logic")
+
     repositories {
         mavenCentral()
         gradlePluginPortal()
-        mavenLocal()
     }
 }
 
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
-        mavenLocal()
     }
 
     versionCatalogs {

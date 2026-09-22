@@ -2,18 +2,19 @@ package io.github.taetae98coding.calendar.data
 
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
 import io.github.taetae98coding.calendar.data.cache.CacheUnit
-import io.github.taetae98coding.calendar.data.cache.Granularity
-import io.github.taetae98coding.calendar.data.cache.SourceApi
 import io.github.taetae98coding.calendar.data.cache.oldestFirst
+import io.github.taetae98coding.calendar.data.source.Granularity
+import io.github.taetae98coding.calendar.data.source.SourceApi
 import io.github.taetae98coding.calendar.domain.CalendarYears
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.time.Instant
 
 class CacheUnitOrderTest {
     private fun unit(year: Int, month: Int?, lastUpdatedAt: String?): CacheUnit {
         val api = if (month == null) SourceApi.NAGER_KOREA else SourceApi.KASI_REST_DE
 
-        return CacheUnit(api, CachePeriod(year, month), lastUpdatedAt)
+        return CacheUnit(api, CachePeriod(year, month), lastUpdatedAt?.let(Instant::parse))
     }
 
     @Test
@@ -37,13 +38,9 @@ class CacheUnitOrderTest {
     /** 갱신 단위가 요청 한 건이라, 한 달만 실패하면 그 달만 다음 차례로 밀린다. */
     @Test
     fun `같은 해에서도 실패한 달만 먼저 잡힌다`() {
-        val units = (1..12).map { month ->
-            unit(2026, month, if (month == 7) null else "2026-09-22T00:00:00Z")
-        }
+        val units = (1..12).map { month -> unit(2026, month, if (month == 7) null else "2026-09-22T00:00:00Z") }
 
-        val first = units.oldestFirst(2026).first()
-
-        assertEquals(7, first.period.month)
+        assertEquals(7, units.oldestFirst(2026).first().period.month)
     }
 
     @Test

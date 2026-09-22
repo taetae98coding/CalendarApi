@@ -2,10 +2,10 @@ package io.github.taetae98coding.calendar.data
 
 import io.github.taetae98coding.calendar.data.holiday.KasiHolidayMapper
 import io.github.taetae98coding.calendar.data.holiday.NagerHolidayMapper
-import io.github.taetae98coding.calendar.datasource.openapi.kasi.KasiSpcdeItem
-import io.github.taetae98coding.calendar.datasource.openapi.kasi.KasiSpcdeItemKind
-import io.github.taetae98coding.calendar.datasource.openapi.nager.NagerHoliday
-import io.github.taetae98coding.calendar.domain.holiday.Country
+import io.github.taetae98coding.calendar.datasource.kasi.KasiSpcdeItem
+import io.github.taetae98coding.calendar.datasource.kasi.KasiSpcdeItemKind
+import io.github.taetae98coding.calendar.datasource.nager.NagerHoliday
+import io.github.taetae98coding.calendar.domain.Country
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse

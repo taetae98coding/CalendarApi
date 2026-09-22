@@ -8,7 +8,7 @@ package io.github.taetae98coding.calendar.domain
  *
  * 수집(`:data`)과 배포(`:app`)가 같은 범위를 봐야 하므로 도메인에 둔다.
  */
-data object CalendarYears {
+object CalendarYears {
     const val START_YEAR = 1998
 
     /** @see START_YEAR */

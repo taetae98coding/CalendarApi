@@ -1,13 +1,14 @@
 package io.github.taetae98coding.calendar.publish
 
-import io.github.taetae98coding.calendar.datasource.file.FileDataSource
-import java.io.File
+import io.github.taetae98coding.calendar.datasource.file.JsonFiles
 
 /** GitHub Pages 루트에 놓일 간단한 문서 페이지를 생성한다. */
-data object IndexPage {
+class IndexPage(
+    private val paths: DocPaths,
+) {
     suspend fun write(meta: ApiMeta) {
-        FileDataSource.writeText("", File(DocPaths.root, ".nojekyll"))
-        FileDataSource.writeText(html(meta), File(DocPaths.root, "index.html"))
+        JsonFiles.pretty.writeText("", paths.noJekyll)
+        JsonFiles.pretty.writeText(html(meta), paths.index)
     }
 
     private fun html(meta: ApiMeta): String {
@@ -42,11 +43,12 @@ data object IndexPage {
                 <tr><td>음력</td><td><code>lunar/{country}/{year}.json</code></td><td><code>lunar/{country}/{year}/{month}.json</code></td></tr>
                 <tr><td>통합</td><td><code>calendar/{country}/{year}.json</code></td><td><code>calendar/{country}/{year}/{month}.json</code></td></tr>
             </table>
-            <p>필요한 것만 받으려면 <code>holiday</code> · <code>lunar</code> 를, 한 번에 받으려면 <code>calendar</code> 를 쓰면 됩니다.</p>
+            <p>필요한 것만 받으려면 <code>holiday</code> · <code>lunar</code> 를, 한 번에 받으려면 <code>calendar</code> 를 쓰면 됩니다.
+            범위 안이지만 원천에 자료가 없는 구간은 빈 목록(<code>[]</code>)으로 내려갑니다.</p>
 
             <h2>생성 현황</h2>
             <table>
-                <tr><th>API</th><th>국가</th><th>생성된 연도</th></tr>
+                <tr><th>API</th><th>국가</th><th>내용이 있는 연도</th></tr>
                 ${meta.apis.joinToString("\n                ", transform = ::rows)}
             </table>
 
@@ -59,19 +61,11 @@ data object IndexPage {
         """.trimIndent()
     }
 
-    private fun rows(api: ApiCoverage): String {
+    private fun rows(api: ApiMeta.Api): String {
         return api.countries.joinToString("\n                ") { country ->
-            val generated = country.generated.joinToString(", ") { range -> range.text() }.ifBlank { "없음" }
+            val generated = country.generated.joinToString(", ", transform = ApiMeta.YearRange::text).ifBlank { "없음" }
 
             "<tr><td><code>${api.id}</code></td><td><code>${country.code}</code></td><td>$generated</td></tr>"
-        }
-    }
-
-    private fun YearRange.text(): String {
-        return if (start == endInclusive) {
-            "$start"
-        } else {
-            "$start ~ $endInclusive"
         }
     }
 }

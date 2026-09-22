@@ -1,8 +1,7 @@
 import java.util.Properties
 
 plugins {
-    alias(libs.plugins.kotlin.jvm)
-    alias(libs.plugins.kotlin.plugin.serialization)
+    id("calendar.kotlin-jvm")
 }
 
 /** 실행 진입점과 배포 문서 생성. 계층을 조립하는 자리라 셋 모두에 의존한다. */
@@ -12,12 +11,10 @@ dependencies {
     implementation(project(":datasource"))
     implementation(libs.kotlinx.coroutines.core)
 
-    testImplementation(kotlin("test"))
-    testImplementation(libs.kotlinx.coroutines.test)
-}
+    // Ktor 가 SLF4J 로 로그를 보낸다. 구현이 없으면 실행마다 경고가 찍히므로 조용한 구현을 넣는다.
+    runtimeOnly(libs.slf4j.nop)
 
-tasks.test {
-    useJUnitPlatform()
+    testImplementation(libs.kotlinx.coroutines.test)
 }
 
 /** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */
@@ -45,17 +42,12 @@ tasks.register<JavaExec>("updateCalendar") {
     // cache/ 와 docs/ 는 저장소 루트 기준의 상대 경로다. 모듈 디렉터리에서 실행되지 않도록 고정한다.
     workingDir = rootProject.projectDir
 
-    // 제공 범위(1998 ~ 2050)는 Config 에 고정되어 있다. 환경 변수로 바꾸지 않는다.
-    // 한 번의 실행에서 다 받을 수는 없으므로, 서비스마다 이 개수만큼만 요청하고
-    // 가장 오래 갱신되지 않은 폴더부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
-    val fetchBudget = env("FETCH_BUDGET") ?: "3000"
-
-    val maxConcurrency = env("MAX_CONCURRENCY") ?: "8"
-    val maxRequestsPerSecond = env("MAX_REQUESTS_PER_SECOND") ?: "20"
-    val serviceKey = secret("DATA_GO_KR_SERVICE_KEY").orEmpty()
-
-    environment("FETCH_BUDGET", fetchBudget)
-    environment("MAX_CONCURRENCY", maxConcurrency)
-    environment("MAX_REQUESTS_PER_SECOND", maxRequestsPerSecond)
-    environment("DATA_GO_KR_SERVICE_KEY", serviceKey)
+    // 제공 범위(1998 ~ 2050)는 CalendarYears 에 고정되어 있다. 환경 변수로 바꾸지 않는다.
+    // 한 번의 실행에서 다 받을 수는 없으므로, 서비스마다 예산만큼만 요청하고
+    // 가장 오래 갱신되지 않은 구간부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
+    // 기본값은 Config 가 가진다. 여기서는 정해진 값만 넘긴다.
+    listOf("FETCH_BUDGET", "MAX_CONCURRENCY", "MAX_REQUESTS_PER_SECOND").forEach { name ->
+        env(name)?.let { value -> environment(name, value) }
+    }
+    secret("DATA_GO_KR_SERVICE_KEY")?.let { value -> environment("DATA_GO_KR_SERVICE_KEY", value) }
 }
