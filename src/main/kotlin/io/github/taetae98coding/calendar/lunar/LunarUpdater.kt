@@ -11,11 +11,16 @@ import kotlin.time.Clock
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.todayIn
 
 data object LunarUpdater {
+    /** 동시에 처리할 연도 수. 월 단위 호출은 이 안에서 다시 12개씩 동시에 나간다. */
+    private const val YEAR_PARALLELISM = 4
+
     /** 한국천문연구원 음양력 정보의 시작 시점. 1391년 1월은 제공되지 않는다. */
     private val minYearMonth = YearMonth(Config.LUNAR_MIN_YEAR, 2)
 
@@ -29,17 +34,20 @@ data object LunarUpdater {
         val today = Clock.System.todayIn(TimeZone.of("Asia/Seoul"))
 
         // 가까운 연도부터 채워 예산이 모자라도 실제로 많이 쓰이는 구간이 먼저 완성되게 한다.
+        // Semaphore 는 FIFO 라 연도를 한꺼번에 띄워도 이 순서가 대체로 유지된다.
         val years = config.lunarYears.sortedBy { year -> abs(year - today.year) }
-        val completed = mutableSetOf<Int>()
+        val yearSemaphore = Semaphore(YEAR_PARALLELISM)
 
-        for (year in years) {
-            if (updateYear(year, config, budget)) {
-                completed += year
-            }
+        val completed = coroutineScope {
+            years.map { year -> async { year to yearSemaphore.withPermit { updateYear(year, config, budget) } } }
+                .awaitAll()
         }
+            .filter { (_, isCompleted) -> isCompleted }
+            .map { (year, _) -> year }
 
-        val missing = config.lunarYears.filterNot(completed::contains)
-        println("[Lunar] 완료 ${completed.size}년 / 미완료 ${missing.size}년, 잔여 예산=${budget.get()}")
+        val completedYears = completed.toSet()
+        val missing = config.lunarYears.filterNot(completedYears::contains)
+        println("[Lunar] 완료 ${completedYears.size}년 / 미완료 ${missing.size}년, 잔여 예산=${budget.get().coerceAtLeast(0)}")
 
         return LunarResult(completedYears = completed.sorted(), missingYears = missing)
     }
@@ -77,7 +85,7 @@ data object LunarUpdater {
 
         if (budget.getAndDecrement() <= 0) return null
 
-        val lunarDates = runCatching { KasiDataSource.getLunar(yearMonth).map { item -> item.toLunarDate() } }
+        val lunarDates = runCatching { KasiDataSource.getLunarItems(yearMonth).map { item -> item.toLunarDate() } }
             .getOrElse { throwable ->
                 println("[Lunar] $yearMonth 조회 실패: ${throwable.message}")
                 return null

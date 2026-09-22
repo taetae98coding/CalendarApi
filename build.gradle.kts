@@ -6,6 +6,7 @@ plugins {
 }
 
 dependencies {
+    implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.datetime)
 
     implementation(ktorLibs.client.okhttp)

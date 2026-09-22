@@ -25,9 +25,17 @@ data object CalendarUpdater {
     private suspend fun updateYear(year: Int, holidays: Map<Country, Map<Int, List<Holiday>>>) {
         val yearLunar = FileDataSource.readOrNull<List<LunarDate>>(Paths.lunarYear(year)).orEmpty()
         val yearMonths = (1..12).map { month -> YearMonth(year, month) }
-        val lunarByYearMonth = yearMonths.associateWith { yearMonth ->
-            yearLunar.filter { lunar -> lunar.solar.yearMonth == yearMonth }
-                .ifEmpty { FileDataSource.readOrNull<List<LunarDate>>(Paths.lunarYearMonth(yearMonth)).orEmpty() }
+        val lunarByYearMonth = coroutineScope {
+            yearMonths.map { yearMonth ->
+                async {
+                    val lunar = yearLunar.filter { lunar -> lunar.solar.yearMonth == yearMonth }
+                        .ifEmpty { FileDataSource.readOrNull<List<LunarDate>>(Paths.lunarYearMonth(yearMonth)).orEmpty() }
+
+                    yearMonth to lunar
+                }
+            }
+                .awaitAll()
+                .toMap()
         }
 
         coroutineScope {

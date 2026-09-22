@@ -1,5 +1,6 @@
 package io.github.taetae98coding.calendar
 
+import io.github.taetae98coding.calendar.openapi.OpenApiClient
 import io.github.taetae98coding.calendar.openapi.entity.OpenApiResult
 import io.github.taetae98coding.calendar.openapi.kasi.KasiBody
 import io.github.taetae98coding.calendar.openapi.kasi.KasiLunarItem
@@ -10,20 +11,16 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 import kotlinx.datetime.LocalDate
-import kotlinx.serialization.json.Json
 
 class KasiParseTest {
-    private val json = Json {
-        ignoreUnknownKeys = true
-        isLenient = true
-    }
+    private val json = OpenApiClient.json
 
     private fun lunarItems(body: String): List<KasiLunarItem> {
-        return json.decodeFromString<OpenApiResult<KasiBody>>(body).response.body.toItemList(json)
+        return json.decodeFromString<OpenApiResult<KasiBody>>(body).bodyOrThrow("테스트").toItemList(json)
     }
 
     private fun spcdeItems(body: String): List<KasiSpcdeItem> {
-        return json.decodeFromString<OpenApiResult<KasiBody>>(body).response.body.toItemList(json)
+        return json.decodeFromString<OpenApiResult<KasiBody>>(body).bodyOrThrow("테스트").toItemList(json)
     }
 
     @Test

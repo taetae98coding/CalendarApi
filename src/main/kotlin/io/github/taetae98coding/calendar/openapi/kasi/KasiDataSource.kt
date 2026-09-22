@@ -1,19 +1,16 @@
 package io.github.taetae98coding.calendar.openapi.kasi
 
+import io.github.taetae98coding.calendar.openapi.OpenApiClient
 import io.github.taetae98coding.calendar.openapi.entity.OpenApiResult
-import io.ktor.client.HttpClient
+import io.ktor.client.call.body
 import io.ktor.client.plugins.DefaultRequest
-import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
-import io.ktor.client.statement.bodyAsText
-import io.ktor.http.HttpStatusCode
 import io.ktor.http.takeFrom
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.number
-import kotlinx.serialization.json.Json
 
 /**
  * 한국천문연구원 OpenAPI 클라이언트.
@@ -24,63 +21,42 @@ import kotlinx.serialization.json.Json
 data object KasiDataSource {
     private const val BASE_URL = "https://apis.data.go.kr/B090041/openapi/service/"
 
-    private val semaphore = Semaphore(4)
-
-    val apiJson by lazy {
-        Json {
-            ignoreUnknownKeys = true
-            isLenient = true
-        }
-    }
+    /** 특일·음력 요청이 함께 돌기 때문에 data.go.kr 로 나가는 총 동시 요청 수를 여기서 묶어 제한한다. */
+    private val semaphore = Semaphore(OpenApiClient.maxConcurrency)
 
     private val client by lazy {
-        HttpClient {
-            expectSuccess = false
-
+        OpenApiClient.create {
             install(DefaultRequest) {
                 url.takeFrom(BASE_URL)
-                url.parameters.append("serviceKey", System.getenv("SERVICE_KEY"))
+                url.parameters.append("serviceKey", System.getenv("SERVICE_KEY").orEmpty())
                 url.parameters.append("_type", "json")
+                url.parameters.append("numOfRows", "100")
             }
         }
     }
 
     suspend fun getSpcdeItems(api: String, yearMonth: YearMonth): List<KasiSpcdeItem> {
-        val body = request("SpcdeInfoService/$api") {
-            parameter("solYear", yearMonth.year)
-            parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
-            parameter("numOfRows", 100)
-        }
-
-        return body.toItemList(apiJson)
+        return getItems("SpcdeInfoService/$api", yearMonth)
     }
 
     /** solDay 를 생략하면 해당 양력 월 전체의 음력 정보를 한 번에 받는다. */
-    suspend fun getLunar(yearMonth: YearMonth): List<KasiLunarItem> {
-        val body = request("LrsrCldInfoService/getLunCalInfo") {
-            parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
-            parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
-            parameter("numOfRows", 100)
-        }
-
-        return body.toItemList(apiJson)
+    suspend fun getLunarItems(yearMonth: YearMonth): List<KasiLunarItem> {
+        return getItems("LrsrCldInfoService/getLunCalInfo", yearMonth)
     }
 
-    private suspend fun request(path: String, block: HttpRequestBuilder.() -> Unit): KasiBody {
-        val (status, text) = semaphore.withPermit {
-            val response = client.get(path, block)
+    private suspend inline fun <reified T> getItems(path: String, yearMonth: YearMonth): List<T> {
+        val description = "KASI $path $yearMonth"
 
-            response.status to response.bodyAsText()
+        val response = semaphore.withPermit {
+            client.get(path) {
+                parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
+                parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
+            }
         }
 
-        val result = runCatching { apiJson.decodeFromString<OpenApiResult<KasiBody>>(text) }
-            .getOrElse { throwable -> throw IllegalStateException("KASI $path 응답 해석 실패. status=$status, body=${text.take(500)}", throwable) }
+        val result = runCatching { response.body<OpenApiResult<KasiBody>>() }
+            .getOrElse { throwable -> throw IllegalStateException("$description 응답 해석 실패. status=${response.status}", throwable) }
 
-        val header = result.response.header
-        if (status != HttpStatusCode.OK || header.code != "00") {
-            error("KASI $path 실패. status=$status, code=${header.code}, message=${header.message}")
-        }
-
-        return result.response.body
+        return result.bodyOrThrow(description).toItemList(OpenApiClient.json)
     }
 }
