@@ -1,0 +1,38 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "푸른 하늘의 날",
+        "isHoliday": "N",
+        "locdate": 20240907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "사회복지의 날",
+        "isHoliday": "N",
+        "locdate": 20240907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "곤충의 날",
+        "isHoliday": "N",
+        "locdate": 20240907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "해양경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20240910
+    },
+    {
+        "dateKind": "02",
+        "dateName": "청년의 날",
+        "isHoliday": "N",
+        "locdate": 20240921
+    },
+    {
+        "dateKind": "02",
+        "dateName": "조달의 날",
+        "isHoliday": "N",
+        "locdate": 20240930
+    }
+]

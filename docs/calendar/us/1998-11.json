@@ -1,0 +1,19 @@
+{
+    "country": "us",
+    "period": "1998-11",
+    "holidays": [
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "1998-11-11",
+            "endInclusive": "1998-11-11"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "1998-11-26",
+            "endInclusive": "1998-11-26"
+        }
+    ],
+    "lunar": []
+}

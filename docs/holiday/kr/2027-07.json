@@ -1,0 +1,80 @@
+[
+    {
+        "name": "사회적기업의 날",
+        "isHoliday": false,
+        "start": "2027-07-01",
+        "endInclusive": "2027-07-01"
+    },
+    {
+        "name": "도농교류의 날",
+        "isHoliday": false,
+        "start": "2027-07-07",
+        "endInclusive": "2027-07-07"
+    },
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2027-07-07",
+        "endInclusive": "2027-07-07"
+    },
+    {
+        "name": "인구의 날",
+        "isHoliday": false,
+        "start": "2027-07-11",
+        "endInclusive": "2027-07-11"
+    },
+    {
+        "name": "북한이탈주민의 날",
+        "isHoliday": false,
+        "start": "2027-07-14",
+        "endInclusive": "2027-07-14"
+    },
+    {
+        "name": "정보보호의 날",
+        "isHoliday": false,
+        "start": "2027-07-14",
+        "endInclusive": "2027-07-14"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2027-07-17",
+        "endInclusive": "2027-07-17"
+    },
+    {
+        "name": "연안안전의 날",
+        "isHoliday": false,
+        "start": "2027-07-18",
+        "endInclusive": "2027-07-18"
+    },
+    {
+        "name": "대체공휴일(제헌절)",
+        "isHoliday": true,
+        "start": "2027-07-19",
+        "endInclusive": "2027-07-19"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2027-07-20",
+        "endInclusive": "2027-07-20"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2027-07-23",
+        "endInclusive": "2027-07-23"
+    },
+    {
+        "name": "유엔군 참전의 날",
+        "isHoliday": false,
+        "start": "2027-07-27",
+        "endInclusive": "2027-07-27"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2027-07-30",
+        "endInclusive": "2027-07-30"
+    }
+]

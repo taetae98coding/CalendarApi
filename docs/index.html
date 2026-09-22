@@ -11,14 +11,21 @@
         h2 { margin-top: 40px; }
         table { width: 100%; border-collapse: collapse; }
         th, td { padding: 8px 6px; border-bottom: 1px solid rgba(127, 127, 127, 0.3); text-align: left; vertical-align: top; }
+        .updated { color: rgba(127, 127, 127, 1); font-size: 0.9em; }
     </style>
 </head>
 <body>
 <h1>CalendarApi</h1>
 <p>공휴일과 음력 정보를 정적 JSON 으로 제공하는 API 입니다. GitHub Actions 가 주기적으로 갱신합니다.</p>
+<p class="updated">마지막 갱신 : 2026-09-22T07:15:03.730539Z</p>
 
 <h2>공휴일</h2>
-<p>제공 범위 : <code>2025</code> ~ <code>2025</code>, 국가 : <code>kr</code>, <code>us</code></p>
+<p>제공 범위 : <code>1998 ~ 2029</code></p>
+<table>
+    <tr><th>국가</th><th>코드</th><th>범위</th></tr>
+    <tr><td>대한민국</td><td><code>kr</code></td><td>1998 ~ 2029</td></tr>
+    <tr><td>미국</td><td><code>us</code></td><td>1998 ~ 2029</td></tr>
+</table>
 <table>
     <tr><th>설명</th><th>경로</th></tr>
     <tr><td>연도별</td><td><code>holiday/{country}/{year}.json</code></td></tr>
@@ -26,7 +33,7 @@
 </table>
 
 <h2>음력</h2>
-<p>제공 범위 : <code>2025</code> ~ <code>2025</code></p>
+<p>원본 제공 범위 : <code>1391 ~ 2050</code>, 생성 완료 : <code>없음</code></p>
 <table>
     <tr><th>설명</th><th>경로</th></tr>
     <tr><td>연도별</td><td><code>lunar/{year}.json</code></td></tr>

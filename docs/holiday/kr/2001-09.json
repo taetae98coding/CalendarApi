@@ -1,0 +1,14 @@
+[
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2001-09-07",
+        "endInclusive": "2001-09-07"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2001-09-23",
+        "endInclusive": "2001-09-23"
+    }
+]

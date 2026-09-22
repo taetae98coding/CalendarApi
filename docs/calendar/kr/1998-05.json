@@ -1,0 +1,19 @@
+{
+    "country": "kr",
+    "period": "1998-05",
+    "holidays": [
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "1998-05-03",
+            "endInclusive": "1998-05-03"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "1998-05-05",
+            "endInclusive": "1998-05-05"
+        }
+    ],
+    "lunar": []
+}

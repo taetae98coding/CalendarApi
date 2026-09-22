@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "환경의 날",
+        "isHoliday": "N",
+        "locdate": 20070605
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·25 전쟁일",
+        "isHoliday": "N",
+        "locdate": 20070625
+    }
+]

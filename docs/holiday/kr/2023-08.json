@@ -1,0 +1,38 @@
+[
+    {
+        "name": "섬의 날",
+        "isHoliday": false,
+        "start": "2023-08-08",
+        "endInclusive": "2023-08-08"
+    },
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2023-08-08",
+        "endInclusive": "2023-08-08"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2023-08-10",
+        "endInclusive": "2023-08-10"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2023-08-15",
+        "endInclusive": "2023-08-15"
+    },
+    {
+        "name": "칠석",
+        "isHoliday": false,
+        "start": "2023-08-22",
+        "endInclusive": "2023-08-22"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2023-08-23",
+        "endInclusive": "2023-08-23"
+    }
+]

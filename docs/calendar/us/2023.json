@@ -1,0 +1,73 @@
+{
+    "country": "us",
+    "period": "2023",
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2023-01-02",
+            "endInclusive": "2023-01-02"
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2023-01-16",
+            "endInclusive": "2023-01-16"
+        },
+        {
+            "name": "Washington's Birthday",
+            "isHoliday": true,
+            "start": "2023-02-20",
+            "endInclusive": "2023-02-20"
+        },
+        {
+            "name": "Memorial Day",
+            "isHoliday": true,
+            "start": "2023-05-29",
+            "endInclusive": "2023-05-29"
+        },
+        {
+            "name": "Juneteenth National Independence Day",
+            "isHoliday": true,
+            "start": "2023-06-19",
+            "endInclusive": "2023-06-19"
+        },
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2023-07-04",
+            "endInclusive": "2023-07-04"
+        },
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "2023-09-04",
+            "endInclusive": "2023-09-04"
+        },
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2023-10-09",
+            "endInclusive": "2023-10-09"
+        },
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "2023-11-10",
+            "endInclusive": "2023-11-10"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "2023-11-23",
+            "endInclusive": "2023-11-23"
+        },
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2023-12-25",
+            "endInclusive": "2023-12-25"
+        }
+    ],
+    "lunar": []
+}

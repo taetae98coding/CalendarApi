@@ -1,0 +1,37 @@
+{
+    "country": "kr",
+    "period": "2001-10",
+    "holidays": [
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2001-10-01",
+            "endInclusive": "2001-10-03"
+        },
+        {
+            "name": "개천절",
+            "isHoliday": true,
+            "start": "2001-10-03",
+            "endInclusive": "2001-10-03"
+        },
+        {
+            "name": "한로",
+            "isHoliday": false,
+            "start": "2001-10-08",
+            "endInclusive": "2001-10-08"
+        },
+        {
+            "name": "한글날",
+            "isHoliday": true,
+            "start": "2001-10-09",
+            "endInclusive": "2001-10-09"
+        },
+        {
+            "name": "상강",
+            "isHoliday": false,
+            "start": "2001-10-23",
+            "endInclusive": "2001-10-23"
+        }
+    ],
+    "lunar": []
+}

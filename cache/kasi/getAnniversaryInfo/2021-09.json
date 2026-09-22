@@ -1,0 +1,20 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "사회복지의 날",
+        "isHoliday": "N",
+        "locdate": 20210907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "곤충의 날",
+        "isHoliday": "N",
+        "locdate": 20210907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "해양경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20210910
+    }
+]

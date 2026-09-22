@@ -1,0 +1,86 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "국군의 날",
+        "isHoliday": "N",
+        "locdate": 20251001
+    },
+    {
+        "dateKind": "02",
+        "dateName": "노인의 날",
+        "isHoliday": "N",
+        "locdate": 20251002
+    },
+    {
+        "dateKind": "02",
+        "dateName": "세계 한인의 날",
+        "isHoliday": "N",
+        "locdate": 20251005
+    },
+    {
+        "dateKind": "02",
+        "dateName": "재향군인의 날",
+        "isHoliday": "N",
+        "locdate": 20251008
+    },
+    {
+        "dateKind": "02",
+        "dateName": "임산부의 날",
+        "isHoliday": "N",
+        "locdate": 20251010
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정신건강의 날",
+        "isHoliday": "N",
+        "locdate": 20251010
+    },
+    {
+        "dateKind": "02",
+        "dateName": "스포츠의 날",
+        "isHoliday": "N",
+        "locdate": 20251015
+    },
+    {
+        "dateKind": "02",
+        "dateName": "부마민주항쟁 기념일",
+        "isHoliday": "N",
+        "locdate": 20251016
+    },
+    {
+        "dateKind": "02",
+        "dateName": "문화의 날",
+        "isHoliday": "N",
+        "locdate": 20251018
+    },
+    {
+        "dateKind": "02",
+        "dateName": "경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20251021
+    },
+    {
+        "dateKind": "02",
+        "dateName": "국제연합일",
+        "isHoliday": "N",
+        "locdate": 20251024
+    },
+    {
+        "dateKind": "02",
+        "dateName": "교정의 날",
+        "isHoliday": "N",
+        "locdate": 20251028
+    },
+    {
+        "dateKind": "02",
+        "dateName": "금융의 날",
+        "isHoliday": "N",
+        "locdate": 20251028
+    },
+    {
+        "dateKind": "02",
+        "dateName": "지방자치 및 균형발전의 날",
+        "isHoliday": "N",
+        "locdate": 20251029
+    }
+]

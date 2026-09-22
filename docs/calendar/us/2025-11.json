@@ -1,0 +1,19 @@
+{
+    "country": "us",
+    "period": "2025-11",
+    "holidays": [
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "2025-11-11",
+            "endInclusive": "2025-11-11"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "2025-11-27",
+            "endInclusive": "2025-11-27"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "03",
+        "dateName": "소서",
+        "isHoliday": "N",
+        "locdate": 20240706
+    },
+    {
+        "dateKind": "03",
+        "dateName": "대서",
+        "isHoliday": "N",
+        "locdate": 20240722
+    }
+]

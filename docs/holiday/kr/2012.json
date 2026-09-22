@@ -1,0 +1,530 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2012-01-01",
+        "endInclusive": "2012-01-01"
+    },
+    {
+        "name": "소한",
+        "isHoliday": false,
+        "start": "2012-01-06",
+        "endInclusive": "2012-01-06"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2012-01-18",
+        "endInclusive": "2012-01-18"
+    },
+    {
+        "name": "대한",
+        "isHoliday": false,
+        "start": "2012-01-21",
+        "endInclusive": "2012-01-21"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2012-01-22",
+        "endInclusive": "2012-01-24"
+    },
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2012-02-04",
+        "endInclusive": "2012-02-04"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2012-02-19",
+        "endInclusive": "2012-02-19"
+    },
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2012-03-01",
+        "endInclusive": "2012-03-01"
+    },
+    {
+        "name": "납세자의 날",
+        "isHoliday": false,
+        "start": "2012-03-03",
+        "endInclusive": "2012-03-03"
+    },
+    {
+        "name": "경칩",
+        "isHoliday": false,
+        "start": "2012-03-05",
+        "endInclusive": "2012-03-05"
+    },
+    {
+        "name": "3·15 의거 기념일",
+        "isHoliday": false,
+        "start": "2012-03-15",
+        "endInclusive": "2012-03-15"
+    },
+    {
+        "name": "춘분",
+        "isHoliday": false,
+        "start": "2012-03-20",
+        "endInclusive": "2012-03-20"
+    },
+    {
+        "name": "상공의 날",
+        "isHoliday": false,
+        "start": "2012-03-21",
+        "endInclusive": "2012-03-21"
+    },
+    {
+        "name": "청명",
+        "isHoliday": false,
+        "start": "2012-04-04",
+        "endInclusive": "2012-04-04"
+    },
+    {
+        "name": "식목일",
+        "isHoliday": false,
+        "start": "2012-04-05",
+        "endInclusive": "2012-04-05"
+    },
+    {
+        "name": "한식",
+        "isHoliday": false,
+        "start": "2012-04-05",
+        "endInclusive": "2012-04-05"
+    },
+    {
+        "name": "향토예비군의 날",
+        "isHoliday": false,
+        "start": "2012-04-06",
+        "endInclusive": "2012-04-06"
+    },
+    {
+        "name": "보건의 날",
+        "isHoliday": false,
+        "start": "2012-04-07",
+        "endInclusive": "2012-04-07"
+    },
+    {
+        "name": "국회의원선거",
+        "isHoliday": true,
+        "start": "2012-04-11",
+        "endInclusive": "2012-04-11"
+    },
+    {
+        "name": "임시정부수립기념일",
+        "isHoliday": false,
+        "start": "2012-04-13",
+        "endInclusive": "2012-04-13"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2012-04-16",
+        "endInclusive": "2012-04-16"
+    },
+    {
+        "name": "4·19 혁명 기념일",
+        "isHoliday": false,
+        "start": "2012-04-19",
+        "endInclusive": "2012-04-19"
+    },
+    {
+        "name": "곡우",
+        "isHoliday": false,
+        "start": "2012-04-20",
+        "endInclusive": "2012-04-20"
+    },
+    {
+        "name": "장애인의 날",
+        "isHoliday": false,
+        "start": "2012-04-20",
+        "endInclusive": "2012-04-20"
+    },
+    {
+        "name": "과학의 날",
+        "isHoliday": false,
+        "start": "2012-04-21",
+        "endInclusive": "2012-04-21"
+    },
+    {
+        "name": "정보통신의 날",
+        "isHoliday": false,
+        "start": "2012-04-22",
+        "endInclusive": "2012-04-22"
+    },
+    {
+        "name": "법의 날",
+        "isHoliday": false,
+        "start": "2012-04-25",
+        "endInclusive": "2012-04-25"
+    },
+    {
+        "name": "충무공 이순신 탄신일",
+        "isHoliday": false,
+        "start": "2012-04-28",
+        "endInclusive": "2012-04-28"
+    },
+    {
+        "name": "근로자의 날",
+        "isHoliday": false,
+        "start": "2012-05-01",
+        "endInclusive": "2012-05-01"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2012-05-05",
+        "endInclusive": "2012-05-05"
+    },
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "2012-05-05",
+        "endInclusive": "2012-05-05"
+    },
+    {
+        "name": "어버이날",
+        "isHoliday": false,
+        "start": "2012-05-08",
+        "endInclusive": "2012-05-08"
+    },
+    {
+        "name": "스승의 날",
+        "isHoliday": false,
+        "start": "2012-05-15",
+        "endInclusive": "2012-05-15"
+    },
+    {
+        "name": "5·18 민주화운동기념일",
+        "isHoliday": false,
+        "start": "2012-05-18",
+        "endInclusive": "2012-05-18"
+    },
+    {
+        "name": "부부의 날",
+        "isHoliday": false,
+        "start": "2012-05-21",
+        "endInclusive": "2012-05-21"
+    },
+    {
+        "name": "성년의 날",
+        "isHoliday": false,
+        "start": "2012-05-21",
+        "endInclusive": "2012-05-21"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "2012-05-21",
+        "endInclusive": "2012-05-21"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2012-05-28",
+        "endInclusive": "2012-05-28"
+    },
+    {
+        "name": "바다의 날",
+        "isHoliday": false,
+        "start": "2012-05-31",
+        "endInclusive": "2012-05-31"
+    },
+    {
+        "name": "의병의 날",
+        "isHoliday": false,
+        "start": "2012-06-01",
+        "endInclusive": "2012-06-01"
+    },
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2012-06-05",
+        "endInclusive": "2012-06-05"
+    },
+    {
+        "name": "환경의 날",
+        "isHoliday": false,
+        "start": "2012-06-05",
+        "endInclusive": "2012-06-05"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2012-06-06",
+        "endInclusive": "2012-06-06"
+    },
+    {
+        "name": "6·10 민주항쟁기념일",
+        "isHoliday": false,
+        "start": "2012-06-10",
+        "endInclusive": "2012-06-10"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2012-06-21",
+        "endInclusive": "2012-06-21"
+    },
+    {
+        "name": "단오",
+        "isHoliday": false,
+        "start": "2012-06-24",
+        "endInclusive": "2012-06-24"
+    },
+    {
+        "name": "6·25 전쟁일",
+        "isHoliday": false,
+        "start": "2012-06-25",
+        "endInclusive": "2012-06-25"
+    },
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2012-07-07",
+        "endInclusive": "2012-07-07"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": false,
+        "start": "2012-07-17",
+        "endInclusive": "2012-07-17"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2012-07-18",
+        "endInclusive": "2012-07-18"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2012-07-19",
+        "endInclusive": "2012-07-19"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2012-07-22",
+        "endInclusive": "2012-07-22"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2012-07-28",
+        "endInclusive": "2012-07-28"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2012-08-07",
+        "endInclusive": "2012-08-07"
+    },
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2012-08-07",
+        "endInclusive": "2012-08-07"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2012-08-15",
+        "endInclusive": "2012-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2012-08-23",
+        "endInclusive": "2012-08-23"
+    },
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2012-09-07",
+        "endInclusive": "2012-09-07"
+    },
+    {
+        "name": "철도의 날",
+        "isHoliday": false,
+        "start": "2012-09-18",
+        "endInclusive": "2012-09-18"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2012-09-22",
+        "endInclusive": "2012-09-22"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2012-09-29",
+        "endInclusive": "2012-10-01"
+    },
+    {
+        "name": "국군의 날",
+        "isHoliday": false,
+        "start": "2012-10-01",
+        "endInclusive": "2012-10-01"
+    },
+    {
+        "name": "노인의 날",
+        "isHoliday": false,
+        "start": "2012-10-02",
+        "endInclusive": "2012-10-02"
+    },
+    {
+        "name": "개천절",
+        "isHoliday": true,
+        "start": "2012-10-03",
+        "endInclusive": "2012-10-03"
+    },
+    {
+        "name": "세계한인의 날",
+        "isHoliday": false,
+        "start": "2012-10-05",
+        "endInclusive": "2012-10-05"
+    },
+    {
+        "name": "재향군인의 날",
+        "isHoliday": false,
+        "start": "2012-10-08",
+        "endInclusive": "2012-10-08"
+    },
+    {
+        "name": "한로",
+        "isHoliday": false,
+        "start": "2012-10-08",
+        "endInclusive": "2012-10-08"
+    },
+    {
+        "name": "한글날",
+        "isHoliday": false,
+        "start": "2012-10-09",
+        "endInclusive": "2012-10-09"
+    },
+    {
+        "name": "체육의 날",
+        "isHoliday": false,
+        "start": "2012-10-15",
+        "endInclusive": "2012-10-15"
+    },
+    {
+        "name": "문화의 날",
+        "isHoliday": false,
+        "start": "2012-10-20",
+        "endInclusive": "2012-10-20"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2012-10-20",
+        "endInclusive": "2012-10-20"
+    },
+    {
+        "name": "경찰의 날",
+        "isHoliday": false,
+        "start": "2012-10-21",
+        "endInclusive": "2012-10-21"
+    },
+    {
+        "name": "상강",
+        "isHoliday": false,
+        "start": "2012-10-23",
+        "endInclusive": "2012-10-23"
+    },
+    {
+        "name": "국제연합일",
+        "isHoliday": false,
+        "start": "2012-10-24",
+        "endInclusive": "2012-10-24"
+    },
+    {
+        "name": "교정의 날",
+        "isHoliday": false,
+        "start": "2012-10-28",
+        "endInclusive": "2012-10-28"
+    },
+    {
+        "name": "저축의 날",
+        "isHoliday": false,
+        "start": "2012-10-30",
+        "endInclusive": "2012-10-30"
+    },
+    {
+        "name": "학생독립운동기념일",
+        "isHoliday": false,
+        "start": "2012-11-03",
+        "endInclusive": "2012-11-03"
+    },
+    {
+        "name": "입동",
+        "isHoliday": false,
+        "start": "2012-11-07",
+        "endInclusive": "2012-11-07"
+    },
+    {
+        "name": "농업인의 날",
+        "isHoliday": false,
+        "start": "2012-11-11",
+        "endInclusive": "2012-11-11"
+    },
+    {
+        "name": "순국선열의 날",
+        "isHoliday": false,
+        "start": "2012-11-17",
+        "endInclusive": "2012-11-17"
+    },
+    {
+        "name": "소설",
+        "isHoliday": false,
+        "start": "2012-11-22",
+        "endInclusive": "2012-11-22"
+    },
+    {
+        "name": "무역의 날",
+        "isHoliday": false,
+        "start": "2012-11-30",
+        "endInclusive": "2012-11-30"
+    },
+    {
+        "name": "소비자의 날",
+        "isHoliday": false,
+        "start": "2012-12-03",
+        "endInclusive": "2012-12-03"
+    },
+    {
+        "name": "대설",
+        "isHoliday": false,
+        "start": "2012-12-07",
+        "endInclusive": "2012-12-07"
+    },
+    {
+        "name": "대통령선거",
+        "isHoliday": true,
+        "start": "2012-12-19",
+        "endInclusive": "2012-12-19"
+    },
+    {
+        "name": "동지",
+        "isHoliday": false,
+        "start": "2012-12-21",
+        "endInclusive": "2012-12-21"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2012-12-25",
+        "endInclusive": "2012-12-25"
+    },
+    {
+        "name": "원자력의 날",
+        "isHoliday": false,
+        "start": "2012-12-27",
+        "endInclusive": "2012-12-27"
+    }
+]

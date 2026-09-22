@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2022-01",
+    "holidays": [
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2022-01-17",
+            "endInclusive": "2022-01-17"
+        }
+    ],
+    "lunar": []
+}

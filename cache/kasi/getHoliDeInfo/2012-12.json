@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "대통령선거일",
+        "isHoliday": "Y",
+        "locdate": 20121219
+    },
+    {
+        "dateKind": "01",
+        "dateName": "기독탄신일",
+        "isHoliday": "Y",
+        "locdate": 20121225
+    }
+]

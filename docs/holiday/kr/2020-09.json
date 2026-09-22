@@ -1,0 +1,20 @@
+[
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2020-09-07",
+        "endInclusive": "2020-09-07"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2020-09-22",
+        "endInclusive": "2020-09-22"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2020-09-30",
+        "endInclusive": "2020-10-02"
+    }
+]

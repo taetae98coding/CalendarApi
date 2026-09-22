@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "인구의 날",
+        "isHoliday": "N",
+        "locdate": 20230711
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정보보호의 날",
+        "isHoliday": "N",
+        "locdate": 20230712
+    }
+]

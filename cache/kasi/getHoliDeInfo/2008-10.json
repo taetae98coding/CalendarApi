@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "개천절",
+        "isHoliday": "Y",
+        "locdate": 20081003
+    },
+    {
+        "dateKind": "01",
+        "dateName": "한글날",
+        "isHoliday": "N",
+        "locdate": 20081009
+    }
+]

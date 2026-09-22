@@ -1,0 +1,130 @@
+[
+    {
+        "date": "1999-01-01",
+        "localName": "새해",
+        "name": "New Year's Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-02-15",
+        "localName": "설날",
+        "name": "Lunar New Year",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-02-16",
+        "localName": "설날",
+        "name": "Lunar New Year",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-02-17",
+        "localName": "설날",
+        "name": "Lunar New Year",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-03-01",
+        "localName": "3·1절",
+        "name": "Independence Movement Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-05-05",
+        "localName": "어린이날",
+        "name": "Children's Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-05-22",
+        "localName": "부처님 오신 날",
+        "name": "Buddha's Birthday",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-06-06",
+        "localName": "현충일",
+        "name": "Memorial Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-07-19",
+        "localName": "제헌절",
+        "name": "Constitution Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-08-15",
+        "localName": "광복절",
+        "name": "Liberation Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-09-23",
+        "localName": "추석",
+        "name": "Chuseok",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-09-24",
+        "localName": "추석",
+        "name": "Chuseok",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-09-25",
+        "localName": "추석",
+        "name": "Chuseok",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-10-03",
+        "localName": "개천절",
+        "name": "National Foundation Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-10-09",
+        "localName": "한글날",
+        "name": "Hangul Day",
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "1999-12-25",
+        "localName": "크리스마스",
+        "name": "Christmas Day",
+        "types": [
+            "Public"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "의병의 날",
+        "isHoliday": "N",
+        "locdate": 20200601
+    },
+    {
+        "dateKind": "02",
+        "dateName": "환경의 날",
+        "isHoliday": "N",
+        "locdate": 20200605
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·10 민주항쟁 기념일",
+        "isHoliday": "N",
+        "locdate": 20200610
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·25 전쟁일",
+        "isHoliday": "N",
+        "locdate": 20200625
+    },
+    {
+        "dateKind": "02",
+        "dateName": "철도의 날",
+        "isHoliday": "N",
+        "locdate": 20200628
+    }
+]

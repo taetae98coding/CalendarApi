@@ -1,0 +1,62 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2014-01-01",
+        "endInclusive": "2014-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2014-01-20",
+        "endInclusive": "2014-01-20"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2014-02-17",
+        "endInclusive": "2014-02-17"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2014-05-26",
+        "endInclusive": "2014-05-26"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2014-07-04",
+        "endInclusive": "2014-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2014-09-01",
+        "endInclusive": "2014-09-01"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2014-10-13",
+        "endInclusive": "2014-10-13"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2014-11-11",
+        "endInclusive": "2014-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2014-11-27",
+        "endInclusive": "2014-11-27"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2014-12-25",
+        "endInclusive": "2014-12-25"
+    }
+]

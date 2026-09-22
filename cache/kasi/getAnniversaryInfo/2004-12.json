@@ -1,0 +1,20 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "소비자 보호의 날",
+        "isHoliday": "N",
+        "locdate": 20041203
+    },
+    {
+        "dateKind": "02",
+        "dateName": "국민교육헌장선포기념일",
+        "isHoliday": "N",
+        "locdate": 20041205
+    },
+    {
+        "dateKind": "02",
+        "dateName": "세계인권선언기념일",
+        "isHoliday": "N",
+        "locdate": 20041210
+    }
+]

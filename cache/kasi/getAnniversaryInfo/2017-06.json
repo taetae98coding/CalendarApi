@@ -1,0 +1,26 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "의병의 날",
+        "isHoliday": "N",
+        "locdate": 20170601
+    },
+    {
+        "dateKind": "02",
+        "dateName": "환경의 날",
+        "isHoliday": "N",
+        "locdate": 20170605
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·10 민주항쟁기념일",
+        "isHoliday": "N",
+        "locdate": 20170610
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·25 전쟁일",
+        "isHoliday": "N",
+        "locdate": 20170625
+    }
+]

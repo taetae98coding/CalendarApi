@@ -1,0 +1,79 @@
+{
+    "country": "kr",
+    "period": "2028-07",
+    "holidays": [
+        {
+            "name": "사회적기업의 날",
+            "isHoliday": false,
+            "start": "2028-07-01",
+            "endInclusive": "2028-07-01"
+        },
+        {
+            "name": "소서",
+            "isHoliday": false,
+            "start": "2028-07-06",
+            "endInclusive": "2028-07-06"
+        },
+        {
+            "name": "도농교류의 날",
+            "isHoliday": false,
+            "start": "2028-07-07",
+            "endInclusive": "2028-07-07"
+        },
+        {
+            "name": "인구의 날",
+            "isHoliday": false,
+            "start": "2028-07-11",
+            "endInclusive": "2028-07-11"
+        },
+        {
+            "name": "정보보호의 날",
+            "isHoliday": false,
+            "start": "2028-07-12",
+            "endInclusive": "2028-07-12"
+        },
+        {
+            "name": "북한이탈주민의 날",
+            "isHoliday": false,
+            "start": "2028-07-14",
+            "endInclusive": "2028-07-14"
+        },
+        {
+            "name": "초복",
+            "isHoliday": false,
+            "start": "2028-07-14",
+            "endInclusive": "2028-07-14"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2028-07-17",
+            "endInclusive": "2028-07-17"
+        },
+        {
+            "name": "연안안전의 날",
+            "isHoliday": false,
+            "start": "2028-07-18",
+            "endInclusive": "2028-07-18"
+        },
+        {
+            "name": "대서",
+            "isHoliday": false,
+            "start": "2028-07-22",
+            "endInclusive": "2028-07-22"
+        },
+        {
+            "name": "중복",
+            "isHoliday": false,
+            "start": "2028-07-24",
+            "endInclusive": "2028-07-24"
+        },
+        {
+            "name": "유엔군 참전의 날",
+            "isHoliday": false,
+            "start": "2028-07-27",
+            "endInclusive": "2028-07-27"
+        }
+    ],
+    "lunar": []
+}

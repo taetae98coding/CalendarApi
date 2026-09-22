@@ -1,0 +1,92 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "근로자의 날",
+        "isHoliday": "N",
+        "locdate": 20250501
+    },
+    {
+        "dateKind": "02",
+        "dateName": "어린이 날",
+        "isHoliday": "N",
+        "locdate": 20250505
+    },
+    {
+        "dateKind": "02",
+        "dateName": "어버이 날",
+        "isHoliday": "N",
+        "locdate": 20250508
+    },
+    {
+        "dateKind": "02",
+        "dateName": "유권자의 날",
+        "isHoliday": "N",
+        "locdate": 20250510
+    },
+    {
+        "dateKind": "02",
+        "dateName": "동학농민혁명 기념일",
+        "isHoliday": "N",
+        "locdate": 20250511
+    },
+    {
+        "dateKind": "02",
+        "dateName": "입양의 날",
+        "isHoliday": "N",
+        "locdate": 20250511
+    },
+    {
+        "dateKind": "02",
+        "dateName": "식품안전의 날",
+        "isHoliday": "N",
+        "locdate": 20250514
+    },
+    {
+        "dateKind": "02",
+        "dateName": "스승의 날",
+        "isHoliday": "N",
+        "locdate": 20250515
+    },
+    {
+        "dateKind": "02",
+        "dateName": "5·18민주화운동 기념일",
+        "isHoliday": "N",
+        "locdate": 20250518
+    },
+    {
+        "dateKind": "02",
+        "dateName": "성년의 날",
+        "isHoliday": "N",
+        "locdate": 20250519
+    },
+    {
+        "dateKind": "02",
+        "dateName": "발명의 날",
+        "isHoliday": "N",
+        "locdate": 20250519
+    },
+    {
+        "dateKind": "02",
+        "dateName": "세계인의 날",
+        "isHoliday": "N",
+        "locdate": 20250520
+    },
+    {
+        "dateKind": "02",
+        "dateName": "부부의 날",
+        "isHoliday": "N",
+        "locdate": 20250521
+    },
+    {
+        "dateKind": "02",
+        "dateName": "해외 파병용사의 날",
+        "isHoliday": "N",
+        "locdate": 20250529
+    },
+    {
+        "dateKind": "02",
+        "dateName": "바다의 날",
+        "isHoliday": "N",
+        "locdate": 20250531
+    }
+]

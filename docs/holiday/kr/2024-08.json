@@ -1,0 +1,38 @@
+[
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2024-08-07",
+        "endInclusive": "2024-08-07"
+    },
+    {
+        "name": "섬의 날",
+        "isHoliday": false,
+        "start": "2024-08-08",
+        "endInclusive": "2024-08-08"
+    },
+    {
+        "name": "칠석",
+        "isHoliday": false,
+        "start": "2024-08-10",
+        "endInclusive": "2024-08-10"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2024-08-14",
+        "endInclusive": "2024-08-14"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2024-08-15",
+        "endInclusive": "2024-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2024-08-22",
+        "endInclusive": "2024-08-22"
+    }
+]

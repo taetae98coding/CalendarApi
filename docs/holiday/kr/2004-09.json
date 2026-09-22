@@ -1,0 +1,26 @@
+[
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2004-09-07",
+        "endInclusive": "2004-09-07"
+    },
+    {
+        "name": "철도의 날",
+        "isHoliday": false,
+        "start": "2004-09-18",
+        "endInclusive": "2004-09-18"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2004-09-23",
+        "endInclusive": "2004-09-23"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2004-09-27",
+        "endInclusive": "2004-09-29"
+    }
+]

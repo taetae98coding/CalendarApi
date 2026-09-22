@@ -1,0 +1,38 @@
+[
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2010-07-07",
+        "endInclusive": "2010-07-07"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": false,
+        "start": "2010-07-17",
+        "endInclusive": "2010-07-17"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2010-07-19",
+        "endInclusive": "2010-07-19"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2010-07-20",
+        "endInclusive": "2010-07-20"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2010-07-23",
+        "endInclusive": "2010-07-23"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2010-07-29",
+        "endInclusive": "2010-07-29"
+    }
+]

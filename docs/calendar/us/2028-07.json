@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2028-07",
+    "holidays": [
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2028-07-04",
+            "endInclusive": "2028-07-04"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "개천절",
+        "isHoliday": "Y",
+        "locdate": 20211003
+    },
+    {
+        "dateKind": "01",
+        "dateName": "대체공휴일",
+        "isHoliday": "Y",
+        "locdate": 20211004
+    },
+    {
+        "dateKind": "01",
+        "dateName": "한글날",
+        "isHoliday": "Y",
+        "locdate": 20211009
+    },
+    {
+        "dateKind": "01",
+        "dateName": "대체공휴일",
+        "isHoliday": "Y",
+        "locdate": 20211011
+    }
+]

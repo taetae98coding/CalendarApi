@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "섬의 날",
+        "isHoliday": "N",
+        "locdate": 20270808
+    },
+    {
+        "dateKind": "02",
+        "dateName": "일본군위안부 피해자 기림의 날",
+        "isHoliday": "N",
+        "locdate": 20270814
+    }
+]

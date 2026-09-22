@@ -1,0 +1,13 @@
+{
+    "country": "kr",
+    "period": "1999-07",
+    "holidays": [
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "1999-07-19",
+            "endInclusive": "1999-07-19"
+        }
+    ],
+    "lunar": []
+}

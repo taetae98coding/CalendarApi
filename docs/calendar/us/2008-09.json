@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2008-09",
+    "holidays": [
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "2008-09-01",
+            "endInclusive": "2008-09-01"
+        }
+    ],
+    "lunar": []
+}

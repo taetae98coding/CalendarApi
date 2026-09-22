@@ -1,0 +1,20 @@
+[
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "2000-05-05",
+        "endInclusive": "2000-05-05"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2000-05-11",
+        "endInclusive": "2000-05-11"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "2000-05-21",
+        "endInclusive": "2000-05-21"
+    }
+]

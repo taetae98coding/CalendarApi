@@ -1,0 +1,38 @@
+[
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2004-07-07",
+        "endInclusive": "2004-07-07"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2004-07-17",
+        "endInclusive": "2004-07-17"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2004-07-19",
+        "endInclusive": "2004-07-19"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2004-07-20",
+        "endInclusive": "2004-07-20"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2004-07-22",
+        "endInclusive": "2004-07-22"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2004-07-30",
+        "endInclusive": "2004-07-30"
+    }
+]

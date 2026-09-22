@@ -1,0 +1,98 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "예비군의 날",
+        "isHoliday": "N",
+        "locdate": 20270402
+    },
+    {
+        "dateKind": "02",
+        "dateName": "4·3희생자 추념일",
+        "isHoliday": "N",
+        "locdate": 20270403
+    },
+    {
+        "dateKind": "02",
+        "dateName": "식목일",
+        "isHoliday": "N",
+        "locdate": 20270405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "보건의 날",
+        "isHoliday": "N",
+        "locdate": 20270407
+    },
+    {
+        "dateKind": "02",
+        "dateName": "임시의정원 개원기념일",
+        "isHoliday": "N",
+        "locdate": 20270410
+    },
+    {
+        "dateKind": "02",
+        "dateName": "대한민국임시정부 수립기념일",
+        "isHoliday": "N",
+        "locdate": 20270411
+    },
+    {
+        "dateKind": "02",
+        "dateName": "도시농업의 날",
+        "isHoliday": "N",
+        "locdate": 20270411
+    },
+    {
+        "dateKind": "02",
+        "dateName": "국민안전의 날",
+        "isHoliday": "N",
+        "locdate": 20270416
+    },
+    {
+        "dateKind": "02",
+        "dateName": "4·19혁명 기념일",
+        "isHoliday": "N",
+        "locdate": 20270419
+    },
+    {
+        "dateKind": "02",
+        "dateName": "장애인의 날",
+        "isHoliday": "N",
+        "locdate": 20270420
+    },
+    {
+        "dateKind": "02",
+        "dateName": "과학의 날",
+        "isHoliday": "N",
+        "locdate": 20270421
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정보통신의 날",
+        "isHoliday": "N",
+        "locdate": 20270422
+    },
+    {
+        "dateKind": "02",
+        "dateName": "순직의무군경의 날",
+        "isHoliday": "N",
+        "locdate": 20270423
+    },
+    {
+        "dateKind": "02",
+        "dateName": "법의 날",
+        "isHoliday": "N",
+        "locdate": 20270425
+    },
+    {
+        "dateKind": "02",
+        "dateName": "충무공 이순신 탄신일",
+        "isHoliday": "N",
+        "locdate": 20270428
+    },
+    {
+        "dateKind": "02",
+        "dateName": "산업재해근로자의 날",
+        "isHoliday": "N",
+        "locdate": 20270428
+    }
+]

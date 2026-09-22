@@ -1,0 +1,20 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "환경의 날",
+        "isHoliday": "N",
+        "locdate": 20100605
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·10 민주항쟁기념일",
+        "isHoliday": "N",
+        "locdate": 20100610
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·25 전쟁일",
+        "isHoliday": "N",
+        "locdate": 20100625
+    }
+]

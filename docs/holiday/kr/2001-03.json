@@ -1,0 +1,20 @@
+[
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2001-03-01",
+        "endInclusive": "2001-03-01"
+    },
+    {
+        "name": "경칩",
+        "isHoliday": false,
+        "start": "2001-03-05",
+        "endInclusive": "2001-03-05"
+    },
+    {
+        "name": "춘분",
+        "isHoliday": false,
+        "start": "2001-03-20",
+        "endInclusive": "2001-03-20"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "전국동시지방선거",
+        "isHoliday": "Y",
+        "locdate": 20220601
+    },
+    {
+        "dateKind": "01",
+        "dateName": "현충일",
+        "isHoliday": "Y",
+        "locdate": 20220606
+    }
+]

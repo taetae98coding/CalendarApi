@@ -1,0 +1,14 @@
+[
+    {
+        "name": "입동",
+        "isHoliday": false,
+        "start": "2003-11-08",
+        "endInclusive": "2003-11-08"
+    },
+    {
+        "name": "소설",
+        "isHoliday": false,
+        "start": "2003-11-23",
+        "endInclusive": "2003-11-23"
+    }
+]

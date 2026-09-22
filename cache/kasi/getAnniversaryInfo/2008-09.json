@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "사회복지의 날",
+        "isHoliday": "N",
+        "locdate": 20080907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "철도의 날",
+        "isHoliday": "N",
+        "locdate": 20080918
+    }
+]

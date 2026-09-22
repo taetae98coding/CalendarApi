@@ -1,0 +1,32 @@
+[
+    {
+        "name": "환경의 날",
+        "isHoliday": false,
+        "start": "2006-06-05",
+        "endInclusive": "2006-06-05"
+    },
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2006-06-06",
+        "endInclusive": "2006-06-06"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2006-06-06",
+        "endInclusive": "2006-06-06"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2006-06-21",
+        "endInclusive": "2006-06-21"
+    },
+    {
+        "name": "6·25 전쟁일",
+        "isHoliday": false,
+        "start": "2006-06-25",
+        "endInclusive": "2006-06-25"
+    }
+]

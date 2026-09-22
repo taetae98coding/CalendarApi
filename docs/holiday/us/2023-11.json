@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2023-11-10",
+        "endInclusive": "2023-11-10"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2023-11-23",
+        "endInclusive": "2023-11-23"
+    }
+]

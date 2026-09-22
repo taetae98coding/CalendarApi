@@ -1,0 +1,26 @@
+[
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2025-02-03",
+        "endInclusive": "2025-02-03"
+    },
+    {
+        "name": "정월대보름",
+        "isHoliday": false,
+        "start": "2025-02-12",
+        "endInclusive": "2025-02-12"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2025-02-18",
+        "endInclusive": "2025-02-18"
+    },
+    {
+        "name": "2·28 민주운동 기념일",
+        "isHoliday": false,
+        "start": "2025-02-28",
+        "endInclusive": "2025-02-28"
+    }
+]

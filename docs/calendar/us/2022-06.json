@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2022-06",
+    "holidays": [
+        {
+            "name": "Juneteenth National Independence Day",
+            "isHoliday": true,
+            "start": "2022-06-20",
+            "endInclusive": "2022-06-20"
+        }
+    ],
+    "lunar": []
+}

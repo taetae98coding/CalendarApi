@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2017-10",
+    "holidays": [
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2017-10-09",
+            "endInclusive": "2017-10-09"
+        }
+    ],
+    "lunar": []
+}

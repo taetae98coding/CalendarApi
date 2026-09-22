@@ -1,0 +1,38 @@
+[
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2025-08-07",
+        "endInclusive": "2025-08-07"
+    },
+    {
+        "name": "섬의 날",
+        "isHoliday": false,
+        "start": "2025-08-08",
+        "endInclusive": "2025-08-08"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2025-08-09",
+        "endInclusive": "2025-08-09"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2025-08-15",
+        "endInclusive": "2025-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2025-08-23",
+        "endInclusive": "2025-08-23"
+    },
+    {
+        "name": "칠석",
+        "isHoliday": false,
+        "start": "2025-08-29",
+        "endInclusive": "2025-08-29"
+    }
+]

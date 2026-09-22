@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "1999-09",
+    "holidays": [
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "1999-09-06",
+            "endInclusive": "1999-09-06"
+        }
+    ],
+    "lunar": []
+}

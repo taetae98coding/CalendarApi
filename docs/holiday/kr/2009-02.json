@@ -1,0 +1,14 @@
+[
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2009-02-04",
+        "endInclusive": "2009-02-04"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2009-02-18",
+        "endInclusive": "2009-02-18"
+    }
+]

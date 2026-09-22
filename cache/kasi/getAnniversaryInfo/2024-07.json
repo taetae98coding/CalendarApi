@@ -1,0 +1,20 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "정보보호의 날",
+        "isHoliday": "N",
+        "locdate": 20240710
+    },
+    {
+        "dateKind": "02",
+        "dateName": "인구의 날",
+        "isHoliday": "N",
+        "locdate": 20240711
+    },
+    {
+        "dateKind": "02",
+        "dateName": "유엔군 참전의 날",
+        "isHoliday": "N",
+        "locdate": 20240727
+    }
+]

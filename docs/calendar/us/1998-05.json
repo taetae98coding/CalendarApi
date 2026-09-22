@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "1998-05",
+    "holidays": [
+        {
+            "name": "Memorial Day",
+            "isHoliday": true,
+            "start": "1998-05-25",
+            "endInclusive": "1998-05-25"
+        }
+    ],
+    "lunar": []
+}

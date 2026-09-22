@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2027-05",
+    "holidays": [
+        {
+            "name": "Memorial Day",
+            "isHoliday": true,
+            "start": "2027-05-31",
+            "endInclusive": "2027-05-31"
+        }
+    ],
+    "lunar": []
+}

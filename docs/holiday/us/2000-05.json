@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2000-05-29",
+        "endInclusive": "2000-05-29"
+    }
+]

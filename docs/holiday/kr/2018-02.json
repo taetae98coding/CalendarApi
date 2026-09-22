@@ -1,0 +1,20 @@
+[
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2018-02-04",
+        "endInclusive": "2018-02-04"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2018-02-15",
+        "endInclusive": "2018-02-17"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2018-02-19",
+        "endInclusive": "2018-02-19"
+    }
+]

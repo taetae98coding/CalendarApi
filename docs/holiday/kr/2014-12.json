@@ -1,0 +1,38 @@
+[
+    {
+        "name": "소비자의 날",
+        "isHoliday": false,
+        "start": "2014-12-03",
+        "endInclusive": "2014-12-03"
+    },
+    {
+        "name": "무역의 날",
+        "isHoliday": false,
+        "start": "2014-12-05",
+        "endInclusive": "2014-12-05"
+    },
+    {
+        "name": "대설",
+        "isHoliday": false,
+        "start": "2014-12-07",
+        "endInclusive": "2014-12-07"
+    },
+    {
+        "name": "동지",
+        "isHoliday": false,
+        "start": "2014-12-22",
+        "endInclusive": "2014-12-22"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2014-12-25",
+        "endInclusive": "2014-12-25"
+    },
+    {
+        "name": "원자력의 날",
+        "isHoliday": false,
+        "start": "2014-12-27",
+        "endInclusive": "2014-12-27"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "납세자의 날",
+        "isHoliday": "N",
+        "locdate": 20100303
+    },
+    {
+        "dateKind": "02",
+        "dateName": "상공의 날",
+        "isHoliday": "N",
+        "locdate": 20100317
+    }
+]

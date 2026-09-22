@@ -1,0 +1,80 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "통계의 날",
+        "isHoliday": "N",
+        "locdate": 20270901
+    },
+    {
+        "dateKind": "02",
+        "dateName": "여권통문의 날",
+        "isHoliday": "N",
+        "locdate": 20270901
+    },
+    {
+        "dateKind": "02",
+        "dateName": "푸른 하늘의 날",
+        "isHoliday": "N",
+        "locdate": 20270907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "사회복지의 날",
+        "isHoliday": "N",
+        "locdate": 20270907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "곤충의 날",
+        "isHoliday": "N",
+        "locdate": 20270907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "화장품의 날",
+        "isHoliday": "N",
+        "locdate": 20270907
+    },
+    {
+        "dateKind": "02",
+        "dateName": "숙련기술인의 날",
+        "isHoliday": "N",
+        "locdate": 20270909
+    },
+    {
+        "dateKind": "02",
+        "dateName": "해양경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20270910
+    },
+    {
+        "dateKind": "02",
+        "dateName": "이산가족의 날",
+        "isHoliday": "N",
+        "locdate": 20270913
+    },
+    {
+        "dateKind": "02",
+        "dateName": "청년의 날",
+        "isHoliday": "N",
+        "locdate": 20270918
+    },
+    {
+        "dateKind": "02",
+        "dateName": "치매극복의 날",
+        "isHoliday": "N",
+        "locdate": 20270921
+    },
+    {
+        "dateKind": "02",
+        "dateName": "조달의 날",
+        "isHoliday": "N",
+        "locdate": 20270930
+    },
+    {
+        "dateKind": "02",
+        "dateName": "개인정보 보호의 날",
+        "isHoliday": "N",
+        "locdate": 20270930
+    }
+]

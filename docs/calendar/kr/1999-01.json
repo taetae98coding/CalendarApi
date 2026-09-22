@@ -1,0 +1,13 @@
+{
+    "country": "kr",
+    "period": "1999-01",
+    "holidays": [
+        {
+            "name": "신정",
+            "isHoliday": true,
+            "start": "1999-01-01",
+            "endInclusive": "1999-01-01"
+        }
+    ],
+    "lunar": []
+}

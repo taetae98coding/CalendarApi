@@ -1,0 +1,56 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "의병의 날",
+        "isHoliday": "N",
+        "locdate": 20240601
+    },
+    {
+        "dateKind": "02",
+        "dateName": "환경의 날",
+        "isHoliday": "N",
+        "locdate": 20240605
+    },
+    {
+        "dateKind": "02",
+        "dateName": "구강보건의 날",
+        "isHoliday": "N",
+        "locdate": 20240609
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·10민주항쟁 기념일",
+        "isHoliday": "N",
+        "locdate": 20240610
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·10만세운동 기념일",
+        "isHoliday": "N",
+        "locdate": 20240610
+    },
+    {
+        "dateKind": "02",
+        "dateName": "전자정부의 날",
+        "isHoliday": "N",
+        "locdate": 20240624
+    },
+    {
+        "dateKind": "02",
+        "dateName": "6·25전쟁일",
+        "isHoliday": "N",
+        "locdate": 20240625
+    },
+    {
+        "dateKind": "02",
+        "dateName": "마약퇴치의 날",
+        "isHoliday": "N",
+        "locdate": 20240626
+    },
+    {
+        "dateKind": "02",
+        "dateName": "철도의 날",
+        "isHoliday": "N",
+        "locdate": 20240628
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2002-06-06",
+        "endInclusive": "2002-06-06"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2002-06-21",
+        "endInclusive": "2002-06-21"
+    }
+]

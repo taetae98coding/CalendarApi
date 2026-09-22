@@ -1,0 +1,26 @@
+[
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2003-05-05",
+        "endInclusive": "2003-05-05"
+    },
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "2003-05-06",
+        "endInclusive": "2003-05-06"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2003-05-08",
+        "endInclusive": "2003-05-08"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "2003-05-21",
+        "endInclusive": "2003-05-21"
+    }
+]

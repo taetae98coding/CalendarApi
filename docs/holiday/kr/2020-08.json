@@ -1,0 +1,32 @@
+[
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2020-08-07",
+        "endInclusive": "2020-08-07"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2020-08-15",
+        "endInclusive": "2020-08-15"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2020-08-15",
+        "endInclusive": "2020-08-15"
+    },
+    {
+        "name": "임시공휴일",
+        "isHoliday": true,
+        "start": "2020-08-17",
+        "endInclusive": "2020-08-17"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2020-08-23",
+        "endInclusive": "2020-08-23"
+    }
+]

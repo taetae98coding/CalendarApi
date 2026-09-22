@@ -1,0 +1,62 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "1999-12-31",
+        "endInclusive": "1999-12-31"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2000-01-17",
+        "endInclusive": "2000-01-17"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2000-02-21",
+        "endInclusive": "2000-02-21"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2000-05-29",
+        "endInclusive": "2000-05-29"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2000-07-04",
+        "endInclusive": "2000-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2000-09-04",
+        "endInclusive": "2000-09-04"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2000-10-09",
+        "endInclusive": "2000-10-09"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2000-11-10",
+        "endInclusive": "2000-11-10"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2000-11-23",
+        "endInclusive": "2000-11-23"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2000-12-25",
+        "endInclusive": "2000-12-25"
+    }
+]

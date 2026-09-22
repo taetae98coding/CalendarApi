@@ -1,0 +1,44 @@
+[
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2028-08-07",
+        "endInclusive": "2028-08-07"
+    },
+    {
+        "name": "섬의 날",
+        "isHoliday": false,
+        "start": "2028-08-08",
+        "endInclusive": "2028-08-08"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2028-08-13",
+        "endInclusive": "2028-08-13"
+    },
+    {
+        "name": "일본군위안부 피해자 기림의 날",
+        "isHoliday": false,
+        "start": "2028-08-14",
+        "endInclusive": "2028-08-14"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2028-08-15",
+        "endInclusive": "2028-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2028-08-22",
+        "endInclusive": "2028-08-22"
+    },
+    {
+        "name": "칠석",
+        "isHoliday": false,
+        "start": "2028-08-26",
+        "endInclusive": "2028-08-26"
+    }
+]

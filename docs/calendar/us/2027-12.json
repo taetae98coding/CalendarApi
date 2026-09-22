@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2027-12",
+    "holidays": [
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2027-12-24",
+            "endInclusive": "2027-12-24"
+        }
+    ],
+    "lunar": []
+}

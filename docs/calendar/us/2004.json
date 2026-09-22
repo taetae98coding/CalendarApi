@@ -1,0 +1,67 @@
+{
+    "country": "us",
+    "period": "2004",
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2004-01-01",
+            "endInclusive": "2004-01-01"
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2004-01-19",
+            "endInclusive": "2004-01-19"
+        },
+        {
+            "name": "Washington's Birthday",
+            "isHoliday": true,
+            "start": "2004-02-16",
+            "endInclusive": "2004-02-16"
+        },
+        {
+            "name": "Memorial Day",
+            "isHoliday": true,
+            "start": "2004-05-31",
+            "endInclusive": "2004-05-31"
+        },
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2004-07-05",
+            "endInclusive": "2004-07-05"
+        },
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "2004-09-06",
+            "endInclusive": "2004-09-06"
+        },
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2004-10-11",
+            "endInclusive": "2004-10-11"
+        },
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "2004-11-11",
+            "endInclusive": "2004-11-11"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "2004-11-25",
+            "endInclusive": "2004-11-25"
+        },
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2004-12-24",
+            "endInclusive": "2004-12-24"
+        }
+    ],
+    "lunar": []
+}

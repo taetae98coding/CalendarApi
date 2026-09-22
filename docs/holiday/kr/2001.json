@@ -1,0 +1,218 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2001-01-01",
+        "endInclusive": "2001-01-01"
+    },
+    {
+        "name": "소한",
+        "isHoliday": false,
+        "start": "2001-01-05",
+        "endInclusive": "2001-01-05"
+    },
+    {
+        "name": "대한",
+        "isHoliday": false,
+        "start": "2001-01-20",
+        "endInclusive": "2001-01-20"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2001-01-23",
+        "endInclusive": "2001-01-25"
+    },
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2001-02-04",
+        "endInclusive": "2001-02-04"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2001-02-18",
+        "endInclusive": "2001-02-18"
+    },
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2001-03-01",
+        "endInclusive": "2001-03-01"
+    },
+    {
+        "name": "경칩",
+        "isHoliday": false,
+        "start": "2001-03-05",
+        "endInclusive": "2001-03-05"
+    },
+    {
+        "name": "춘분",
+        "isHoliday": false,
+        "start": "2001-03-20",
+        "endInclusive": "2001-03-20"
+    },
+    {
+        "name": "청명",
+        "isHoliday": false,
+        "start": "2001-04-05",
+        "endInclusive": "2001-04-05"
+    },
+    {
+        "name": "곡우",
+        "isHoliday": false,
+        "start": "2001-04-20",
+        "endInclusive": "2001-04-20"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2001-05-01",
+        "endInclusive": "2001-05-01"
+    },
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "2001-05-05",
+        "endInclusive": "2001-05-05"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2001-05-07",
+        "endInclusive": "2001-05-07"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "2001-05-21",
+        "endInclusive": "2001-05-21"
+    },
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2001-06-05",
+        "endInclusive": "2001-06-05"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2001-06-06",
+        "endInclusive": "2001-06-06"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2001-06-21",
+        "endInclusive": "2001-06-21"
+    },
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2001-07-07",
+        "endInclusive": "2001-07-07"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2001-07-17",
+        "endInclusive": "2001-07-17"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2001-07-23",
+        "endInclusive": "2001-07-23"
+    },
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2001-08-07",
+        "endInclusive": "2001-08-07"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2001-08-15",
+        "endInclusive": "2001-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2001-08-23",
+        "endInclusive": "2001-08-23"
+    },
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2001-09-07",
+        "endInclusive": "2001-09-07"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2001-09-23",
+        "endInclusive": "2001-09-23"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2001-10-01",
+        "endInclusive": "2001-10-03"
+    },
+    {
+        "name": "개천절",
+        "isHoliday": true,
+        "start": "2001-10-03",
+        "endInclusive": "2001-10-03"
+    },
+    {
+        "name": "한로",
+        "isHoliday": false,
+        "start": "2001-10-08",
+        "endInclusive": "2001-10-08"
+    },
+    {
+        "name": "한글날",
+        "isHoliday": true,
+        "start": "2001-10-09",
+        "endInclusive": "2001-10-09"
+    },
+    {
+        "name": "상강",
+        "isHoliday": false,
+        "start": "2001-10-23",
+        "endInclusive": "2001-10-23"
+    },
+    {
+        "name": "입동",
+        "isHoliday": false,
+        "start": "2001-11-07",
+        "endInclusive": "2001-11-07"
+    },
+    {
+        "name": "소설",
+        "isHoliday": false,
+        "start": "2001-11-22",
+        "endInclusive": "2001-11-22"
+    },
+    {
+        "name": "대설",
+        "isHoliday": false,
+        "start": "2001-12-07",
+        "endInclusive": "2001-12-07"
+    },
+    {
+        "name": "동지",
+        "isHoliday": false,
+        "start": "2001-12-22",
+        "endInclusive": "2001-12-22"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2001-12-25",
+        "endInclusive": "2001-12-25"
+    }
+]

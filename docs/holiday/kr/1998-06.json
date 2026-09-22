@@ -1,0 +1,8 @@
+[
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "1998-06-06",
+        "endInclusive": "1998-06-06"
+    }
+]

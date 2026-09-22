@@ -1,0 +1,74 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "4·3희생자 추념일",
+        "isHoliday": "N",
+        "locdate": 20230403
+    },
+    {
+        "dateKind": "02",
+        "dateName": "식목일",
+        "isHoliday": "N",
+        "locdate": 20230405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "예비군의 날",
+        "isHoliday": "N",
+        "locdate": 20230407
+    },
+    {
+        "dateKind": "02",
+        "dateName": "보건의 날",
+        "isHoliday": "N",
+        "locdate": 20230407
+    },
+    {
+        "dateKind": "02",
+        "dateName": "도시농업의 날",
+        "isHoliday": "N",
+        "locdate": 20230411
+    },
+    {
+        "dateKind": "02",
+        "dateName": "대한민국임시정부 수립기념일",
+        "isHoliday": "N",
+        "locdate": 20230411
+    },
+    {
+        "dateKind": "02",
+        "dateName": "4·19 혁명 기념일",
+        "isHoliday": "N",
+        "locdate": 20230419
+    },
+    {
+        "dateKind": "02",
+        "dateName": "장애인의 날",
+        "isHoliday": "N",
+        "locdate": 20230420
+    },
+    {
+        "dateKind": "02",
+        "dateName": "과학의 날",
+        "isHoliday": "N",
+        "locdate": 20230421
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정보통신의 날",
+        "isHoliday": "N",
+        "locdate": 20230422
+    },
+    {
+        "dateKind": "02",
+        "dateName": "법의 날",
+        "isHoliday": "N",
+        "locdate": 20230425
+    },
+    {
+        "dateKind": "02",
+        "dateName": "충무공 이순신 탄신일",
+        "isHoliday": "N",
+        "locdate": 20230428
+    }
+]

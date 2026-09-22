@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "제21대 국회의원선거",
+        "isHoliday": "Y",
+        "locdate": 20200415
+    },
+    {
+        "dateKind": "01",
+        "dateName": "부처님오신날",
+        "isHoliday": "Y",
+        "locdate": 20200430
+    }
+]

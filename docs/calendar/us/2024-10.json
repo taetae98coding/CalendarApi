@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2024-10",
+    "holidays": [
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2024-10-14",
+            "endInclusive": "2024-10-14"
+        }
+    ],
+    "lunar": []
+}

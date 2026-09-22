@@ -1,0 +1,25 @@
+{
+    "country": "kr",
+    "period": "2001-08",
+    "holidays": [
+        {
+            "name": "입추",
+            "isHoliday": false,
+            "start": "2001-08-07",
+            "endInclusive": "2001-08-07"
+        },
+        {
+            "name": "광복절",
+            "isHoliday": true,
+            "start": "2001-08-15",
+            "endInclusive": "2001-08-15"
+        },
+        {
+            "name": "처서",
+            "isHoliday": false,
+            "start": "2001-08-23",
+            "endInclusive": "2001-08-23"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "곤충의 날",
+        "isHoliday": false,
+        "start": "2021-09-07",
+        "endInclusive": "2021-09-07"
+    },
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2021-09-07",
+        "endInclusive": "2021-09-07"
+    },
+    {
+        "name": "사회복지의 날",
+        "isHoliday": false,
+        "start": "2021-09-07",
+        "endInclusive": "2021-09-07"
+    },
+    {
+        "name": "해양경찰의 날",
+        "isHoliday": false,
+        "start": "2021-09-10",
+        "endInclusive": "2021-09-10"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2021-09-20",
+        "endInclusive": "2021-09-22"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2021-09-23",
+        "endInclusive": "2021-09-23"
+    }
+]

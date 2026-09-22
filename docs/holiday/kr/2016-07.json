@@ -1,0 +1,44 @@
+[
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2016-07-07",
+        "endInclusive": "2016-07-07"
+    },
+    {
+        "name": "정보보호의 날",
+        "isHoliday": false,
+        "start": "2016-07-13",
+        "endInclusive": "2016-07-13"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": false,
+        "start": "2016-07-17",
+        "endInclusive": "2016-07-17"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2016-07-17",
+        "endInclusive": "2016-07-17"
+    },
+    {
+        "name": "토왕용사",
+        "isHoliday": false,
+        "start": "2016-07-19",
+        "endInclusive": "2016-07-19"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2016-07-22",
+        "endInclusive": "2016-07-22"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2016-07-27",
+        "endInclusive": "2016-07-27"
+    }
+]

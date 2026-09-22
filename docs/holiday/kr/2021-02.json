@@ -1,0 +1,32 @@
+[
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2021-02-03",
+        "endInclusive": "2021-02-03"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2021-02-11",
+        "endInclusive": "2021-02-13"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2021-02-18",
+        "endInclusive": "2021-02-18"
+    },
+    {
+        "name": "정월대보름",
+        "isHoliday": false,
+        "start": "2021-02-26",
+        "endInclusive": "2021-02-26"
+    },
+    {
+        "name": "2·28 민주운동 기념일",
+        "isHoliday": false,
+        "start": "2021-02-28",
+        "endInclusive": "2021-02-28"
+    }
+]

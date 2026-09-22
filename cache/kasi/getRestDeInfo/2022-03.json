@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "삼일절",
+        "isHoliday": "Y",
+        "locdate": 20220301
+    },
+    {
+        "dateKind": "01",
+        "dateName": "대통령선거일",
+        "isHoliday": "Y",
+        "locdate": 20220309
+    }
+]

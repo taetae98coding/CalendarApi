@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2003-10",
+    "holidays": [
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2003-10-13",
+            "endInclusive": "2003-10-13"
+        }
+    ],
+    "lunar": []
+}

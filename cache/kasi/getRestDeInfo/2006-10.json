@@ -1,0 +1,26 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "개천절",
+        "isHoliday": "Y",
+        "locdate": 20061003
+    },
+    {
+        "dateKind": "01",
+        "dateName": "추석",
+        "isHoliday": "Y",
+        "locdate": 20061005
+    },
+    {
+        "dateKind": "01",
+        "dateName": "추석",
+        "isHoliday": "Y",
+        "locdate": 20061006
+    },
+    {
+        "dateKind": "01",
+        "dateName": "추석",
+        "isHoliday": "Y",
+        "locdate": 20061007
+    }
+]

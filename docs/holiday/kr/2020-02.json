@@ -1,0 +1,20 @@
+[
+    {
+        "name": "입춘",
+        "isHoliday": false,
+        "start": "2020-02-04",
+        "endInclusive": "2020-02-04"
+    },
+    {
+        "name": "우수",
+        "isHoliday": false,
+        "start": "2020-02-19",
+        "endInclusive": "2020-02-19"
+    },
+    {
+        "name": "2·28 민주운동 기념일",
+        "isHoliday": false,
+        "start": "2020-02-28",
+        "endInclusive": "2020-02-28"
+    }
+]

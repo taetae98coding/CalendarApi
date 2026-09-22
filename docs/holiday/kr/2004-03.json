@@ -1,0 +1,44 @@
+[
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2004-03-01",
+        "endInclusive": "2004-03-01"
+    },
+    {
+        "name": "납세자의 날",
+        "isHoliday": false,
+        "start": "2004-03-03",
+        "endInclusive": "2004-03-03"
+    },
+    {
+        "name": "경칩",
+        "isHoliday": false,
+        "start": "2004-03-05",
+        "endInclusive": "2004-03-05"
+    },
+    {
+        "name": "상공의 날",
+        "isHoliday": false,
+        "start": "2004-03-17",
+        "endInclusive": "2004-03-17"
+    },
+    {
+        "name": "춘분",
+        "isHoliday": false,
+        "start": "2004-03-20",
+        "endInclusive": "2004-03-20"
+    },
+    {
+        "name": "물의 날",
+        "isHoliday": false,
+        "start": "2004-03-22",
+        "endInclusive": "2004-03-22"
+    },
+    {
+        "name": "기상의 날",
+        "isHoliday": false,
+        "start": "2004-03-23",
+        "endInclusive": "2004-03-23"
+    }
+]

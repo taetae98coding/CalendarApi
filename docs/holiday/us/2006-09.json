@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2006-09-04",
+        "endInclusive": "2006-09-04"
+    }
+]

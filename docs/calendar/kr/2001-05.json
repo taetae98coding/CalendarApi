@@ -1,0 +1,31 @@
+{
+    "country": "kr",
+    "period": "2001-05",
+    "holidays": [
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2001-05-01",
+            "endInclusive": "2001-05-01"
+        },
+        {
+            "name": "입하",
+            "isHoliday": false,
+            "start": "2001-05-05",
+            "endInclusive": "2001-05-05"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2001-05-07",
+            "endInclusive": "2001-05-07"
+        },
+        {
+            "name": "소만",
+            "isHoliday": false,
+            "start": "2001-05-21",
+            "endInclusive": "2001-05-21"
+        }
+    ],
+    "lunar": []
+}

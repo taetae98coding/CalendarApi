@@ -1,0 +1,44 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "근로자의 날",
+        "isHoliday": "N",
+        "locdate": 20150501
+    },
+    {
+        "dateKind": "02",
+        "dateName": "어버이 날",
+        "isHoliday": "N",
+        "locdate": 20150508
+    },
+    {
+        "dateKind": "02",
+        "dateName": "스승의 날",
+        "isHoliday": "N",
+        "locdate": 20150515
+    },
+    {
+        "dateKind": "02",
+        "dateName": "5·18 민주화운동기념일",
+        "isHoliday": "N",
+        "locdate": 20150518
+    },
+    {
+        "dateKind": "02",
+        "dateName": "성년의 날",
+        "isHoliday": "N",
+        "locdate": 20150518
+    },
+    {
+        "dateKind": "02",
+        "dateName": "부부의 날",
+        "isHoliday": "N",
+        "locdate": 20150521
+    },
+    {
+        "dateKind": "02",
+        "dateName": "바다의 날",
+        "isHoliday": "N",
+        "locdate": 20150531
+    }
+]

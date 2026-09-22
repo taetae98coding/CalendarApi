@@ -1,0 +1,86 @@
+[
+    {
+        "name": "4·3 희생자 추념일",
+        "isHoliday": false,
+        "start": "2019-04-03",
+        "endInclusive": "2019-04-03"
+    },
+    {
+        "name": "식목일",
+        "isHoliday": false,
+        "start": "2019-04-05",
+        "endInclusive": "2019-04-05"
+    },
+    {
+        "name": "예비군의 날",
+        "isHoliday": false,
+        "start": "2019-04-05",
+        "endInclusive": "2019-04-05"
+    },
+    {
+        "name": "청명",
+        "isHoliday": false,
+        "start": "2019-04-05",
+        "endInclusive": "2019-04-05"
+    },
+    {
+        "name": "한식",
+        "isHoliday": false,
+        "start": "2019-04-06",
+        "endInclusive": "2019-04-06"
+    },
+    {
+        "name": "보건의 날",
+        "isHoliday": false,
+        "start": "2019-04-07",
+        "endInclusive": "2019-04-07"
+    },
+    {
+        "name": "대한민국임시정부 수립기념일",
+        "isHoliday": false,
+        "start": "2019-04-11",
+        "endInclusive": "2019-04-11"
+    },
+    {
+        "name": "4·19 혁명 기념일",
+        "isHoliday": false,
+        "start": "2019-04-19",
+        "endInclusive": "2019-04-19"
+    },
+    {
+        "name": "곡우",
+        "isHoliday": false,
+        "start": "2019-04-20",
+        "endInclusive": "2019-04-20"
+    },
+    {
+        "name": "장애인의 날",
+        "isHoliday": false,
+        "start": "2019-04-20",
+        "endInclusive": "2019-04-20"
+    },
+    {
+        "name": "과학의 날",
+        "isHoliday": false,
+        "start": "2019-04-21",
+        "endInclusive": "2019-04-21"
+    },
+    {
+        "name": "정보통신의 날",
+        "isHoliday": false,
+        "start": "2019-04-22",
+        "endInclusive": "2019-04-22"
+    },
+    {
+        "name": "법의 날",
+        "isHoliday": false,
+        "start": "2019-04-25",
+        "endInclusive": "2019-04-25"
+    },
+    {
+        "name": "충무공 이순신 탄신일",
+        "isHoliday": false,
+        "start": "2019-04-28",
+        "endInclusive": "2019-04-28"
+    }
+]

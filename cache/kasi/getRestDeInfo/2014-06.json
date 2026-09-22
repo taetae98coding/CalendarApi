@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "01",
+        "dateName": "동시지방선거일",
+        "isHoliday": "Y",
+        "locdate": 20140604
+    },
+    {
+        "dateKind": "01",
+        "dateName": "현충일",
+        "isHoliday": "Y",
+        "locdate": 20140606
+    }
+]

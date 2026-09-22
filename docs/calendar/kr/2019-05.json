@@ -1,0 +1,85 @@
+{
+    "country": "kr",
+    "period": "2019-05",
+    "holidays": [
+        {
+            "name": "근로자의 날",
+            "isHoliday": false,
+            "start": "2019-05-01",
+            "endInclusive": "2019-05-01"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2019-05-05",
+            "endInclusive": "2019-05-05"
+        },
+        {
+            "name": "대체공휴일",
+            "isHoliday": true,
+            "start": "2019-05-06",
+            "endInclusive": "2019-05-06"
+        },
+        {
+            "name": "입하",
+            "isHoliday": false,
+            "start": "2019-05-06",
+            "endInclusive": "2019-05-06"
+        },
+        {
+            "name": "어버이날",
+            "isHoliday": false,
+            "start": "2019-05-08",
+            "endInclusive": "2019-05-08"
+        },
+        {
+            "name": "유권자의 날",
+            "isHoliday": false,
+            "start": "2019-05-10",
+            "endInclusive": "2019-05-10"
+        },
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2019-05-12",
+            "endInclusive": "2019-05-12"
+        },
+        {
+            "name": "스승의 날",
+            "isHoliday": false,
+            "start": "2019-05-15",
+            "endInclusive": "2019-05-15"
+        },
+        {
+            "name": "5·18 민주화운동 기념일",
+            "isHoliday": false,
+            "start": "2019-05-18",
+            "endInclusive": "2019-05-18"
+        },
+        {
+            "name": "성년의 날",
+            "isHoliday": false,
+            "start": "2019-05-20",
+            "endInclusive": "2019-05-20"
+        },
+        {
+            "name": "부부의 날",
+            "isHoliday": false,
+            "start": "2019-05-21",
+            "endInclusive": "2019-05-21"
+        },
+        {
+            "name": "소만",
+            "isHoliday": false,
+            "start": "2019-05-21",
+            "endInclusive": "2019-05-21"
+        },
+        {
+            "name": "바다의 날",
+            "isHoliday": false,
+            "start": "2019-05-31",
+            "endInclusive": "2019-05-31"
+        }
+    ],
+    "lunar": []
+}

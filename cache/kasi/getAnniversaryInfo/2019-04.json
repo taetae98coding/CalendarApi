@@ -1,0 +1,68 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "4·3 희생자 추념일",
+        "isHoliday": "N",
+        "locdate": 20190403
+    },
+    {
+        "dateKind": "02",
+        "dateName": "예비군의 날",
+        "isHoliday": "N",
+        "locdate": 20190405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "식목일",
+        "isHoliday": "N",
+        "locdate": 20190405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "보건의 날",
+        "isHoliday": "N",
+        "locdate": 20190407
+    },
+    {
+        "dateKind": "02",
+        "dateName": "대한민국임시정부 수립기념일",
+        "isHoliday": "N",
+        "locdate": 20190411
+    },
+    {
+        "dateKind": "02",
+        "dateName": "4·19 혁명 기념일",
+        "isHoliday": "N",
+        "locdate": 20190419
+    },
+    {
+        "dateKind": "02",
+        "dateName": "장애인의 날",
+        "isHoliday": "N",
+        "locdate": 20190420
+    },
+    {
+        "dateKind": "02",
+        "dateName": "과학의 날",
+        "isHoliday": "N",
+        "locdate": 20190421
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정보통신의 날",
+        "isHoliday": "N",
+        "locdate": 20190422
+    },
+    {
+        "dateKind": "02",
+        "dateName": "법의 날",
+        "isHoliday": "N",
+        "locdate": 20190425
+    },
+    {
+        "dateKind": "02",
+        "dateName": "충무공 이순신 탄신일",
+        "isHoliday": "N",
+        "locdate": 20190428
+    }
+]

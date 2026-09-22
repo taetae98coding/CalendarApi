@@ -1,0 +1,19 @@
+{
+    "country": "kr",
+    "period": "2017-02",
+    "holidays": [
+        {
+            "name": "입춘",
+            "isHoliday": false,
+            "start": "2017-02-04",
+            "endInclusive": "2017-02-04"
+        },
+        {
+            "name": "우수",
+            "isHoliday": false,
+            "start": "2017-02-18",
+            "endInclusive": "2017-02-18"
+        }
+    ],
+    "lunar": []
+}

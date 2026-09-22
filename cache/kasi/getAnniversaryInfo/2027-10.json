@@ -1,0 +1,98 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "국군의 날",
+        "isHoliday": "N",
+        "locdate": 20271001
+    },
+    {
+        "dateKind": "02",
+        "dateName": "노인의 날",
+        "isHoliday": "N",
+        "locdate": 20271002
+    },
+    {
+        "dateKind": "02",
+        "dateName": "동물보호의 날",
+        "isHoliday": "N",
+        "locdate": 20271004
+    },
+    {
+        "dateKind": "02",
+        "dateName": "세계 한인의 날",
+        "isHoliday": "N",
+        "locdate": 20271005
+    },
+    {
+        "dateKind": "02",
+        "dateName": "재향군인의 날",
+        "isHoliday": "N",
+        "locdate": 20271008
+    },
+    {
+        "dateKind": "02",
+        "dateName": "호스피스의 날",
+        "isHoliday": "N",
+        "locdate": 20271009
+    },
+    {
+        "dateKind": "02",
+        "dateName": "임산부의 날",
+        "isHoliday": "N",
+        "locdate": 20271010
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정신건강의 날",
+        "isHoliday": "N",
+        "locdate": 20271010
+    },
+    {
+        "dateKind": "02",
+        "dateName": "스포츠의 날",
+        "isHoliday": "N",
+        "locdate": 20271015
+    },
+    {
+        "dateKind": "02",
+        "dateName": "부마민주항쟁 기념일",
+        "isHoliday": "N",
+        "locdate": 20271016
+    },
+    {
+        "dateKind": "02",
+        "dateName": "문화의 날",
+        "isHoliday": "N",
+        "locdate": 20271016
+    },
+    {
+        "dateKind": "02",
+        "dateName": "경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20271021
+    },
+    {
+        "dateKind": "02",
+        "dateName": "국제연합일",
+        "isHoliday": "N",
+        "locdate": 20271024
+    },
+    {
+        "dateKind": "02",
+        "dateName": "금융의 날",
+        "isHoliday": "N",
+        "locdate": 20271026
+    },
+    {
+        "dateKind": "02",
+        "dateName": "교정의 날",
+        "isHoliday": "N",
+        "locdate": 20271028
+    },
+    {
+        "dateKind": "02",
+        "dateName": "지방자치 및 균형발전의 날",
+        "isHoliday": "N",
+        "locdate": 20271029
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "country": "kr",
+    "period": "2019-01",
+    "holidays": [
+        {
+            "name": "신정",
+            "isHoliday": true,
+            "start": "2019-01-01",
+            "endInclusive": "2019-01-01"
+        },
+        {
+            "name": "소한",
+            "isHoliday": false,
+            "start": "2019-01-06",
+            "endInclusive": "2019-01-06"
+        },
+        {
+            "name": "대한",
+            "isHoliday": false,
+            "start": "2019-01-20",
+            "endInclusive": "2019-01-20"
+        }
+    ],
+    "lunar": []
+}

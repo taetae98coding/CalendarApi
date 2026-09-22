@@ -1,0 +1,214 @@
+[
+    {
+        "date": "2013-01-01",
+        "localName": "New Year's Day",
+        "name": "New Year's Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-01-21",
+        "localName": "Martin Luther King, Jr. Day",
+        "name": "Martin Luther King, Jr. Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-02-12",
+        "localName": "Lincoln's Birthday",
+        "name": "Lincoln's Birthday",
+        "global": false,
+        "counties": [
+            "US-CA",
+            "US-CT",
+            "US-IL",
+            "US-IN",
+            "US-KY",
+            "US-MI",
+            "US-NY",
+            "US-MO",
+            "US-OH"
+        ],
+        "types": [
+            "Observance"
+        ]
+    },
+    {
+        "date": "2013-02-18",
+        "localName": "Washington's Birthday",
+        "name": "Presidents Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-03-29",
+        "localName": "Good Friday",
+        "name": "Good Friday",
+        "global": false,
+        "counties": [
+            "US-CT",
+            "US-DE",
+            "US-HI",
+            "US-IN",
+            "US-KY",
+            "US-LA",
+            "US-NC",
+            "US-ND",
+            "US-NJ",
+            "US-TN"
+        ],
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "2013-03-29",
+        "localName": "Good Friday",
+        "name": "Good Friday",
+        "global": false,
+        "counties": [
+            "US-TX"
+        ],
+        "types": [
+            "Optional"
+        ]
+    },
+    {
+        "date": "2013-05-08",
+        "localName": "Truman Day",
+        "name": "Truman Day",
+        "global": false,
+        "counties": [
+            "US-MO"
+        ],
+        "types": [
+            "School",
+            "Authorities"
+        ]
+    },
+    {
+        "date": "2013-05-27",
+        "localName": "Memorial Day",
+        "name": "Memorial Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-07-04",
+        "localName": "Independence Day",
+        "name": "Independence Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-09-02",
+        "localName": "Labor Day",
+        "name": "Labour Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-10-14",
+        "localName": "Columbus Day",
+        "name": "Columbus Day",
+        "global": false,
+        "counties": [
+            "US-AL",
+            "US-AZ",
+            "US-CO",
+            "US-CT",
+            "US-GA",
+            "US-ID",
+            "US-IL",
+            "US-IN",
+            "US-IA",
+            "US-KS",
+            "US-KY",
+            "US-LA",
+            "US-ME",
+            "US-MD",
+            "US-MA",
+            "US-MS",
+            "US-MO",
+            "US-MT",
+            "US-NE",
+            "US-NH",
+            "US-NJ",
+            "US-NM",
+            "US-NY",
+            "US-NC",
+            "US-OH",
+            "US-OK",
+            "US-PA",
+            "US-RI",
+            "US-SC",
+            "US-TN",
+            "US-UT",
+            "US-VA",
+            "US-WV"
+        ],
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "2013-10-14",
+        "localName": "Columbus Day",
+        "name": "Columbus Day",
+        "types": [
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-10-14",
+        "localName": "Indigenous Peoples' Day",
+        "name": "Indigenous Peoples' Day",
+        "global": false,
+        "counties": [
+            "US-HI",
+            "US-SD"
+        ],
+        "types": [
+            "Public"
+        ]
+    },
+    {
+        "date": "2013-11-11",
+        "localName": "Veterans Day",
+        "name": "Veterans Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-11-28",
+        "localName": "Thanksgiving Day",
+        "name": "Thanksgiving Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    },
+    {
+        "date": "2013-12-25",
+        "localName": "Christmas Day",
+        "name": "Christmas Day",
+        "types": [
+            "Public",
+            "Bank"
+        ]
+    }
+]

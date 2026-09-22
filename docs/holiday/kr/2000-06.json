@@ -1,0 +1,20 @@
+[
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2000-06-05",
+        "endInclusive": "2000-06-05"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2000-06-06",
+        "endInclusive": "2000-06-06"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2000-06-21",
+        "endInclusive": "2000-06-21"
+    }
+]

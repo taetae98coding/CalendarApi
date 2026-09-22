@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2029-06",
+    "holidays": [
+        {
+            "name": "Juneteenth National Independence Day",
+            "isHoliday": true,
+            "start": "2029-06-19",
+            "endInclusive": "2029-06-19"
+        }
+    ],
+    "lunar": []
+}

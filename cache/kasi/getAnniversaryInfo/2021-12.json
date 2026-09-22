@@ -1,0 +1,26 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "소비자의 날",
+        "isHoliday": "N",
+        "locdate": 20211203
+    },
+    {
+        "dateKind": "02",
+        "dateName": "무역의 날",
+        "isHoliday": "N",
+        "locdate": 20211205
+    },
+    {
+        "dateKind": "02",
+        "dateName": "자원봉사자의 날",
+        "isHoliday": "N",
+        "locdate": 20211205
+    },
+    {
+        "dateKind": "02",
+        "dateName": "원자력 안전 및 진흥의 날",
+        "isHoliday": "N",
+        "locdate": 20211227
+    }
+]

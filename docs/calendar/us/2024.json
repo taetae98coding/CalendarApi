@@ -1,0 +1,73 @@
+{
+    "country": "us",
+    "period": "2024",
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2024-01-01",
+            "endInclusive": "2024-01-01"
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2024-01-15",
+            "endInclusive": "2024-01-15"
+        },
+        {
+            "name": "Washington's Birthday",
+            "isHoliday": true,
+            "start": "2024-02-19",
+            "endInclusive": "2024-02-19"
+        },
+        {
+            "name": "Memorial Day",
+            "isHoliday": true,
+            "start": "2024-05-27",
+            "endInclusive": "2024-05-27"
+        },
+        {
+            "name": "Juneteenth National Independence Day",
+            "isHoliday": true,
+            "start": "2024-06-19",
+            "endInclusive": "2024-06-19"
+        },
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2024-07-04",
+            "endInclusive": "2024-07-04"
+        },
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "2024-09-02",
+            "endInclusive": "2024-09-02"
+        },
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2024-10-14",
+            "endInclusive": "2024-10-14"
+        },
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "2024-11-11",
+            "endInclusive": "2024-11-11"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "2024-11-28",
+            "endInclusive": "2024-11-28"
+        },
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2024-12-25",
+            "endInclusive": "2024-12-25"
+        }
+    ],
+    "lunar": []
+}

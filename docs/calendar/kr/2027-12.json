@@ -1,0 +1,61 @@
+{
+    "country": "kr",
+    "period": "2027-12",
+    "holidays": [
+        {
+            "name": "소비자의 날",
+            "isHoliday": false,
+            "start": "2027-12-03",
+            "endInclusive": "2027-12-03"
+        },
+        {
+            "name": "무역의 날",
+            "isHoliday": false,
+            "start": "2027-12-05",
+            "endInclusive": "2027-12-05"
+        },
+        {
+            "name": "자원봉사자의 날",
+            "isHoliday": false,
+            "start": "2027-12-05",
+            "endInclusive": "2027-12-05"
+        },
+        {
+            "name": "대설",
+            "isHoliday": false,
+            "start": "2027-12-07",
+            "endInclusive": "2027-12-07"
+        },
+        {
+            "name": "동지",
+            "isHoliday": false,
+            "start": "2027-12-22",
+            "endInclusive": "2027-12-22"
+        },
+        {
+            "name": "크리스마스",
+            "isHoliday": true,
+            "start": "2027-12-25",
+            "endInclusive": "2027-12-25"
+        },
+        {
+            "name": "대체공휴일(기독탄신일)",
+            "isHoliday": true,
+            "start": "2027-12-27",
+            "endInclusive": "2027-12-27"
+        },
+        {
+            "name": "원자력 안전 및 진흥의 날",
+            "isHoliday": false,
+            "start": "2027-12-27",
+            "endInclusive": "2027-12-27"
+        },
+        {
+            "name": "항공안전의 날",
+            "isHoliday": false,
+            "start": "2027-12-29",
+            "endInclusive": "2027-12-29"
+        }
+    ],
+    "lunar": []
+}

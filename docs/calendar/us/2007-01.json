@@ -1,0 +1,19 @@
+{
+    "country": "us",
+    "period": "2007-01",
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2007-01-01",
+            "endInclusive": "2007-01-01"
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2007-01-15",
+            "endInclusive": "2007-01-15"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2001-07",
+    "holidays": [
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2001-07-04",
+            "endInclusive": "2001-07-04"
+        }
+    ],
+    "lunar": []
+}

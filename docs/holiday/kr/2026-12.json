@@ -1,0 +1,44 @@
+[
+    {
+        "name": "소비자의 날",
+        "isHoliday": false,
+        "start": "2026-12-03",
+        "endInclusive": "2026-12-03"
+    },
+    {
+        "name": "무역의 날",
+        "isHoliday": false,
+        "start": "2026-12-05",
+        "endInclusive": "2026-12-05"
+    },
+    {
+        "name": "자원봉사자의 날",
+        "isHoliday": false,
+        "start": "2026-12-05",
+        "endInclusive": "2026-12-05"
+    },
+    {
+        "name": "대설",
+        "isHoliday": false,
+        "start": "2026-12-07",
+        "endInclusive": "2026-12-07"
+    },
+    {
+        "name": "동지",
+        "isHoliday": false,
+        "start": "2026-12-22",
+        "endInclusive": "2026-12-22"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2026-12-25",
+        "endInclusive": "2026-12-25"
+    },
+    {
+        "name": "원자력 안전 및 진흥의 날",
+        "isHoliday": false,
+        "start": "2026-12-27",
+        "endInclusive": "2026-12-27"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "name": "곤충의 날",
+        "isHoliday": false,
+        "start": "2024-09-07",
+        "endInclusive": "2024-09-07"
+    },
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2024-09-07",
+        "endInclusive": "2024-09-07"
+    },
+    {
+        "name": "사회복지의 날",
+        "isHoliday": false,
+        "start": "2024-09-07",
+        "endInclusive": "2024-09-07"
+    },
+    {
+        "name": "푸른 하늘의 날",
+        "isHoliday": false,
+        "start": "2024-09-07",
+        "endInclusive": "2024-09-07"
+    },
+    {
+        "name": "해양경찰의 날",
+        "isHoliday": false,
+        "start": "2024-09-10",
+        "endInclusive": "2024-09-10"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2024-09-16",
+        "endInclusive": "2024-09-18"
+    },
+    {
+        "name": "청년의 날",
+        "isHoliday": false,
+        "start": "2024-09-21",
+        "endInclusive": "2024-09-21"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2024-09-22",
+        "endInclusive": "2024-09-22"
+    },
+    {
+        "name": "조달의 날",
+        "isHoliday": false,
+        "start": "2024-09-30",
+        "endInclusive": "2024-09-30"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "소비자 보호의 날",
+        "isHoliday": false,
+        "start": "2004-12-03",
+        "endInclusive": "2004-12-03"
+    },
+    {
+        "name": "국민교육헌장선포기념일",
+        "isHoliday": false,
+        "start": "2004-12-05",
+        "endInclusive": "2004-12-05"
+    },
+    {
+        "name": "대설",
+        "isHoliday": false,
+        "start": "2004-12-07",
+        "endInclusive": "2004-12-07"
+    },
+    {
+        "name": "세계인권선언기념일",
+        "isHoliday": false,
+        "start": "2004-12-10",
+        "endInclusive": "2004-12-10"
+    },
+    {
+        "name": "동지",
+        "isHoliday": false,
+        "start": "2004-12-21",
+        "endInclusive": "2004-12-21"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2004-12-25",
+        "endInclusive": "2004-12-25"
+    }
+]

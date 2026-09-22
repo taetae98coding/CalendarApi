@@ -1,0 +1,13 @@
+{
+    "country": "kr",
+    "period": "2029-03",
+    "holidays": [
+        {
+            "name": "삼일절",
+            "isHoliday": true,
+            "start": "2029-03-01",
+            "endInclusive": "2029-03-01"
+        }
+    ],
+    "lunar": []
+}

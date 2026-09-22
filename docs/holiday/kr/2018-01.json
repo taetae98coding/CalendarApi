@@ -1,0 +1,20 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2018-01-01",
+        "endInclusive": "2018-01-01"
+    },
+    {
+        "name": "소한",
+        "isHoliday": false,
+        "start": "2018-01-05",
+        "endInclusive": "2018-01-05"
+    },
+    {
+        "name": "대한",
+        "isHoliday": false,
+        "start": "2018-01-20",
+        "endInclusive": "2018-01-20"
+    }
+]

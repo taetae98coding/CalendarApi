@@ -1,0 +1,164 @@
+[
+    {
+        "name": "노동절",
+        "isHoliday": true,
+        "start": "2028-05-01",
+        "endInclusive": "2028-05-01"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2028-05-02",
+        "endInclusive": "2028-05-02"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2028-05-05",
+        "endInclusive": "2028-05-05"
+    },
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "2028-05-05",
+        "endInclusive": "2028-05-05"
+    },
+    {
+        "name": "어버이날",
+        "isHoliday": false,
+        "start": "2028-05-08",
+        "endInclusive": "2028-05-08"
+    },
+    {
+        "name": "양잠인의 날",
+        "isHoliday": false,
+        "start": "2028-05-10",
+        "endInclusive": "2028-05-10"
+    },
+    {
+        "name": "유권자의 날",
+        "isHoliday": false,
+        "start": "2028-05-10",
+        "endInclusive": "2028-05-10"
+    },
+    {
+        "name": "한부모가족의 날",
+        "isHoliday": false,
+        "start": "2028-05-10",
+        "endInclusive": "2028-05-10"
+    },
+    {
+        "name": "동학농민혁명 기념일",
+        "isHoliday": false,
+        "start": "2028-05-11",
+        "endInclusive": "2028-05-11"
+    },
+    {
+        "name": "입양의 날",
+        "isHoliday": false,
+        "start": "2028-05-11",
+        "endInclusive": "2028-05-11"
+    },
+    {
+        "name": "식품안전의 날",
+        "isHoliday": false,
+        "start": "2028-05-14",
+        "endInclusive": "2028-05-14"
+    },
+    {
+        "name": "가정의 날",
+        "isHoliday": false,
+        "start": "2028-05-15",
+        "endInclusive": "2028-05-15"
+    },
+    {
+        "name": "성년의 날",
+        "isHoliday": false,
+        "start": "2028-05-15",
+        "endInclusive": "2028-05-15"
+    },
+    {
+        "name": "세종대왕 나신 날",
+        "isHoliday": false,
+        "start": "2028-05-15",
+        "endInclusive": "2028-05-15"
+    },
+    {
+        "name": "스승의 날",
+        "isHoliday": false,
+        "start": "2028-05-15",
+        "endInclusive": "2028-05-15"
+    },
+    {
+        "name": "5·18민주화운동 기념일",
+        "isHoliday": false,
+        "start": "2028-05-18",
+        "endInclusive": "2028-05-18"
+    },
+    {
+        "name": "발명의 날",
+        "isHoliday": false,
+        "start": "2028-05-19",
+        "endInclusive": "2028-05-19"
+    },
+    {
+        "name": "세계인의 날",
+        "isHoliday": false,
+        "start": "2028-05-20",
+        "endInclusive": "2028-05-20"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "2028-05-20",
+        "endInclusive": "2028-05-20"
+    },
+    {
+        "name": "부부의 날",
+        "isHoliday": false,
+        "start": "2028-05-21",
+        "endInclusive": "2028-05-21"
+    },
+    {
+        "name": "실종아동의 날",
+        "isHoliday": false,
+        "start": "2028-05-25",
+        "endInclusive": "2028-05-25"
+    },
+    {
+        "name": "우주항공의 날",
+        "isHoliday": false,
+        "start": "2028-05-27",
+        "endInclusive": "2028-05-27"
+    },
+    {
+        "name": "단오",
+        "isHoliday": false,
+        "start": "2028-05-28",
+        "endInclusive": "2028-05-28"
+    },
+    {
+        "name": "의료기기의 날",
+        "isHoliday": false,
+        "start": "2028-05-29",
+        "endInclusive": "2028-05-29"
+    },
+    {
+        "name": "해외 파병용사의 날",
+        "isHoliday": false,
+        "start": "2028-05-29",
+        "endInclusive": "2028-05-29"
+    },
+    {
+        "name": "국회 개원기념일",
+        "isHoliday": false,
+        "start": "2028-05-31",
+        "endInclusive": "2028-05-31"
+    },
+    {
+        "name": "바다의 날",
+        "isHoliday": false,
+        "start": "2028-05-31",
+        "endInclusive": "2028-05-31"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2021-12",
+    "holidays": [
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2021-12-24",
+            "endInclusive": "2021-12-24"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "사회복지의 날",
+        "isHoliday": false,
+        "start": "2007-09-07",
+        "endInclusive": "2007-09-07"
+    },
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2007-09-08",
+        "endInclusive": "2007-09-08"
+    },
+    {
+        "name": "철도의 날",
+        "isHoliday": false,
+        "start": "2007-09-18",
+        "endInclusive": "2007-09-18"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2007-09-23",
+        "endInclusive": "2007-09-23"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2007-09-24",
+        "endInclusive": "2007-09-26"
+    }
+]

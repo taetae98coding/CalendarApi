@@ -1,0 +1,19 @@
+{
+    "country": "us",
+    "period": "2007-11",
+    "holidays": [
+        {
+            "name": "Veterans Day",
+            "isHoliday": true,
+            "start": "2007-11-12",
+            "endInclusive": "2007-11-12"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "isHoliday": true,
+            "start": "2007-11-22",
+            "endInclusive": "2007-11-22"
+        }
+    ],
+    "lunar": []
+}

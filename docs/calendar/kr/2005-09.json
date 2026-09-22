@@ -1,0 +1,31 @@
+{
+    "country": "kr",
+    "period": "2005-09",
+    "holidays": [
+        {
+            "name": "백로",
+            "isHoliday": false,
+            "start": "2005-09-07",
+            "endInclusive": "2005-09-07"
+        },
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2005-09-17",
+            "endInclusive": "2005-09-19"
+        },
+        {
+            "name": "철도의 날",
+            "isHoliday": false,
+            "start": "2005-09-18",
+            "endInclusive": "2005-09-18"
+        },
+        {
+            "name": "추분",
+            "isHoliday": false,
+            "start": "2005-09-23",
+            "endInclusive": "2005-09-23"
+        }
+    ],
+    "lunar": []
+}

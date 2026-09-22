@@ -1,0 +1,32 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "학생의 날",
+        "isHoliday": "N",
+        "locdate": 20061103
+    },
+    {
+        "dateKind": "02",
+        "dateName": "소방의 날",
+        "isHoliday": "N",
+        "locdate": 20061109
+    },
+    {
+        "dateKind": "02",
+        "dateName": "농업인의 날",
+        "isHoliday": "N",
+        "locdate": 20061111
+    },
+    {
+        "dateKind": "02",
+        "dateName": "순국선열의 날",
+        "isHoliday": "N",
+        "locdate": 20061117
+    },
+    {
+        "dateKind": "02",
+        "dateName": "무역의 날",
+        "isHoliday": "N",
+        "locdate": 20061130
+    }
+]

@@ -1,0 +1,43 @@
+{
+    "country": "kr",
+    "period": "2024-02",
+    "holidays": [
+        {
+            "name": "입춘",
+            "isHoliday": false,
+            "start": "2024-02-04",
+            "endInclusive": "2024-02-04"
+        },
+        {
+            "name": "설날",
+            "isHoliday": true,
+            "start": "2024-02-09",
+            "endInclusive": "2024-02-11"
+        },
+        {
+            "name": "대체공휴일(설날)",
+            "isHoliday": true,
+            "start": "2024-02-12",
+            "endInclusive": "2024-02-12"
+        },
+        {
+            "name": "우수",
+            "isHoliday": false,
+            "start": "2024-02-19",
+            "endInclusive": "2024-02-19"
+        },
+        {
+            "name": "정월대보름",
+            "isHoliday": false,
+            "start": "2024-02-24",
+            "endInclusive": "2024-02-24"
+        },
+        {
+            "name": "2·28 민주운동 기념일",
+            "isHoliday": false,
+            "start": "2024-02-28",
+            "endInclusive": "2024-02-28"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "백로",
+        "isHoliday": false,
+        "start": "2009-09-07",
+        "endInclusive": "2009-09-07"
+    },
+    {
+        "name": "사회복지의 날",
+        "isHoliday": false,
+        "start": "2009-09-07",
+        "endInclusive": "2009-09-07"
+    },
+    {
+        "name": "철도의 날",
+        "isHoliday": false,
+        "start": "2009-09-18",
+        "endInclusive": "2009-09-18"
+    },
+    {
+        "name": "추분",
+        "isHoliday": false,
+        "start": "2009-09-23",
+        "endInclusive": "2009-09-23"
+    }
+]

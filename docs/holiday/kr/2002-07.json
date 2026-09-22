@@ -1,0 +1,20 @@
+[
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2002-07-07",
+        "endInclusive": "2002-07-07"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2002-07-17",
+        "endInclusive": "2002-07-17"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2002-07-23",
+        "endInclusive": "2002-07-23"
+    }
+]

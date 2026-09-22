@@ -1,0 +1,56 @@
+[
+    {
+        "name": "학생독립운동 기념일",
+        "isHoliday": false,
+        "start": "2026-11-03",
+        "endInclusive": "2026-11-03"
+    },
+    {
+        "name": "입동",
+        "isHoliday": false,
+        "start": "2026-11-07",
+        "endInclusive": "2026-11-07"
+    },
+    {
+        "name": "소방의 날",
+        "isHoliday": false,
+        "start": "2026-11-09",
+        "endInclusive": "2026-11-09"
+    },
+    {
+        "name": "농업인의 날",
+        "isHoliday": false,
+        "start": "2026-11-11",
+        "endInclusive": "2026-11-11"
+    },
+    {
+        "name": "유엔참전용사 국제추모의 날",
+        "isHoliday": false,
+        "start": "2026-11-11",
+        "endInclusive": "2026-11-11"
+    },
+    {
+        "name": "순국선열의 날",
+        "isHoliday": false,
+        "start": "2026-11-17",
+        "endInclusive": "2026-11-17"
+    },
+    {
+        "name": "아동학대 예방의 날",
+        "isHoliday": false,
+        "start": "2026-11-19",
+        "endInclusive": "2026-11-19"
+    },
+    {
+        "name": "김치의 날",
+        "isHoliday": false,
+        "start": "2026-11-22",
+        "endInclusive": "2026-11-22"
+    },
+    {
+        "name": "소설",
+        "isHoliday": false,
+        "start": "2026-11-22",
+        "endInclusive": "2026-11-22"
+    }
+]

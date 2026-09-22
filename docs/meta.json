@@ -1,0 +1,40 @@
+{
+    "updatedAt": "2026-09-22T07:15:03.730539Z",
+    "holiday": {
+        "startYear": 1998,
+        "endInclusiveYear": 2029,
+        "countries": [
+            {
+                "code": "kr",
+                "name": "대한민국",
+                "startYear": 1998,
+                "endInclusiveYear": 2029,
+                "sources": [
+                    "한국천문연구원 특일 정보 (공공데이터포털)",
+                    "Nager.Date (2004년 이전 및 미고시 연도 보완)"
+                ]
+            },
+            {
+                "code": "us",
+                "name": "미국",
+                "startYear": 1998,
+                "endInclusiveYear": 2029,
+                "sources": [
+                    "Nager.Date"
+                ]
+            }
+        ]
+    },
+    "lunar": {
+        "startYear": 1391,
+        "endInclusiveYear": 2050,
+        "generated": [],
+        "missing": [
+            {
+                "start": 1391,
+                "endInclusive": 2050
+            }
+        ],
+        "source": "한국천문연구원 음양력 정보 (공공데이터포털)"
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "country": "kr",
+    "period": "2021-05",
+    "holidays": [
+        {
+            "name": "근로자의 날",
+            "isHoliday": false,
+            "start": "2021-05-01",
+            "endInclusive": "2021-05-01"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2021-05-05",
+            "endInclusive": "2021-05-05"
+        },
+        {
+            "name": "입하",
+            "isHoliday": false,
+            "start": "2021-05-05",
+            "endInclusive": "2021-05-05"
+        },
+        {
+            "name": "어버이날",
+            "isHoliday": false,
+            "start": "2021-05-08",
+            "endInclusive": "2021-05-08"
+        },
+        {
+            "name": "유권자의 날",
+            "isHoliday": false,
+            "start": "2021-05-10",
+            "endInclusive": "2021-05-10"
+        },
+        {
+            "name": "동학농민혁명 기념일",
+            "isHoliday": false,
+            "start": "2021-05-11",
+            "endInclusive": "2021-05-11"
+        },
+        {
+            "name": "식품안전의 날",
+            "isHoliday": false,
+            "start": "2021-05-14",
+            "endInclusive": "2021-05-14"
+        },
+        {
+            "name": "스승의 날",
+            "isHoliday": false,
+            "start": "2021-05-15",
+            "endInclusive": "2021-05-15"
+        },
+        {
+            "name": "성년의 날",
+            "isHoliday": false,
+            "start": "2021-05-17",
+            "endInclusive": "2021-05-17"
+        },
+        {
+            "name": "5·18 민주화운동 기념일",
+            "isHoliday": false,
+            "start": "2021-05-18",
+            "endInclusive": "2021-05-18"
+        },
+        {
+            "name": "발명의 날",
+            "isHoliday": false,
+            "start": "2021-05-19",
+            "endInclusive": "2021-05-19"
+        },
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2021-05-19",
+            "endInclusive": "2021-05-19"
+        },
+        {
+            "name": "부부의 날",
+            "isHoliday": false,
+            "start": "2021-05-21",
+            "endInclusive": "2021-05-21"
+        },
+        {
+            "name": "소만",
+            "isHoliday": false,
+            "start": "2021-05-21",
+            "endInclusive": "2021-05-21"
+        },
+        {
+            "name": "바다의 날",
+            "isHoliday": false,
+            "start": "2021-05-31",
+            "endInclusive": "2021-05-31"
+        }
+    ],
+    "lunar": []
+}

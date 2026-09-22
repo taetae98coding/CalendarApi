@@ -1,0 +1,25 @@
+{
+    "country": "kr",
+    "period": "2000-07",
+    "holidays": [
+        {
+            "name": "소서",
+            "isHoliday": false,
+            "start": "2000-07-07",
+            "endInclusive": "2000-07-07"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2000-07-17",
+            "endInclusive": "2000-07-17"
+        },
+        {
+            "name": "대서",
+            "isHoliday": false,
+            "start": "2000-07-22",
+            "endInclusive": "2000-07-22"
+        }
+    ],
+    "lunar": []
+}

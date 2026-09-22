@@ -1,0 +1,44 @@
+[
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2017-03-01",
+        "endInclusive": "2017-03-01"
+    },
+    {
+        "name": "납세자의 날",
+        "isHoliday": false,
+        "start": "2017-03-03",
+        "endInclusive": "2017-03-03"
+    },
+    {
+        "name": "경칩",
+        "isHoliday": false,
+        "start": "2017-03-05",
+        "endInclusive": "2017-03-05"
+    },
+    {
+        "name": "3·15 의거 기념일",
+        "isHoliday": false,
+        "start": "2017-03-15",
+        "endInclusive": "2017-03-15"
+    },
+    {
+        "name": "상공의 날",
+        "isHoliday": false,
+        "start": "2017-03-15",
+        "endInclusive": "2017-03-15"
+    },
+    {
+        "name": "춘분",
+        "isHoliday": false,
+        "start": "2017-03-20",
+        "endInclusive": "2017-03-20"
+    },
+    {
+        "name": "서해수호의 날",
+        "isHoliday": false,
+        "start": "2017-03-24",
+        "endInclusive": "2017-03-24"
+    }
+]

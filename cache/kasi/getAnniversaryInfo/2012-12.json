@@ -1,0 +1,14 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "소비자의 날",
+        "isHoliday": "N",
+        "locdate": 20121203
+    },
+    {
+        "dateKind": "02",
+        "dateName": "원자력의 날",
+        "isHoliday": "N",
+        "locdate": 20121227
+    }
+]

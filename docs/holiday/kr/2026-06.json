@@ -1,0 +1,86 @@
+[
+    {
+        "name": "의병의 날",
+        "isHoliday": false,
+        "start": "2026-06-01",
+        "endInclusive": "2026-06-01"
+    },
+    {
+        "name": "전국동시지방선거",
+        "isHoliday": true,
+        "start": "2026-06-03",
+        "endInclusive": "2026-06-03"
+    },
+    {
+        "name": "환경의 날",
+        "isHoliday": false,
+        "start": "2026-06-05",
+        "endInclusive": "2026-06-05"
+    },
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2026-06-06",
+        "endInclusive": "2026-06-06"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2026-06-06",
+        "endInclusive": "2026-06-06"
+    },
+    {
+        "name": "구강보건의 날",
+        "isHoliday": false,
+        "start": "2026-06-09",
+        "endInclusive": "2026-06-09"
+    },
+    {
+        "name": "6·10만세운동 기념일",
+        "isHoliday": false,
+        "start": "2026-06-10",
+        "endInclusive": "2026-06-10"
+    },
+    {
+        "name": "6·10민주항쟁 기념일",
+        "isHoliday": false,
+        "start": "2026-06-10",
+        "endInclusive": "2026-06-10"
+    },
+    {
+        "name": "단오",
+        "isHoliday": false,
+        "start": "2026-06-19",
+        "endInclusive": "2026-06-19"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2026-06-21",
+        "endInclusive": "2026-06-21"
+    },
+    {
+        "name": "전자정부의 날",
+        "isHoliday": false,
+        "start": "2026-06-24",
+        "endInclusive": "2026-06-24"
+    },
+    {
+        "name": "6·25전쟁일",
+        "isHoliday": false,
+        "start": "2026-06-25",
+        "endInclusive": "2026-06-25"
+    },
+    {
+        "name": "마약퇴치의 날",
+        "isHoliday": false,
+        "start": "2026-06-26",
+        "endInclusive": "2026-06-26"
+    },
+    {
+        "name": "철도의 날",
+        "isHoliday": false,
+        "start": "2026-06-28",
+        "endInclusive": "2026-06-28"
+    }
+]

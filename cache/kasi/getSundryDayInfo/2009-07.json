@@ -1,0 +1,20 @@
+[
+    {
+        "dateKind": "04",
+        "dateName": "초복",
+        "isHoliday": "N",
+        "locdate": 20090714
+    },
+    {
+        "dateKind": "04",
+        "dateName": "토왕용사",
+        "isHoliday": "N",
+        "locdate": 20090719
+    },
+    {
+        "dateKind": "04",
+        "dateName": "중복",
+        "isHoliday": "N",
+        "locdate": 20090724
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2005-12",
+    "holidays": [
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2005-12-26",
+            "endInclusive": "2005-12-26"
+        }
+    ],
+    "lunar": []
+}

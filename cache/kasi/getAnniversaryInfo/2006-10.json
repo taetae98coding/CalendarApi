@@ -1,0 +1,62 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "국군의 날",
+        "isHoliday": "N",
+        "locdate": 20061001
+    },
+    {
+        "dateKind": "02",
+        "dateName": "노인의 날",
+        "isHoliday": "N",
+        "locdate": 20061002
+    },
+    {
+        "dateKind": "02",
+        "dateName": "재향군인의 날",
+        "isHoliday": "N",
+        "locdate": 20061008
+    },
+    {
+        "dateKind": "02",
+        "dateName": "한글날",
+        "isHoliday": "N",
+        "locdate": 20061009
+    },
+    {
+        "dateKind": "02",
+        "dateName": "체육의 날",
+        "isHoliday": "N",
+        "locdate": 20061015
+    },
+    {
+        "dateKind": "02",
+        "dateName": "문화의 날",
+        "isHoliday": "N",
+        "locdate": 20061021
+    },
+    {
+        "dateKind": "02",
+        "dateName": "경찰의 날",
+        "isHoliday": "N",
+        "locdate": 20061021
+    },
+    {
+        "dateKind": "02",
+        "dateName": "국제연합일",
+        "isHoliday": "N",
+        "locdate": 20061024
+    },
+    {
+        "dateKind": "02",
+        "dateName": "교정의 날",
+        "isHoliday": "N",
+        "locdate": 20061028
+    },
+    {
+        "dateKind": "02",
+        "dateName": "저축의 날",
+        "isHoliday": "N",
+        "locdate": 20061031
+    }
+]

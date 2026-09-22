@@ -1,0 +1,26 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2001-01-01",
+        "endInclusive": "2001-01-01"
+    },
+    {
+        "name": "소한",
+        "isHoliday": false,
+        "start": "2001-01-05",
+        "endInclusive": "2001-01-05"
+    },
+    {
+        "name": "대한",
+        "isHoliday": false,
+        "start": "2001-01-20",
+        "endInclusive": "2001-01-20"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2001-01-23",
+        "endInclusive": "2001-01-25"
+    }
+]

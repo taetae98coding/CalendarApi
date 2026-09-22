@@ -1,0 +1,26 @@
+[
+    {
+        "name": "입추",
+        "isHoliday": false,
+        "start": "2015-08-08",
+        "endInclusive": "2015-08-08"
+    },
+    {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2015-08-12",
+        "endInclusive": "2015-08-12"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2015-08-15",
+        "endInclusive": "2015-08-15"
+    },
+    {
+        "name": "처서",
+        "isHoliday": false,
+        "start": "2015-08-23",
+        "endInclusive": "2015-08-23"
+    }
+]

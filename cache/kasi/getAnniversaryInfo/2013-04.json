@@ -1,0 +1,62 @@
+[
+    {
+        "dateKind": "02",
+        "dateName": "식목일",
+        "isHoliday": "N",
+        "locdate": 20130405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "향토예비군의 날",
+        "isHoliday": "N",
+        "locdate": 20130405
+    },
+    {
+        "dateKind": "02",
+        "dateName": "보건의 날",
+        "isHoliday": "N",
+        "locdate": 20130407
+    },
+    {
+        "dateKind": "02",
+        "dateName": "임시정부수립기념일",
+        "isHoliday": "N",
+        "locdate": 20130413
+    },
+    {
+        "dateKind": "02",
+        "dateName": "4·19 혁명 기념일",
+        "isHoliday": "N",
+        "locdate": 20130419
+    },
+    {
+        "dateKind": "02",
+        "dateName": "장애인의 날",
+        "isHoliday": "N",
+        "locdate": 20130420
+    },
+    {
+        "dateKind": "02",
+        "dateName": "과학의 날",
+        "isHoliday": "N",
+        "locdate": 20130421
+    },
+    {
+        "dateKind": "02",
+        "dateName": "정보통신의 날",
+        "isHoliday": "N",
+        "locdate": 20130422
+    },
+    {
+        "dateKind": "02",
+        "dateName": "법의 날",
+        "isHoliday": "N",
+        "locdate": 20130425
+    },
+    {
+        "dateKind": "02",
+        "dateName": "충무공 이순신 탄신일",
+        "isHoliday": "N",
+        "locdate": 20130428
+    }
+]

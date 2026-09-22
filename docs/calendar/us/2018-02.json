@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2018-02",
+    "holidays": [
+        {
+            "name": "Washington's Birthday",
+            "isHoliday": true,
+            "start": "2018-02-19",
+            "endInclusive": "2018-02-19"
+        }
+    ],
+    "lunar": []
+}

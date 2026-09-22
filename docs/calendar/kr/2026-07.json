@@ -1,0 +1,61 @@
+{
+    "country": "kr",
+    "period": "2026-07",
+    "holidays": [
+        {
+            "name": "소서",
+            "isHoliday": false,
+            "start": "2026-07-07",
+            "endInclusive": "2026-07-07"
+        },
+        {
+            "name": "정보보호의 날",
+            "isHoliday": false,
+            "start": "2026-07-08",
+            "endInclusive": "2026-07-08"
+        },
+        {
+            "name": "인구의 날",
+            "isHoliday": false,
+            "start": "2026-07-11",
+            "endInclusive": "2026-07-11"
+        },
+        {
+            "name": "북한이탈주민의 날",
+            "isHoliday": false,
+            "start": "2026-07-14",
+            "endInclusive": "2026-07-14"
+        },
+        {
+            "name": "초복",
+            "isHoliday": false,
+            "start": "2026-07-15",
+            "endInclusive": "2026-07-15"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2026-07-17",
+            "endInclusive": "2026-07-17"
+        },
+        {
+            "name": "대서",
+            "isHoliday": false,
+            "start": "2026-07-23",
+            "endInclusive": "2026-07-23"
+        },
+        {
+            "name": "중복",
+            "isHoliday": false,
+            "start": "2026-07-25",
+            "endInclusive": "2026-07-25"
+        },
+        {
+            "name": "유엔군 참전의 날",
+            "isHoliday": false,
+            "start": "2026-07-27",
+            "endInclusive": "2026-07-27"
+        }
+    ],
+    "lunar": []
+}

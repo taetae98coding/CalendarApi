@@ -1,0 +1,13 @@
+{
+    "country": "us",
+    "period": "2022-10",
+    "holidays": [
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2022-10-10",
+            "endInclusive": "2022-10-10"
+        }
+    ],
+    "lunar": []
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "의병의 날",
+        "isHoliday": false,
+        "start": "2013-06-01",
+        "endInclusive": "2013-06-01"
+    },
+    {
+        "name": "망종",
+        "isHoliday": false,
+        "start": "2013-06-05",
+        "endInclusive": "2013-06-05"
+    },
+    {
+        "name": "환경의 날",
+        "isHoliday": false,
+        "start": "2013-06-05",
+        "endInclusive": "2013-06-05"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2013-06-06",
+        "endInclusive": "2013-06-06"
+    },
+    {
+        "name": "6·10 민주항쟁기념일",
+        "isHoliday": false,
+        "start": "2013-06-10",
+        "endInclusive": "2013-06-10"
+    },
+    {
+        "name": "단오",
+        "isHoliday": false,
+        "start": "2013-06-13",
+        "endInclusive": "2013-06-13"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "2013-06-21",
+        "endInclusive": "2013-06-21"
+    },
+    {
+        "name": "6·25 전쟁일",
+        "isHoliday": false,
+        "start": "2013-06-25",
+        "endInclusive": "2013-06-25"
+    }
+]

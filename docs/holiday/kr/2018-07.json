@@ -1,0 +1,38 @@
+[
+    {
+        "name": "소서",
+        "isHoliday": false,
+        "start": "2018-07-07",
+        "endInclusive": "2018-07-07"
+    },
+    {
+        "name": "정보보호의 날",
+        "isHoliday": false,
+        "start": "2018-07-11",
+        "endInclusive": "2018-07-11"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": false,
+        "start": "2018-07-17",
+        "endInclusive": "2018-07-17"
+    },
+    {
+        "name": "초복",
+        "isHoliday": false,
+        "start": "2018-07-17",
+        "endInclusive": "2018-07-17"
+    },
+    {
+        "name": "대서",
+        "isHoliday": false,
+        "start": "2018-07-23",
+        "endInclusive": "2018-07-23"
+    },
+    {
+        "name": "중복",
+        "isHoliday": false,
+        "start": "2018-07-27",
+        "endInclusive": "2018-07-27"
+    }
+]

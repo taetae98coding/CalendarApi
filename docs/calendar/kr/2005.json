@@ -1,0 +1,517 @@
+{
+    "country": "kr",
+    "period": "2005",
+    "holidays": [
+        {
+            "name": "신정",
+            "isHoliday": true,
+            "start": "2005-01-01",
+            "endInclusive": "2005-01-01"
+        },
+        {
+            "name": "소한",
+            "isHoliday": false,
+            "start": "2005-01-05",
+            "endInclusive": "2005-01-05"
+        },
+        {
+            "name": "토왕용사",
+            "isHoliday": false,
+            "start": "2005-01-17",
+            "endInclusive": "2005-01-17"
+        },
+        {
+            "name": "대한",
+            "isHoliday": false,
+            "start": "2005-01-20",
+            "endInclusive": "2005-01-20"
+        },
+        {
+            "name": "입춘",
+            "isHoliday": false,
+            "start": "2005-02-04",
+            "endInclusive": "2005-02-04"
+        },
+        {
+            "name": "설날",
+            "isHoliday": true,
+            "start": "2005-02-08",
+            "endInclusive": "2005-02-10"
+        },
+        {
+            "name": "우수",
+            "isHoliday": false,
+            "start": "2005-02-18",
+            "endInclusive": "2005-02-18"
+        },
+        {
+            "name": "삼일절",
+            "isHoliday": true,
+            "start": "2005-03-01",
+            "endInclusive": "2005-03-01"
+        },
+        {
+            "name": "납세자의 날",
+            "isHoliday": false,
+            "start": "2005-03-03",
+            "endInclusive": "2005-03-03"
+        },
+        {
+            "name": "경칩",
+            "isHoliday": false,
+            "start": "2005-03-05",
+            "endInclusive": "2005-03-05"
+        },
+        {
+            "name": "상공의 날",
+            "isHoliday": false,
+            "start": "2005-03-16",
+            "endInclusive": "2005-03-16"
+        },
+        {
+            "name": "춘분",
+            "isHoliday": false,
+            "start": "2005-03-20",
+            "endInclusive": "2005-03-20"
+        },
+        {
+            "name": "물의 날",
+            "isHoliday": false,
+            "start": "2005-03-22",
+            "endInclusive": "2005-03-22"
+        },
+        {
+            "name": "기상의 날",
+            "isHoliday": false,
+            "start": "2005-03-23",
+            "endInclusive": "2005-03-23"
+        },
+        {
+            "name": "향토예비군의 날",
+            "isHoliday": false,
+            "start": "2005-04-02",
+            "endInclusive": "2005-04-02"
+        },
+        {
+            "name": "식목일",
+            "isHoliday": true,
+            "start": "2005-04-05",
+            "endInclusive": "2005-04-05"
+        },
+        {
+            "name": "청명",
+            "isHoliday": false,
+            "start": "2005-04-05",
+            "endInclusive": "2005-04-05"
+        },
+        {
+            "name": "한식",
+            "isHoliday": false,
+            "start": "2005-04-05",
+            "endInclusive": "2005-04-05"
+        },
+        {
+            "name": "보건의 날",
+            "isHoliday": false,
+            "start": "2005-04-07",
+            "endInclusive": "2005-04-07"
+        },
+        {
+            "name": "임시정부수립기념일",
+            "isHoliday": false,
+            "start": "2005-04-13",
+            "endInclusive": "2005-04-13"
+        },
+        {
+            "name": "토왕용사",
+            "isHoliday": false,
+            "start": "2005-04-17",
+            "endInclusive": "2005-04-17"
+        },
+        {
+            "name": "4·19 혁명 기념일",
+            "isHoliday": false,
+            "start": "2005-04-19",
+            "endInclusive": "2005-04-19"
+        },
+        {
+            "name": "곡우",
+            "isHoliday": false,
+            "start": "2005-04-20",
+            "endInclusive": "2005-04-20"
+        },
+        {
+            "name": "장애인의 날",
+            "isHoliday": false,
+            "start": "2005-04-20",
+            "endInclusive": "2005-04-20"
+        },
+        {
+            "name": "과학의 날",
+            "isHoliday": false,
+            "start": "2005-04-21",
+            "endInclusive": "2005-04-21"
+        },
+        {
+            "name": "정보통신의 날",
+            "isHoliday": false,
+            "start": "2005-04-22",
+            "endInclusive": "2005-04-22"
+        },
+        {
+            "name": "법의 날",
+            "isHoliday": false,
+            "start": "2005-04-25",
+            "endInclusive": "2005-04-25"
+        },
+        {
+            "name": "충무공 이순신 탄신일",
+            "isHoliday": false,
+            "start": "2005-04-28",
+            "endInclusive": "2005-04-28"
+        },
+        {
+            "name": "근로자의 날",
+            "isHoliday": false,
+            "start": "2005-05-01",
+            "endInclusive": "2005-05-01"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2005-05-05",
+            "endInclusive": "2005-05-05"
+        },
+        {
+            "name": "입하",
+            "isHoliday": false,
+            "start": "2005-05-05",
+            "endInclusive": "2005-05-05"
+        },
+        {
+            "name": "어버이날",
+            "isHoliday": false,
+            "start": "2005-05-08",
+            "endInclusive": "2005-05-08"
+        },
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2005-05-15",
+            "endInclusive": "2005-05-15"
+        },
+        {
+            "name": "스승의 날",
+            "isHoliday": false,
+            "start": "2005-05-15",
+            "endInclusive": "2005-05-15"
+        },
+        {
+            "name": "성년의 날",
+            "isHoliday": false,
+            "start": "2005-05-16",
+            "endInclusive": "2005-05-16"
+        },
+        {
+            "name": "5·18 민주화운동기념일",
+            "isHoliday": false,
+            "start": "2005-05-18",
+            "endInclusive": "2005-05-18"
+        },
+        {
+            "name": "발명의 날",
+            "isHoliday": false,
+            "start": "2005-05-19",
+            "endInclusive": "2005-05-19"
+        },
+        {
+            "name": "소만",
+            "isHoliday": false,
+            "start": "2005-05-21",
+            "endInclusive": "2005-05-21"
+        },
+        {
+            "name": "방재의 날",
+            "isHoliday": false,
+            "start": "2005-05-25",
+            "endInclusive": "2005-05-25"
+        },
+        {
+            "name": "바다의 날",
+            "isHoliday": false,
+            "start": "2005-05-31",
+            "endInclusive": "2005-05-31"
+        },
+        {
+            "name": "망종",
+            "isHoliday": false,
+            "start": "2005-06-05",
+            "endInclusive": "2005-06-05"
+        },
+        {
+            "name": "환경의 날",
+            "isHoliday": false,
+            "start": "2005-06-05",
+            "endInclusive": "2005-06-05"
+        },
+        {
+            "name": "현충일",
+            "isHoliday": true,
+            "start": "2005-06-06",
+            "endInclusive": "2005-06-06"
+        },
+        {
+            "name": "단오",
+            "isHoliday": false,
+            "start": "2005-06-11",
+            "endInclusive": "2005-06-11"
+        },
+        {
+            "name": "하지",
+            "isHoliday": false,
+            "start": "2005-06-21",
+            "endInclusive": "2005-06-21"
+        },
+        {
+            "name": "6·25 전쟁일",
+            "isHoliday": false,
+            "start": "2005-06-25",
+            "endInclusive": "2005-06-25"
+        },
+        {
+            "name": "소서",
+            "isHoliday": false,
+            "start": "2005-07-07",
+            "endInclusive": "2005-07-07"
+        },
+        {
+            "name": "초복",
+            "isHoliday": false,
+            "start": "2005-07-15",
+            "endInclusive": "2005-07-15"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2005-07-17",
+            "endInclusive": "2005-07-17"
+        },
+        {
+            "name": "토왕용사",
+            "isHoliday": false,
+            "start": "2005-07-19",
+            "endInclusive": "2005-07-19"
+        },
+        {
+            "name": "대서",
+            "isHoliday": false,
+            "start": "2005-07-23",
+            "endInclusive": "2005-07-23"
+        },
+        {
+            "name": "중복",
+            "isHoliday": false,
+            "start": "2005-07-25",
+            "endInclusive": "2005-07-25"
+        },
+        {
+            "name": "입추",
+            "isHoliday": false,
+            "start": "2005-08-07",
+            "endInclusive": "2005-08-07"
+        },
+        {
+            "name": "말복",
+            "isHoliday": false,
+            "start": "2005-08-14",
+            "endInclusive": "2005-08-14"
+        },
+        {
+            "name": "광복절",
+            "isHoliday": true,
+            "start": "2005-08-15",
+            "endInclusive": "2005-08-15"
+        },
+        {
+            "name": "처서",
+            "isHoliday": false,
+            "start": "2005-08-23",
+            "endInclusive": "2005-08-23"
+        },
+        {
+            "name": "백로",
+            "isHoliday": false,
+            "start": "2005-09-07",
+            "endInclusive": "2005-09-07"
+        },
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2005-09-17",
+            "endInclusive": "2005-09-19"
+        },
+        {
+            "name": "철도의 날",
+            "isHoliday": false,
+            "start": "2005-09-18",
+            "endInclusive": "2005-09-18"
+        },
+        {
+            "name": "추분",
+            "isHoliday": false,
+            "start": "2005-09-23",
+            "endInclusive": "2005-09-23"
+        },
+        {
+            "name": "국군의 날",
+            "isHoliday": false,
+            "start": "2005-10-01",
+            "endInclusive": "2005-10-01"
+        },
+        {
+            "name": "노인의 날",
+            "isHoliday": false,
+            "start": "2005-10-02",
+            "endInclusive": "2005-10-02"
+        },
+        {
+            "name": "개천절",
+            "isHoliday": true,
+            "start": "2005-10-03",
+            "endInclusive": "2005-10-03"
+        },
+        {
+            "name": "재향군인의 날",
+            "isHoliday": false,
+            "start": "2005-10-08",
+            "endInclusive": "2005-10-08"
+        },
+        {
+            "name": "한로",
+            "isHoliday": false,
+            "start": "2005-10-08",
+            "endInclusive": "2005-10-08"
+        },
+        {
+            "name": "한글날",
+            "isHoliday": false,
+            "start": "2005-10-09",
+            "endInclusive": "2005-10-09"
+        },
+        {
+            "name": "체육의 날",
+            "isHoliday": false,
+            "start": "2005-10-15",
+            "endInclusive": "2005-10-15"
+        },
+        {
+            "name": "문화의 날",
+            "isHoliday": false,
+            "start": "2005-10-20",
+            "endInclusive": "2005-10-20"
+        },
+        {
+            "name": "토왕용사",
+            "isHoliday": false,
+            "start": "2005-10-20",
+            "endInclusive": "2005-10-20"
+        },
+        {
+            "name": "경찰의 날",
+            "isHoliday": false,
+            "start": "2005-10-21",
+            "endInclusive": "2005-10-21"
+        },
+        {
+            "name": "상강",
+            "isHoliday": false,
+            "start": "2005-10-23",
+            "endInclusive": "2005-10-23"
+        },
+        {
+            "name": "국제연합일",
+            "isHoliday": false,
+            "start": "2005-10-24",
+            "endInclusive": "2005-10-24"
+        },
+        {
+            "name": "저축의 날",
+            "isHoliday": false,
+            "start": "2005-10-25",
+            "endInclusive": "2005-10-25"
+        },
+        {
+            "name": "교정의 날",
+            "isHoliday": false,
+            "start": "2005-10-28",
+            "endInclusive": "2005-10-28"
+        },
+        {
+            "name": "학생의 날",
+            "isHoliday": false,
+            "start": "2005-11-03",
+            "endInclusive": "2005-11-03"
+        },
+        {
+            "name": "입동",
+            "isHoliday": false,
+            "start": "2005-11-07",
+            "endInclusive": "2005-11-07"
+        },
+        {
+            "name": "소방의 날",
+            "isHoliday": false,
+            "start": "2005-11-09",
+            "endInclusive": "2005-11-09"
+        },
+        {
+            "name": "농업인의 날",
+            "isHoliday": false,
+            "start": "2005-11-11",
+            "endInclusive": "2005-11-11"
+        },
+        {
+            "name": "순국선열의 날",
+            "isHoliday": false,
+            "start": "2005-11-17",
+            "endInclusive": "2005-11-17"
+        },
+        {
+            "name": "소설",
+            "isHoliday": false,
+            "start": "2005-11-22",
+            "endInclusive": "2005-11-22"
+        },
+        {
+            "name": "무역의 날",
+            "isHoliday": false,
+            "start": "2005-11-30",
+            "endInclusive": "2005-11-30"
+        },
+        {
+            "name": "소비자의 날",
+            "isHoliday": false,
+            "start": "2005-12-03",
+            "endInclusive": "2005-12-03"
+        },
+        {
+            "name": "대설",
+            "isHoliday": false,
+            "start": "2005-12-07",
+            "endInclusive": "2005-12-07"
+        },
+        {
+            "name": "동지",
+            "isHoliday": false,
+            "start": "2005-12-22",
+            "endInclusive": "2005-12-22"
+        },
+        {
+            "name": "크리스마스",
+            "isHoliday": true,
+            "start": "2005-12-25",
+            "endInclusive": "2005-12-25"
+        }
+    ],
+    "lunar": []
+}
