@@ -134,7 +134,16 @@ GitHub Pages 는 `Access-Control-Allow-Origin: *` 를 내려주므로 웹에서�
 ## 로컬 실행
 
 공공데이터포털에서 [특일 정보](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15012690)와
-[음양력 정보](https://www.data.go.kr/data/15012679/openapi.do) 활용 신청 후 받은 일반 인증키(Decoding)가 필요합니다.
+[음양력 정보](https://www.data.go.kr/data/15012679/openapi.do) 활용 신청 후 받은 **일반 인증키(Decoding)** 가 필요합니다.
+
+```bash
+cp secrets.properties.example secrets.properties
+# secrets.properties 를 열어 SERVICE_KEY 값을 채웁니다. 이 파일은 .gitignore 대상입니다.
+
+./gradlew updateCalendar
+```
+
+환경 변수로 넘겨도 됩니다. 환경 변수가 `secrets.properties` 보다 우선합니다.
 
 ```bash
 SERVICE_KEY='발급받은 인증키' ./gradlew updateCalendar
@@ -159,7 +168,8 @@ SERVICE_KEY='발급받은 인증키' ./gradlew updateCalendar
 
 ## 저장소 설정
 
-1. `Settings > Secrets and variables > Actions` 에 `SERVICE_KEY` 를 등록합니다.
+1. `Settings > Secrets and variables > Actions > New repository secret` 에 `SERVICE_KEY` 를 등록합니다.
+   (`secrets.properties` 에 넣는 값과 같습니다.)
 2. `Settings > Pages` 에서 Source 를 `Deploy from a branch`, 브랜치를 `main`, 폴더를 `/docs` 로 설정합니다.
 3. `Actions > Update Calendar > Run workflow` 로 첫 데이터를 생성합니다.
 

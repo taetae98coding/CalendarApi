@@ -24,15 +24,18 @@ tasks.test {
 /** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */
 fun env(name: String): String? = System.getenv(name)?.takeIf(String::isNotBlank)
 
-/** 로컬 실행용. local.properties 는 .gitignore 에 있으므로 인증키를 여기에 둬도 커밋되지 않는다. */
-val localProperties = Properties().apply {
-    rootProject.file("local.properties")
+/**
+ * CI 는 환경 변수(저장소 시크릿)로, 로컬은 secrets.properties 로 인증키를 넘긴다.
+ * secrets.properties 는 .gitignore 대상이라 커밋되지 않는다. 템플릿은 secrets.properties.example 참고.
+ */
+val secretsProperties = Properties().apply {
+    rootProject.file("secrets.properties")
         .takeIf(File::exists)
         ?.inputStream()
         ?.use(::load)
 }
 
-fun secret(name: String): String? = (env(name) ?: localProperties.getProperty(name))?.takeIf(String::isNotBlank)
+fun secret(name: String): String? = (env(name) ?: secretsProperties.getProperty(name))?.takeIf(String::isNotBlank)
 
 tasks.register<JavaExec>("updateCalendar") {
     group = "calendar"

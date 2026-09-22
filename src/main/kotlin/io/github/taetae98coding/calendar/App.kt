@@ -9,7 +9,9 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 
 suspend fun main() {
-    require(!System.getenv("SERVICE_KEY").isNullOrBlank()) { "SERVICE_KEY(공공데이터포털 인증키) 환경 변수가 필요합니다." }
+    require(!System.getenv("SERVICE_KEY").isNullOrBlank()) {
+        "SERVICE_KEY(공공데이터포털 일반 인증키 Decoding)가 없습니다. secrets.properties.example 을 secrets.properties 로 복사해 채우거나 SERVICE_KEY 환경 변수를 설정하세요."
+    }
 
     val config = Config.fromEnvironment()
     val start = TimeSource.Monotonic.markNow()
