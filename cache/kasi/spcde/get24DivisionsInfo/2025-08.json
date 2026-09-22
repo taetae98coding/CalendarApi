@@ -1,0 +1,33 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "입추",
+                        "isHoliday": "N",
+                        "kst": "1452      ",
+                        "locdate": 20250807,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "처서",
+                        "isHoliday": "N",
+                        "kst": "0534      ",
+                        "locdate": 20250823,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

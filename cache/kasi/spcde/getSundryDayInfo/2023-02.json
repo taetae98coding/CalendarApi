@@ -1,0 +1,22 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": {
+                    "dateKind": "04",
+                    "dateName": "정월대보름",
+                    "isHoliday": "N",
+                    "locdate": 20230205,
+                    "seq": 1
+                }
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 1
+        }
+    }
+}

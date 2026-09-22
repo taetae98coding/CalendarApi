@@ -1,0 +1,45 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "정보보호의 날",
+                        "isHoliday": "N",
+                        "locdate": 20260708,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "인구의 날",
+                        "isHoliday": "N",
+                        "locdate": 20260711,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "북한이탈주민의 날",
+                        "isHoliday": "N",
+                        "locdate": 20260714,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "유엔군 참전의 날",
+                        "isHoliday": "N",
+                        "locdate": 20260727,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 4
+        }
+    }
+}

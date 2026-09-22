@@ -1,0 +1,33 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "04",
+                        "dateName": "한식",
+                        "isHoliday": "N",
+                        "locdate": 20060406,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "04",
+                        "dateName": "토왕용사",
+                        "isHoliday": "N",
+                        "kst": "1245      ",
+                        "locdate": 20060417,
+                        "seq": 1,
+                        "sunLongitude": 27
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

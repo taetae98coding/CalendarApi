@@ -1,0 +1,136 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "국군의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281001,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "이산가족의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281001,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "노인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281002,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "동물보호의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281004,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "세계 한인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281005,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "재향군인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281008,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "임산부의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281010,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "정신건강의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281010,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "호스피스의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281014,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "스포츠의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281015,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "부마민주항쟁 기념일",
+                        "isHoliday": "N",
+                        "locdate": 20281016,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "문화의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281021,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "경찰의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281021,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "국제연합일",
+                        "isHoliday": "N",
+                        "locdate": 20281024,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "교정의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281028,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "지방자치 및 균형발전의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281029,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "금융의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281031,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 17
+        }
+    }
+}

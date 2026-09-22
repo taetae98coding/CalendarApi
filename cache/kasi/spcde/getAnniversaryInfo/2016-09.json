@@ -1,0 +1,22 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": {
+                    "dateKind": "02",
+                    "dateName": "철도의 날",
+                    "isHoliday": "N",
+                    "locdate": 20160918,
+                    "seq": 1
+                }
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 1
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "청명",
+                        "isHoliday": "N",
+                        "kst": "1139      ",
+                        "locdate": 20150405,
+                        "seq": 2,
+                        "sunLongitude": 15
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "곡우",
+                        "isHoliday": "N",
+                        "kst": "1842      ",
+                        "locdate": 20150420,
+                        "seq": 2,
+                        "sunLongitude": 30
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

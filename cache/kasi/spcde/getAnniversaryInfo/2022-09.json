@@ -1,0 +1,38 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "사회복지의 날",
+                        "isHoliday": "N",
+                        "locdate": 20220907,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "곤충의 날",
+                        "isHoliday": "N",
+                        "locdate": 20220907,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "해양경찰의 날",
+                        "isHoliday": "N",
+                        "locdate": 20220910,
+                        "seq": 2
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 3
+        }
+    }
+}

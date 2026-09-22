@@ -1,0 +1,80 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "임업인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281101,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "학생독립운동 기념일",
+                        "isHoliday": "N",
+                        "locdate": 20281103,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "소방의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281109,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "유엔참전용사 국제추모의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281111,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "농업인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281111,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "순국선열의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281117,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "약의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281118,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "아동학대 예방의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281119,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "김치의 날",
+                        "isHoliday": "N",
+                        "locdate": 20281122,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 9
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "국군의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121001,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "노인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121002,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "세계한인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121005,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "재향군인의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121008,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "체육의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121015,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "문화의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121020,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "경찰의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121021,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "국제연합일",
+                        "isHoliday": "N",
+                        "locdate": 20121024,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "교정의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121028,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "저축의 날",
+                        "isHoliday": "N",
+                        "locdate": 20121030,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 10
+        }
+    }
+}

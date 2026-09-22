@@ -1,0 +1,35 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "소한",
+                        "isHoliday": "N",
+                        "kst": "1503      ",
+                        "locdate": 20050105,
+                        "seq": 1,
+                        "sunLongitude": 285
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "대한",
+                        "isHoliday": "N",
+                        "kst": "0822      ",
+                        "locdate": 20050120,
+                        "seq": 1,
+                        "sunLongitude": 300
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

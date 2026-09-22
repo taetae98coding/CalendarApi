@@ -3,6 +3,11 @@
         "date": "1998-01-01",
         "localName": "새해",
         "name": "New Year's Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -11,6 +16,11 @@
         "date": "1998-01-27",
         "localName": "설날",
         "name": "Lunar New Year",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -19,6 +29,11 @@
         "date": "1998-01-28",
         "localName": "설날",
         "name": "Lunar New Year",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -27,6 +42,11 @@
         "date": "1998-01-29",
         "localName": "설날",
         "name": "Lunar New Year",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -35,6 +55,11 @@
         "date": "1998-03-01",
         "localName": "3·1절",
         "name": "Independence Movement Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -43,6 +68,11 @@
         "date": "1998-05-03",
         "localName": "부처님 오신 날",
         "name": "Buddha's Birthday",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -51,6 +81,11 @@
         "date": "1998-05-05",
         "localName": "어린이날",
         "name": "Children's Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -59,6 +94,11 @@
         "date": "1998-06-06",
         "localName": "현충일",
         "name": "Memorial Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -67,6 +107,11 @@
         "date": "1998-07-17",
         "localName": "제헌절",
         "name": "Constitution Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -75,6 +120,11 @@
         "date": "1998-08-15",
         "localName": "광복절",
         "name": "Liberation Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -83,6 +133,11 @@
         "date": "1998-10-03",
         "localName": "개천절",
         "name": "National Foundation Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -91,6 +146,11 @@
         "date": "1998-10-05",
         "localName": "추석",
         "name": "Chuseok",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -99,6 +159,11 @@
         "date": "1998-10-06",
         "localName": "추석",
         "name": "Chuseok",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -107,6 +172,11 @@
         "date": "1998-10-07",
         "localName": "추석",
         "name": "Chuseok",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -115,6 +185,11 @@
         "date": "1998-10-09",
         "localName": "한글날",
         "name": "Hangul Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -123,6 +198,11 @@
         "date": "1998-12-25",
         "localName": "크리스마스",
         "name": "Christmas Day",
+        "countryCode": "KR",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public"
         ]

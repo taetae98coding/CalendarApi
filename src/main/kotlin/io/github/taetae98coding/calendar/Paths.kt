@@ -27,7 +27,9 @@ data object Paths {
 
     val meta = File(docs, "meta.json")
 
-    fun kasiSpcdeCache(api: String, yearMonth: YearMonth): File = File(cache, "kasi/$api/$yearMonth.json")
+    fun kasiSpcdeCache(api: String, yearMonth: YearMonth): File = File(cache, "kasi/spcde/$api/$yearMonth.json")
+
+    fun kasiLunarCache(yearMonth: YearMonth): File = File(cache, "kasi/lunar/$yearMonth.json")
 
     fun nagerCache(country: Country, year: Int): File = File(cache, "nager/${country.code}/$year.json")
 }

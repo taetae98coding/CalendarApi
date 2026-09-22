@@ -1,0 +1,45 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "의병의 날",
+                        "isHoliday": "N",
+                        "locdate": 20160601,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "환경의 날",
+                        "isHoliday": "N",
+                        "locdate": 20160605,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "6·10 민주항쟁기념일",
+                        "isHoliday": "N",
+                        "locdate": 20160610,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "6·25 전쟁일",
+                        "isHoliday": "N",
+                        "locdate": 20160625,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 4
+        }
+    }
+}

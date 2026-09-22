@@ -15,12 +15,17 @@ import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.number
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.decodeFromJsonElement
 
 /**
  * 한국천문연구원 OpenAPI 클라이언트.
  *
  * - 특일 정보: `SpcdeInfoService`
  * - 음양력 정보: `LrsrCldInfoService` (1391-02-05 ~ 2050-12-31)
+ *
+ * 응답을 도메인 모델로 좁히지 않고 [JsonElement] 그대로 돌려준다.
+ * 호출자가 원본을 캐시에 남기고, 필요한 필드만 뽑는 일은 [parseItems] 에서 따로 한다.
  */
 data object KasiDataSource {
     private const val BASE_URL = "https://apis.data.go.kr/B090041/openapi/service/"
@@ -42,13 +47,20 @@ data object KasiDataSource {
         }
     }
 
-    suspend fun getSpcdeItems(api: String, yearMonth: YearMonth): List<KasiSpcdeItem> {
-        return getItems("${KasiService.SPCDE.path}/$api", yearMonth)
+    suspend fun getSpcde(api: String, yearMonth: YearMonth): JsonElement {
+        return get("${KasiService.SPCDE.path}/$api", yearMonth)
     }
 
     /** solDay 를 생략하면 해당 양력 월 전체의 음력 정보를 한 번에 받는다. */
-    suspend fun getLunarItems(yearMonth: YearMonth): List<KasiLunarItem> {
-        return getItems("${KasiService.LUNAR.path}/getLunCalInfo", yearMonth)
+    suspend fun getLunar(yearMonth: YearMonth): JsonElement {
+        return get("${KasiService.LUNAR.path}/getLunCalInfo", yearMonth)
+    }
+
+    /** 캐시에 저장해 둔 원본이든 방금 받은 응답이든 같은 방식으로 항목을 뽑는다. */
+    inline fun <reified T> parseItems(raw: JsonElement, description: String): List<T> {
+        return OpenApiClient.json.decodeFromJsonElement<OpenApiResult<KasiBody>>(raw)
+            .bodyOrThrow(description)
+            .toItemList(OpenApiClient.json)
     }
 
     /**
@@ -66,8 +78,8 @@ data object KasiDataSource {
     private suspend fun isRegistered(service: KasiService): Boolean {
         val result = runCatching {
             when (service) {
-                KasiService.SPCDE -> getSpcdeItems("getRestDeInfo", probeYearMonth)
-                KasiService.LUNAR -> getLunarItems(probeYearMonth)
+                KasiService.SPCDE -> getSpcde("getRestDeInfo", probeYearMonth)
+                KasiService.LUNAR -> getLunar(probeYearMonth)
             }
         }
 
@@ -75,7 +87,7 @@ data object KasiDataSource {
         return result.exceptionOrNull().let { throwable -> (throwable as? OpenApiException)?.isNotRegistered != true }
     }
 
-    private suspend inline fun <reified T> getItems(path: String, yearMonth: YearMonth): List<T> {
+    private suspend fun get(path: String, yearMonth: YearMonth): JsonElement {
         val description = "KASI $path $yearMonth"
 
         val response = semaphore.withPermit {
@@ -85,9 +97,12 @@ data object KasiDataSource {
             }
         }
 
-        val result = runCatching { response.body<OpenApiResult<KasiBody>>() }
+        val raw = runCatching { response.body<JsonElement>() }
             .getOrElse { throwable -> throw IllegalStateException("$description 응답 해석 실패. status=${response.status}", throwable) }
 
-        return result.bodyOrThrow(description).toItemList(OpenApiClient.json)
+        // 오류 응답을 캐시에 남기지 않도록 여기서 검증만 하고, 원본은 그대로 돌려준다.
+        OpenApiClient.json.decodeFromJsonElement<OpenApiResult<KasiBody>>(raw).bodyOrThrow(description)
+
+        return raw
     }
 }

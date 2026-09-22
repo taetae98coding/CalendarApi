@@ -1,0 +1,35 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "경칩",
+                        "isHoliday": "N",
+                        "kst": "1456      ",
+                        "locdate": 20040305,
+                        "seq": 1,
+                        "sunLongitude": 345
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "춘분",
+                        "isHoliday": "N",
+                        "kst": "1549      ",
+                        "locdate": 20040320,
+                        "seq": 1,
+                        "sunLongitude": 0
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

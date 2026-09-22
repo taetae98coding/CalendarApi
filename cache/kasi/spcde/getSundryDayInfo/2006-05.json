@@ -1,0 +1,22 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": {
+                    "dateKind": "04",
+                    "dateName": "단오",
+                    "isHoliday": "N",
+                    "locdate": 20060531,
+                    "seq": 2
+                }
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 1
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "04",
+                        "dateName": "말복",
+                        "isHoliday": "N",
+                        "locdate": 20250809,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "04",
+                        "dateName": "칠석",
+                        "isHoliday": "N",
+                        "locdate": 20250829,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

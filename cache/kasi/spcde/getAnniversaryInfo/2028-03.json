@@ -1,0 +1,80 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "납세자의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280303,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "국립공원의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280303,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "3·8민주의거 기념일",
+                        "isHoliday": "N",
+                        "locdate": 20280308,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "여성의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280308,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "3·15의거 기념일",
+                        "isHoliday": "N",
+                        "locdate": 20280315,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "상공의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280315,
+                        "seq": 2
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "의용소방대의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280319,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "암 예방의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280321,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "서해수호의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280324,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 9
+        }
+    }
+}

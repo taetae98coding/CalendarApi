@@ -6,7 +6,6 @@ import io.github.taetae98coding.calendar.file.FileDataSource
 import io.github.taetae98coding.calendar.openapi.kasi.KasiDataSource
 import io.github.taetae98coding.calendar.openapi.kasi.KasiSpcdeItem
 import io.github.taetae98coding.calendar.openapi.nager.NagerDataSource
-import io.github.taetae98coding.calendar.openapi.nager.NagerHoliday
 import java.io.File
 import kotlin.time.Clock
 import kotlinx.coroutines.async
@@ -17,6 +16,7 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.todayIn
 import kotlinx.datetime.yearMonth
+import kotlinx.serialization.json.JsonElement
 
 data object HolidayUpdater {
     private val spcdeApis = listOf(
@@ -95,33 +95,47 @@ data object HolidayUpdater {
         return kasiHolidays + fallback.filterNot { it.start in kasiDates }
     }
 
+    /** 응답 원본을 그대로 캐시에 남기고, 필요한 필드는 여기서만 뽑는다. */
     private suspend fun spcdeItems(api: String, yearMonth: YearMonth, config: Config): List<KasiSpcdeItem> {
         val file = Paths.kasiSpcdeCache(api, yearMonth)
+        val description = "KASI $api $yearMonth"
 
         if (canUseCache(yearMonth, config)) {
-            FileDataSource.readOrNull<List<KasiSpcdeItem>>(file)?.let { return it }
+            cachedSpcdeItems(file, description)?.let { return it }
         }
 
-        return runCatching { KasiDataSource.getSpcdeItems(api, yearMonth) }
-            .onSuccess { items -> FileDataSource.write(items, file) }
+        return runCatching {
+            val raw = KasiDataSource.getSpcde(api, yearMonth)
+            FileDataSource.write(raw, file)
+
+            KasiDataSource.parseItems<KasiSpcdeItem>(raw, description)
+        }
             .getOrElse { throwable ->
-                println("[Holiday] KASI $api $yearMonth 조회 실패: ${throwable.message}")
-                FileDataSource.readOrNull<List<KasiSpcdeItem>>(file).orEmpty()
+                println("[Holiday] $description 조회 실패: ${throwable.message}")
+                cachedSpcdeItems(file, description).orEmpty()
             }
+    }
+
+    private suspend fun cachedSpcdeItems(file: File, description: String): List<KasiSpcdeItem>? {
+        val raw = FileDataSource.readOrNull<JsonElement>(file) ?: return null
+
+        return runCatching { KasiDataSource.parseItems<KasiSpcdeItem>(raw, description) }.getOrNull()
     }
 
     private suspend fun nagerHolidays(country: Country, year: Int, config: Config): List<Holiday> {
         val file = Paths.nagerCache(country, year)
         val today = Clock.System.todayIn(TimeZone.of("Asia/Seoul"))
+        val canUseCache = !config.fetchEnforce && year < today.year
 
-        val items = if (!config.fetchEnforce && year < today.year) {
-            FileDataSource.readOrNull<List<NagerHoliday>>(file)
-                ?: fetchNager(country, year, file)
+        val raw = if (canUseCache) {
+            FileDataSource.readOrNull<JsonElement>(file) ?: fetchNager(country, year, file)
         } else {
-            fetchNager(country, year, file)
+            fetchNager(country, year, file) ?: FileDataSource.readOrNull(file)
         }
 
-        return items.filter { it.counties == null }
+        val items = raw?.let { value -> runCatching { NagerDataSource.parseHolidays(value) }.getOrNull() }.orEmpty()
+
+        return items.filter { item -> item.counties == null }
             .map { item ->
                 Holiday(
                     name = if (country == Country.KOREA) HolidayName.normalize(item.localName) else item.localName,
@@ -132,12 +146,12 @@ data object HolidayUpdater {
             }
     }
 
-    private suspend fun fetchNager(country: Country, year: Int, file: File): List<NagerHoliday> {
+    private suspend fun fetchNager(country: Country, year: Int, file: File): JsonElement? {
         return runCatching { NagerDataSource.getHoliday(year, country.nagerCode) }
-            .onSuccess { items -> if (items.isNotEmpty()) FileDataSource.write(items, file) }
+            .onSuccess { raw -> if (raw != null) FileDataSource.write(raw, file) }
             .getOrElse { throwable ->
                 println("[Holiday] Nager.Date ${country.nagerCode} $year 조회 실패: ${throwable.message}")
-                FileDataSource.readOrNull<List<NagerHoliday>>(file).orEmpty()
+                null
             }
     }
 

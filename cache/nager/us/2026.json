@@ -3,6 +3,11 @@
         "date": "2026-01-01",
         "localName": "New Year's Day",
         "name": "New Year's Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -12,6 +17,11 @@
         "date": "2026-01-19",
         "localName": "Martin Luther King, Jr. Day",
         "name": "Martin Luther King, Jr. Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -21,6 +31,8 @@
         "date": "2026-02-12",
         "localName": "Lincoln's Birthday",
         "name": "Lincoln's Birthday",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-CA",
@@ -33,6 +45,7 @@
             "US-MO",
             "US-OH"
         ],
+        "launchYear": null,
         "types": [
             "Observance"
         ]
@@ -41,6 +54,11 @@
         "date": "2026-02-16",
         "localName": "Washington's Birthday",
         "name": "Presidents Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -50,6 +68,8 @@
         "date": "2026-04-03",
         "localName": "Good Friday",
         "name": "Good Friday",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-CT",
@@ -63,6 +83,7 @@
             "US-NJ",
             "US-TN"
         ],
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -71,10 +92,13 @@
         "date": "2026-04-03",
         "localName": "Good Friday",
         "name": "Good Friday",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-TX"
         ],
+        "launchYear": null,
         "types": [
             "Optional"
         ]
@@ -83,10 +107,13 @@
         "date": "2026-05-08",
         "localName": "Truman Day",
         "name": "Truman Day",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-MO"
         ],
+        "launchYear": null,
         "types": [
             "School",
             "Authorities"
@@ -96,6 +123,11 @@
         "date": "2026-05-25",
         "localName": "Memorial Day",
         "name": "Memorial Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -105,6 +137,11 @@
         "date": "2026-06-19",
         "localName": "Juneteenth National Independence Day",
         "name": "Juneteenth National Independence Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -114,6 +151,11 @@
         "date": "2026-07-03",
         "localName": "Independence Day",
         "name": "Independence Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -123,6 +165,11 @@
         "date": "2026-09-07",
         "localName": "Labor Day",
         "name": "Labour Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -132,6 +179,8 @@
         "date": "2026-10-12",
         "localName": "Columbus Day",
         "name": "Columbus Day",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-AL",
@@ -168,6 +217,7 @@
             "US-VA",
             "US-WV"
         ],
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -176,6 +226,11 @@
         "date": "2026-10-12",
         "localName": "Columbus Day",
         "name": "Columbus Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Bank"
         ]
@@ -184,6 +239,8 @@
         "date": "2026-10-12",
         "localName": "Indigenous Peoples' Day",
         "name": "Indigenous Peoples' Day",
+        "countryCode": "US",
+        "fixed": false,
         "global": false,
         "counties": [
             "US-AK",
@@ -206,6 +263,7 @@
             "US-VT",
             "US-WI"
         ],
+        "launchYear": null,
         "types": [
             "Public"
         ]
@@ -214,6 +272,11 @@
         "date": "2026-11-11",
         "localName": "Veterans Day",
         "name": "Veterans Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -223,6 +286,11 @@
         "date": "2026-11-26",
         "localName": "Thanksgiving Day",
         "name": "Thanksgiving Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"
@@ -232,6 +300,11 @@
         "date": "2026-12-25",
         "localName": "Christmas Day",
         "name": "Christmas Day",
+        "countryCode": "US",
+        "fixed": false,
+        "global": true,
+        "counties": null,
+        "launchYear": null,
         "types": [
             "Public",
             "Bank"

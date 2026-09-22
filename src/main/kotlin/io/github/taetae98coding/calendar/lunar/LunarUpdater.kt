@@ -16,6 +16,7 @@ import kotlinx.coroutines.sync.withPermit
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.todayIn
+import kotlinx.serialization.json.JsonElement
 
 data object LunarUpdater {
     /** 동시에 처리할 연도 수. 월 단위 호출은 이 안에서 다시 12개씩 동시에 나간다. */
@@ -69,38 +70,44 @@ data object LunarUpdater {
 
         if (months.any { it == null }) return false
 
-        val lunarDates = months.filterNotNull().flatten()
-        val file = Paths.lunarYear(year)
-
-        if (config.fetchEnforce || !file.exists()) {
-            FileDataSource.write(lunarDates, file)
-        }
+        FileDataSource.write(months.filterNotNull().flatten(), Paths.lunarYear(year))
 
         return true
     }
 
-    /** 이미 만들어진 파일이 있으면 재사용하고, 없으면 예산 안에서 새로 호출한다. 예산이 없으면 null. */
+    /** 캐시에 원본이 있으면 재사용하고, 없으면 예산 안에서 새로 호출한다. 예산이 없으면 null. */
     private suspend fun loadYearMonth(yearMonth: YearMonth, config: Config, budget: AtomicInteger): List<LunarDate>? {
-        val file = Paths.lunarYearMonth(yearMonth)
+        val file = Paths.kasiLunarCache(yearMonth)
+        val description = "KASI 음양력 $yearMonth"
 
-        if (!config.fetchEnforce) {
-            FileDataSource.readOrNull<List<LunarDate>>(file)
-                ?.takeIf(List<LunarDate>::isNotEmpty)
-                ?.let { return it }
+        val raw = if (!config.fetchEnforce && file.exists()) {
+            FileDataSource.readOrNull<JsonElement>(file)
+        } else {
+            null
+        } ?: run {
+            if (budget.getAndDecrement() <= 0) return null
+
+            runCatching { KasiDataSource.getLunar(yearMonth) }
+                .onSuccess { value -> FileDataSource.write(value, file) }
+                .getOrElse { throwable ->
+                    println("[Lunar] $yearMonth 조회 실패: ${throwable.message}")
+                    return null
+                }
         }
 
-        if (budget.getAndDecrement() <= 0) return null
-
-        val lunarDates = runCatching { KasiDataSource.getLunarItems(yearMonth).map { item -> item.toLunarDate() } }
+        val lunarDates = runCatching { KasiDataSource.parseItems<KasiLunarItem>(raw, description) }
             .getOrElse { throwable ->
-                println("[Lunar] $yearMonth 조회 실패: ${throwable.message}")
+                println("[Lunar] $yearMonth 해석 실패: ${throwable.message}")
                 return null
             }
+            .map { item -> item.toLunarDate() }
+            .sortedBy(LunarDate::solar)
 
         if (lunarDates.isEmpty()) return null
 
-        return lunarDates.sortedBy(LunarDate::solar)
-            .also { value -> FileDataSource.write(value, file) }
+        FileDataSource.write(lunarDates, Paths.lunarYearMonth(yearMonth))
+
+        return lunarDates
     }
 
     private fun KasiLunarItem.toLunarDate(): LunarDate {

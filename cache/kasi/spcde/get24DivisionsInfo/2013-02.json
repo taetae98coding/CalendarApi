@@ -1,0 +1,35 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "입춘",
+                        "isHoliday": "N",
+                        "kst": "0113      ",
+                        "locdate": 20130204,
+                        "seq": 1,
+                        "sunLongitude": 315
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "우수",
+                        "isHoliday": "N",
+                        "kst": "2101      ",
+                        "locdate": 20130218,
+                        "seq": 1,
+                        "sunLongitude": 330
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

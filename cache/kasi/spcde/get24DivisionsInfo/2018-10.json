@@ -1,0 +1,35 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "03",
+                        "dateName": "한로",
+                        "isHoliday": "N",
+                        "kst": "1715      ",
+                        "locdate": 20181008,
+                        "seq": 2,
+                        "sunLongitude": 195
+                    },
+                    {
+                        "dateKind": "03",
+                        "dateName": "상강",
+                        "isHoliday": "N",
+                        "kst": "2022      ",
+                        "locdate": 20181023,
+                        "seq": 1,
+                        "sunLongitude": 210
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

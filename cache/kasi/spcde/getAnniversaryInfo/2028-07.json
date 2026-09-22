@@ -1,0 +1,66 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "사회적기업의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280701,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "도농교류의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280707,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "인구의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280711,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "정보보호의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280712,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "북한이탈주민의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280714,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "연안안전의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280718,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "유엔군 참전의 날",
+                        "isHoliday": "N",
+                        "locdate": 20280727,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 7
+        }
+    }
+}

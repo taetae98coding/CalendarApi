@@ -1,0 +1,31 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "02",
+                        "dateName": "환경의 날",
+                        "isHoliday": "N",
+                        "locdate": 20060605,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "02",
+                        "dateName": "6·25 전쟁일",
+                        "isHoliday": "N",
+                        "locdate": 20060625,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 2
+        }
+    }
+}

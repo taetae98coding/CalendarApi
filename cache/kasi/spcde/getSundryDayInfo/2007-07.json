@@ -1,0 +1,40 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "dateKind": "04",
+                        "dateName": "초복",
+                        "isHoliday": "N",
+                        "locdate": 20070715,
+                        "seq": 1
+                    },
+                    {
+                        "dateKind": "04",
+                        "dateName": "토왕용사",
+                        "isHoliday": "N",
+                        "kst": "1034      ",
+                        "locdate": 20070720,
+                        "seq": 1,
+                        "sunLongitude": 117
+                    },
+                    {
+                        "dateKind": "04",
+                        "dateName": "중복",
+                        "isHoliday": "N",
+                        "locdate": 20070725,
+                        "seq": 1
+                    }
+                ]
+            },
+            "numOfRows": 100,
+            "pageNo": 1,
+            "totalCount": 3
+        }
+    }
+}
