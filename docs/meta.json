@@ -1,40 +1,110 @@
 {
-    "updatedAt": "2026-09-22T08:29:43.850579660Z",
-    "holiday": {
-        "startYear": 1998,
-        "endInclusiveYear": 2029,
-        "countries": [
-            {
-                "code": "kr",
-                "name": "대한민국",
-                "startYear": 1998,
-                "endInclusiveYear": 2029,
-                "sources": [
-                    "한국천문연구원 특일 정보 (공공데이터포털)",
-                    "Nager.Date (2004년 이전 및 미고시 연도 보완)"
-                ]
-            },
-            {
-                "code": "us",
-                "name": "미국",
-                "startYear": 1998,
-                "endInclusiveYear": 2029,
-                "sources": [
-                    "Nager.Date"
-                ]
-            }
-        ]
-    },
-    "lunar": {
-        "startYear": 1391,
-        "endInclusiveYear": 2050,
-        "generated": [
-            {
-                "start": 1391,
-                "endInclusive": 2050
-            }
-        ],
-        "missing": [],
-        "source": "한국천문연구원 음양력 정보 (공공데이터포털)"
-    }
+    "updatedAt": "2026-09-22T09:31:08.566767Z",
+    "startYear": 1998,
+    "endInclusiveYear": 2050,
+    "apis": [
+        {
+            "id": "holiday",
+            "countries": [
+                {
+                    "code": "kr",
+                    "name": "대한민국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "한국천문연구원 특일 정보 (공공데이터포털)",
+                        "Nager.Date (특일 정보에 공휴일이 없는 연도 보완)"
+                    ]
+                },
+                {
+                    "code": "us",
+                    "name": "미국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "Nager.Date"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "lunar",
+            "countries": [
+                {
+                    "code": "kr",
+                    "name": "대한민국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "한국천문연구원 음양력 정보 (공공데이터포털)"
+                    ]
+                },
+                {
+                    "code": "us",
+                    "name": "미국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "한국천문연구원 음양력 정보 (공공데이터포털)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "calendar",
+            "countries": [
+                {
+                    "code": "kr",
+                    "name": "대한민국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "한국천문연구원 특일 정보 (공공데이터포털)",
+                        "Nager.Date (특일 정보에 공휴일이 없는 연도 보완)",
+                        "한국천문연구원 음양력 정보 (공공데이터포털)"
+                    ]
+                },
+                {
+                    "code": "us",
+                    "name": "미국",
+                    "generated": [
+                        {
+                            "start": 1998,
+                            "endInclusive": 2050
+                        }
+                    ],
+                    "missing": [],
+                    "sources": [
+                        "Nager.Date",
+                        "한국천문연구원 음양력 정보 (공공데이터포털)"
+                    ]
+                }
+            ]
+        }
+    ]
 }

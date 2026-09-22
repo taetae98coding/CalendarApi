@@ -14,15 +14,12 @@ import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.decodeFromJsonElement
 
 /**
- * Nager.Date 공개 공휴일 API 클라이언트. 인증키가 필요 없으며 1975 ~ 2076 년을 제공한다.
+ * Nager.Date 공개 공휴일 API 클라이언트. 인증키가 필요 없다.
  *
  * KASI 와 마찬가지로 원본 [JsonElement] 를 돌려주고, 필드를 뽑는 일은 [parseHolidays] 에서 한다.
  */
 data object NagerDataSource {
     private const val BASE_URL = "https://date.nager.at/api/v3/PublicHolidays/"
-
-    const val MIN_YEAR = 1975
-    const val MAX_YEAR = 2076
 
     private val semaphore = Semaphore(OpenApiClient.maxConcurrency)
     private val rateLimiter = RateLimiter(OpenApiClient.maxRequestsPerSecond)
@@ -35,20 +32,20 @@ data object NagerDataSource {
         }
     }
 
-    /** 제공 범위 밖이거나 해당 국가가 없으면 null. */
-    suspend fun getHoliday(year: Int, countryCode: String): JsonElement? {
-        if (year !in MIN_YEAR..MAX_YEAR) return null
+    /** 성공이면 응답 원본, 제공하지 않는 연도(404)면 null. 404 도 정상 응답으로 본다. */
+    suspend fun getHoliday(year: Int, countryCode: String): Result<JsonElement?> {
+        return runCatching {
+            val response = semaphore.withPermit {
+                rateLimiter.acquire()
 
-        val response = semaphore.withPermit {
-            rateLimiter.acquire()
+                client.get("$year/$countryCode")
+            }
 
-            client.get("$year/$countryCode")
-        }
-
-        return when {
-            response.status == HttpStatusCode.NotFound -> null
-            response.status.isSuccess() -> response.body<JsonElement>()
-            else -> error("Nager.Date $year/$countryCode 실패. status=${response.status}")
+            when {
+                response.status == HttpStatusCode.NotFound -> null
+                response.status.isSuccess() -> response.body<JsonElement>()
+                else -> error("Nager.Date $year/$countryCode 실패. status=${response.status}")
+            }
         }
     }
 

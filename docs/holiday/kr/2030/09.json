@@ -1,0 +1,8 @@
+[
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2030-09-11",
+        "endInclusive": "2030-09-13"
+    }
+]

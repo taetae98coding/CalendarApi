@@ -1,0 +1,8 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2043-01-01",
+        "endInclusive": "2043-01-01"
+    }
+]

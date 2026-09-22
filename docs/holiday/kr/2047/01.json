@@ -1,0 +1,20 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2047-01-01",
+        "endInclusive": "2047-01-01"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2047-01-25",
+        "endInclusive": "2047-01-26"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2047-01-28",
+        "endInclusive": "2047-01-28"
+    }
+]

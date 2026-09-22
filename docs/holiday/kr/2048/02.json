@@ -1,0 +1,8 @@
+[
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2048-02-13",
+        "endInclusive": "2048-02-15"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2043-07-03",
+        "endInclusive": "2043-07-03"
+    }
+]

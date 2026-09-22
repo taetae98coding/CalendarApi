@@ -3,12 +3,6 @@
     "period": "2022",
     "holidays": [
         {
-            "name": "New Year's Day",
-            "isHoliday": true,
-            "start": "2021-12-31",
-            "endInclusive": "2021-12-31"
-        },
-        {
             "name": "Martin Luther King, Jr. Day",
             "isHoliday": true,
             "start": "2022-01-17",

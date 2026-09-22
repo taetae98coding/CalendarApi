@@ -1,6 +1,7 @@
 package io.github.taetae98coding.calendar
 
 import io.github.taetae98coding.calendar.file.FileDataSource
+import io.github.taetae98coding.calendar.meta.ApiCoverage
 import io.github.taetae98coding.calendar.meta.ApiMeta
 import io.github.taetae98coding.calendar.meta.YearRange
 import java.io.File
@@ -13,10 +14,6 @@ data object IndexPage {
     }
 
     private fun html(meta: ApiMeta): String {
-        val holidayRange = range(meta.holiday.startYear, meta.holiday.endInclusiveYear)
-        val lunarRange = meta.lunar.generated.joinToString(", ") { range -> range.text() }
-            .ifBlank { "없음" }
-
         return """
             <!DOCTYPE html>
             <html lang="ko">
@@ -39,34 +36,21 @@ data object IndexPage {
             <p>공휴일과 음력 정보를 정적 JSON 으로 제공하는 API 입니다. GitHub Actions 가 주기적으로 갱신합니다.</p>
             <p class="updated">마지막 갱신 : ${meta.updatedAt}</p>
 
-            <h2>공휴일</h2>
-            <p>제공 범위 : <code>$holidayRange</code></p>
+            <h2>경로</h2>
+            <p>제공 범위는 세 API 모두 <code>${meta.startYear} ~ ${meta.endInclusiveYear}</code> 로 같습니다.
+            <code>{country}</code> 는 <code>kr</code>, <code>us</code> 이고 <code>{month}</code> 는 <code>01</code> ~ <code>12</code> 입니다.</p>
             <table>
-                <tr><th>국가</th><th>코드</th><th>범위</th></tr>
-                ${meta.holiday.countries.joinToString("\n                ") { country ->
-                    "<tr><td>${country.name}</td><td><code>${country.code}</code></td><td>${range(country.startYear, country.endInclusiveYear)}</td></tr>"
-                }}
+                <tr><th>설명</th><th>연도</th><th>월</th></tr>
+                <tr><td>공휴일</td><td><code>holiday/{country}/{year}.json</code></td><td><code>holiday/{country}/{year}/{month}.json</code></td></tr>
+                <tr><td>음력</td><td><code>lunar/{country}/{year}.json</code></td><td><code>lunar/{country}/{year}/{month}.json</code></td></tr>
+                <tr><td>통합</td><td><code>calendar/{country}/{year}.json</code></td><td><code>calendar/{country}/{year}/{month}.json</code></td></tr>
             </table>
-            <table>
-                <tr><th>설명</th><th>경로</th></tr>
-                <tr><td>연도별</td><td><code>holiday/{country}/{year}.json</code></td></tr>
-                <tr><td>월별</td><td><code>holiday/{country}/{year}-{month}.json</code></td></tr>
-            </table>
+            <p>필요한 것만 받으려면 <code>holiday</code> · <code>lunar</code> 를, 한 번에 받으려면 <code>calendar</code> 를 쓰면 됩니다.</p>
 
-            <h2>음력</h2>
-            <p>원본 제공 범위 : <code>${meta.lunar.startYear} ~ ${meta.lunar.endInclusiveYear}</code>, 생성 완료 : <code>$lunarRange</code></p>
+            <h2>생성 현황</h2>
             <table>
-                <tr><th>설명</th><th>경로</th></tr>
-                <tr><td>연도별</td><td><code>lunar/{year}.json</code></td></tr>
-                <tr><td>월별</td><td><code>lunar/{year}-{month}.json</code></td></tr>
-            </table>
-
-            <h2>통합</h2>
-            <p>공휴일과 음력을 한 번에 받습니다.</p>
-            <table>
-                <tr><th>설명</th><th>경로</th></tr>
-                <tr><td>연도별</td><td><code>calendar/{country}/{year}.json</code></td></tr>
-                <tr><td>월별</td><td><code>calendar/{country}/{year}-{month}.json</code></td></tr>
+                <tr><th>API</th><th>국가</th><th>생성된 연도</th></tr>
+                ${meta.apis.joinToString("\n                ", transform = ::rows)}
             </table>
 
             <h2>메타</h2>
@@ -78,10 +62,12 @@ data object IndexPage {
         """.trimIndent()
     }
 
-    private fun range(start: Int?, endInclusive: Int?): String {
-        if (start == null || endInclusive == null) return "없음"
+    private fun rows(api: ApiCoverage): String {
+        return api.countries.joinToString("\n                ") { country ->
+            val generated = country.generated.joinToString(", ") { range -> range.text() }.ifBlank { "없음" }
 
-        return "$start ~ $endInclusive"
+            "<tr><td><code>${api.id}</code></td><td><code>${country.code}</code></td><td>$generated</td></tr>"
+        }
     }
 
     private fun YearRange.text(): String {

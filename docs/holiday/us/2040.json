@@ -1,0 +1,68 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2040-01-02",
+        "endInclusive": "2040-01-02"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2040-01-16",
+        "endInclusive": "2040-01-16"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2040-02-20",
+        "endInclusive": "2040-02-20"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2040-05-28",
+        "endInclusive": "2040-05-28"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2040-06-19",
+        "endInclusive": "2040-06-19"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2040-07-04",
+        "endInclusive": "2040-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2040-09-03",
+        "endInclusive": "2040-09-03"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2040-10-08",
+        "endInclusive": "2040-10-08"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2040-11-12",
+        "endInclusive": "2040-11-12"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2040-11-22",
+        "endInclusive": "2040-11-22"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2040-12-25",
+        "endInclusive": "2040-12-25"
+    }
+]

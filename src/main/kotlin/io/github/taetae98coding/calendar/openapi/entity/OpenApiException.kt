@@ -17,9 +17,14 @@ class OpenApiException(
     val isQuotaExceeded: Boolean
         get() = code == QUOTA_EXCEEDED_CODE
 
+    /** 요청은 정상이고 해당 구간에 자료가 없을 뿐이다. 404 와 같이 취급한다. */
+    val isNoData: Boolean
+        get() = code == NO_DATA_CODE
+
     companion object {
         const val NOT_REGISTERED_CODE = "30"
         const val RATE_LIMIT_CODE = "23"
         const val QUOTA_EXCEEDED_CODE = "22"
+        const val NO_DATA_CODE = "03"
     }
 }

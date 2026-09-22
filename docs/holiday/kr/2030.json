@@ -1,0 +1,86 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2030-01-01",
+        "endInclusive": "2030-01-01"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2030-02-02",
+        "endInclusive": "2030-02-02"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2030-02-04",
+        "endInclusive": "2030-02-05"
+    },
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2030-03-01",
+        "endInclusive": "2030-03-01"
+    },
+    {
+        "name": "노동절",
+        "isHoliday": true,
+        "start": "2030-05-01",
+        "endInclusive": "2030-05-01"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2030-05-06",
+        "endInclusive": "2030-05-06"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2030-05-09",
+        "endInclusive": "2030-05-09"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2030-06-06",
+        "endInclusive": "2030-06-06"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2030-07-17",
+        "endInclusive": "2030-07-17"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2030-08-15",
+        "endInclusive": "2030-08-15"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2030-09-11",
+        "endInclusive": "2030-09-13"
+    },
+    {
+        "name": "개천절",
+        "isHoliday": true,
+        "start": "2030-10-03",
+        "endInclusive": "2030-10-03"
+    },
+    {
+        "name": "한글날",
+        "isHoliday": true,
+        "start": "2030-10-09",
+        "endInclusive": "2030-10-09"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2030-12-25",
+        "endInclusive": "2030-12-25"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2030-09-02",
+        "endInclusive": "2030-09-02"
+    }
+]

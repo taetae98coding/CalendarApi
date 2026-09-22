@@ -1,0 +1,68 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2035-01-01",
+        "endInclusive": "2035-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2035-01-15",
+        "endInclusive": "2035-01-15"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2035-02-19",
+        "endInclusive": "2035-02-19"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2035-05-28",
+        "endInclusive": "2035-05-28"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2035-06-19",
+        "endInclusive": "2035-06-19"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2035-07-04",
+        "endInclusive": "2035-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2035-09-03",
+        "endInclusive": "2035-09-03"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2035-10-08",
+        "endInclusive": "2035-10-08"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2035-11-12",
+        "endInclusive": "2035-11-12"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2035-11-22",
+        "endInclusive": "2035-11-22"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2035-12-25",
+        "endInclusive": "2035-12-25"
+    }
+]

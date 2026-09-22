@@ -1,0 +1,14 @@
+[
+    {
+        "name": "개천절",
+        "isHoliday": true,
+        "start": "2041-10-03",
+        "endInclusive": "2041-10-03"
+    },
+    {
+        "name": "한글날",
+        "isHoliday": true,
+        "start": "2041-10-09",
+        "endInclusive": "2041-10-09"
+    }
+]

@@ -1,0 +1,2648 @@
+{
+    "country": "kr",
+    "period": "2048",
+    "holidays": [
+        {
+            "name": "신정",
+            "isHoliday": true,
+            "start": "2048-01-01",
+            "endInclusive": "2048-01-01"
+        },
+        {
+            "name": "설날",
+            "isHoliday": true,
+            "start": "2048-02-13",
+            "endInclusive": "2048-02-15"
+        },
+        {
+            "name": "삼일절",
+            "isHoliday": true,
+            "start": "2048-03-02",
+            "endInclusive": "2048-03-02"
+        },
+        {
+            "name": "노동절",
+            "isHoliday": true,
+            "start": "2048-05-01",
+            "endInclusive": "2048-05-01"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2048-05-05",
+            "endInclusive": "2048-05-05"
+        },
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2048-05-20",
+            "endInclusive": "2048-05-20"
+        },
+        {
+            "name": "현충일",
+            "isHoliday": true,
+            "start": "2048-06-06",
+            "endInclusive": "2048-06-06"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2048-07-17",
+            "endInclusive": "2048-07-17"
+        },
+        {
+            "name": "광복절",
+            "isHoliday": true,
+            "start": "2048-08-17",
+            "endInclusive": "2048-08-17"
+        },
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2048-09-21",
+            "endInclusive": "2048-09-23"
+        },
+        {
+            "name": "개천절",
+            "isHoliday": true,
+            "start": "2048-10-05",
+            "endInclusive": "2048-10-05"
+        },
+        {
+            "name": "한글날",
+            "isHoliday": true,
+            "start": "2048-10-09",
+            "endInclusive": "2048-10-09"
+        },
+        {
+            "name": "크리스마스",
+            "isHoliday": true,
+            "start": "2048-12-25",
+            "endInclusive": "2048-12-25"
+        }
+    ],
+    "lunar": [
+        {
+            "solar": "2048-01-01",
+            "year": 2047,
+            "month": 11,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-02",
+            "year": 2047,
+            "month": 11,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-03",
+            "year": 2047,
+            "month": 11,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-04",
+            "year": 2047,
+            "month": 11,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-05",
+            "year": 2047,
+            "month": 11,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-06",
+            "year": 2047,
+            "month": 11,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-07",
+            "year": 2047,
+            "month": 11,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-08",
+            "year": 2047,
+            "month": 11,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-09",
+            "year": 2047,
+            "month": 11,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-10",
+            "year": 2047,
+            "month": 11,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-11",
+            "year": 2047,
+            "month": 11,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-12",
+            "year": 2047,
+            "month": 11,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-13",
+            "year": 2047,
+            "month": 11,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-14",
+            "year": 2047,
+            "month": 11,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-15",
+            "year": 2047,
+            "month": 12,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-16",
+            "year": 2047,
+            "month": 12,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-17",
+            "year": 2047,
+            "month": 12,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-18",
+            "year": 2047,
+            "month": 12,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-19",
+            "year": 2047,
+            "month": 12,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-20",
+            "year": 2047,
+            "month": 12,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-21",
+            "year": 2047,
+            "month": 12,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-22",
+            "year": 2047,
+            "month": 12,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-23",
+            "year": 2047,
+            "month": 12,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-24",
+            "year": 2047,
+            "month": 12,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-25",
+            "year": 2047,
+            "month": 12,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-26",
+            "year": 2047,
+            "month": 12,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-27",
+            "year": 2047,
+            "month": 12,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-28",
+            "year": 2047,
+            "month": 12,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-29",
+            "year": 2047,
+            "month": 12,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-30",
+            "year": 2047,
+            "month": 12,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-01-31",
+            "year": 2047,
+            "month": 12,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-01",
+            "year": 2047,
+            "month": 12,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-02",
+            "year": 2047,
+            "month": 12,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-03",
+            "year": 2047,
+            "month": 12,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-04",
+            "year": 2047,
+            "month": 12,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-05",
+            "year": 2047,
+            "month": 12,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-06",
+            "year": 2047,
+            "month": 12,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-07",
+            "year": 2047,
+            "month": 12,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-08",
+            "year": 2047,
+            "month": 12,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-09",
+            "year": 2047,
+            "month": 12,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-10",
+            "year": 2047,
+            "month": 12,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-11",
+            "year": 2047,
+            "month": 12,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-12",
+            "year": 2047,
+            "month": 12,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-13",
+            "year": 2047,
+            "month": 12,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-14",
+            "year": 2048,
+            "month": 1,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-15",
+            "year": 2048,
+            "month": 1,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-16",
+            "year": 2048,
+            "month": 1,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-17",
+            "year": 2048,
+            "month": 1,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-18",
+            "year": 2048,
+            "month": 1,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-19",
+            "year": 2048,
+            "month": 1,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-20",
+            "year": 2048,
+            "month": 1,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-21",
+            "year": 2048,
+            "month": 1,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-22",
+            "year": 2048,
+            "month": 1,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-23",
+            "year": 2048,
+            "month": 1,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-24",
+            "year": 2048,
+            "month": 1,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-25",
+            "year": 2048,
+            "month": 1,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-26",
+            "year": 2048,
+            "month": 1,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-27",
+            "year": 2048,
+            "month": 1,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-28",
+            "year": 2048,
+            "month": 1,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-02-29",
+            "year": 2048,
+            "month": 1,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-01",
+            "year": 2048,
+            "month": 1,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-02",
+            "year": 2048,
+            "month": 1,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-03",
+            "year": 2048,
+            "month": 1,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-04",
+            "year": 2048,
+            "month": 1,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-05",
+            "year": 2048,
+            "month": 1,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-06",
+            "year": 2048,
+            "month": 1,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-07",
+            "year": 2048,
+            "month": 1,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-08",
+            "year": 2048,
+            "month": 1,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-09",
+            "year": 2048,
+            "month": 1,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-10",
+            "year": 2048,
+            "month": 1,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-11",
+            "year": 2048,
+            "month": 1,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-12",
+            "year": 2048,
+            "month": 1,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-13",
+            "year": 2048,
+            "month": 1,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-14",
+            "year": 2048,
+            "month": 2,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-15",
+            "year": 2048,
+            "month": 2,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-16",
+            "year": 2048,
+            "month": 2,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-17",
+            "year": 2048,
+            "month": 2,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-18",
+            "year": 2048,
+            "month": 2,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-19",
+            "year": 2048,
+            "month": 2,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-20",
+            "year": 2048,
+            "month": 2,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-21",
+            "year": 2048,
+            "month": 2,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-22",
+            "year": 2048,
+            "month": 2,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-23",
+            "year": 2048,
+            "month": 2,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-24",
+            "year": 2048,
+            "month": 2,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-25",
+            "year": 2048,
+            "month": 2,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-26",
+            "year": 2048,
+            "month": 2,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-27",
+            "year": 2048,
+            "month": 2,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-28",
+            "year": 2048,
+            "month": 2,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-29",
+            "year": 2048,
+            "month": 2,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-30",
+            "year": 2048,
+            "month": 2,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-03-31",
+            "year": 2048,
+            "month": 2,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-01",
+            "year": 2048,
+            "month": 2,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-02",
+            "year": 2048,
+            "month": 2,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-03",
+            "year": 2048,
+            "month": 2,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-04",
+            "year": 2048,
+            "month": 2,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-05",
+            "year": 2048,
+            "month": 2,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-06",
+            "year": 2048,
+            "month": 2,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-07",
+            "year": 2048,
+            "month": 2,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-08",
+            "year": 2048,
+            "month": 2,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-09",
+            "year": 2048,
+            "month": 2,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-10",
+            "year": 2048,
+            "month": 2,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-11",
+            "year": 2048,
+            "month": 2,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-12",
+            "year": 2048,
+            "month": 2,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-13",
+            "year": 2048,
+            "month": 3,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-14",
+            "year": 2048,
+            "month": 3,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-15",
+            "year": 2048,
+            "month": 3,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-16",
+            "year": 2048,
+            "month": 3,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-17",
+            "year": 2048,
+            "month": 3,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-18",
+            "year": 2048,
+            "month": 3,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-19",
+            "year": 2048,
+            "month": 3,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-20",
+            "year": 2048,
+            "month": 3,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-21",
+            "year": 2048,
+            "month": 3,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-22",
+            "year": 2048,
+            "month": 3,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-23",
+            "year": 2048,
+            "month": 3,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-24",
+            "year": 2048,
+            "month": 3,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-25",
+            "year": 2048,
+            "month": 3,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-26",
+            "year": 2048,
+            "month": 3,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-27",
+            "year": 2048,
+            "month": 3,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-28",
+            "year": 2048,
+            "month": 3,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-29",
+            "year": 2048,
+            "month": 3,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-04-30",
+            "year": 2048,
+            "month": 3,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-01",
+            "year": 2048,
+            "month": 3,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-02",
+            "year": 2048,
+            "month": 3,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-03",
+            "year": 2048,
+            "month": 3,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-04",
+            "year": 2048,
+            "month": 3,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-05",
+            "year": 2048,
+            "month": 3,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-06",
+            "year": 2048,
+            "month": 3,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-07",
+            "year": 2048,
+            "month": 3,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-08",
+            "year": 2048,
+            "month": 3,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-09",
+            "year": 2048,
+            "month": 3,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-10",
+            "year": 2048,
+            "month": 3,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-11",
+            "year": 2048,
+            "month": 3,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-12",
+            "year": 2048,
+            "month": 3,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-13",
+            "year": 2048,
+            "month": 4,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-14",
+            "year": 2048,
+            "month": 4,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-15",
+            "year": 2048,
+            "month": 4,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-16",
+            "year": 2048,
+            "month": 4,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-17",
+            "year": 2048,
+            "month": 4,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-18",
+            "year": 2048,
+            "month": 4,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-19",
+            "year": 2048,
+            "month": 4,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-20",
+            "year": 2048,
+            "month": 4,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-21",
+            "year": 2048,
+            "month": 4,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-22",
+            "year": 2048,
+            "month": 4,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-23",
+            "year": 2048,
+            "month": 4,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-24",
+            "year": 2048,
+            "month": 4,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-25",
+            "year": 2048,
+            "month": 4,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-26",
+            "year": 2048,
+            "month": 4,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-27",
+            "year": 2048,
+            "month": 4,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-28",
+            "year": 2048,
+            "month": 4,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-29",
+            "year": 2048,
+            "month": 4,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-30",
+            "year": 2048,
+            "month": 4,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-05-31",
+            "year": 2048,
+            "month": 4,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-01",
+            "year": 2048,
+            "month": 4,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-02",
+            "year": 2048,
+            "month": 4,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-03",
+            "year": 2048,
+            "month": 4,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-04",
+            "year": 2048,
+            "month": 4,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-05",
+            "year": 2048,
+            "month": 4,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-06",
+            "year": 2048,
+            "month": 4,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-07",
+            "year": 2048,
+            "month": 4,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-08",
+            "year": 2048,
+            "month": 4,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-09",
+            "year": 2048,
+            "month": 4,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-10",
+            "year": 2048,
+            "month": 4,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-11",
+            "year": 2048,
+            "month": 5,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-12",
+            "year": 2048,
+            "month": 5,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-13",
+            "year": 2048,
+            "month": 5,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-14",
+            "year": 2048,
+            "month": 5,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-15",
+            "year": 2048,
+            "month": 5,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-16",
+            "year": 2048,
+            "month": 5,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-17",
+            "year": 2048,
+            "month": 5,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-18",
+            "year": 2048,
+            "month": 5,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-19",
+            "year": 2048,
+            "month": 5,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-20",
+            "year": 2048,
+            "month": 5,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-21",
+            "year": 2048,
+            "month": 5,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-22",
+            "year": 2048,
+            "month": 5,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-23",
+            "year": 2048,
+            "month": 5,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-24",
+            "year": 2048,
+            "month": 5,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-25",
+            "year": 2048,
+            "month": 5,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-26",
+            "year": 2048,
+            "month": 5,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-27",
+            "year": 2048,
+            "month": 5,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-28",
+            "year": 2048,
+            "month": 5,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-29",
+            "year": 2048,
+            "month": 5,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-06-30",
+            "year": 2048,
+            "month": 5,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-01",
+            "year": 2048,
+            "month": 5,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-02",
+            "year": 2048,
+            "month": 5,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-03",
+            "year": 2048,
+            "month": 5,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-04",
+            "year": 2048,
+            "month": 5,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-05",
+            "year": 2048,
+            "month": 5,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-06",
+            "year": 2048,
+            "month": 5,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-07",
+            "year": 2048,
+            "month": 5,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-08",
+            "year": 2048,
+            "month": 5,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-09",
+            "year": 2048,
+            "month": 5,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-10",
+            "year": 2048,
+            "month": 5,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-11",
+            "year": 2048,
+            "month": 6,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-12",
+            "year": 2048,
+            "month": 6,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-13",
+            "year": 2048,
+            "month": 6,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-14",
+            "year": 2048,
+            "month": 6,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-15",
+            "year": 2048,
+            "month": 6,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-16",
+            "year": 2048,
+            "month": 6,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-17",
+            "year": 2048,
+            "month": 6,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-18",
+            "year": 2048,
+            "month": 6,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-19",
+            "year": 2048,
+            "month": 6,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-20",
+            "year": 2048,
+            "month": 6,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-21",
+            "year": 2048,
+            "month": 6,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-22",
+            "year": 2048,
+            "month": 6,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-23",
+            "year": 2048,
+            "month": 6,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-24",
+            "year": 2048,
+            "month": 6,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-25",
+            "year": 2048,
+            "month": 6,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-26",
+            "year": 2048,
+            "month": 6,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-27",
+            "year": 2048,
+            "month": 6,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-28",
+            "year": 2048,
+            "month": 6,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-29",
+            "year": 2048,
+            "month": 6,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-30",
+            "year": 2048,
+            "month": 6,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-07-31",
+            "year": 2048,
+            "month": 6,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-01",
+            "year": 2048,
+            "month": 6,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-02",
+            "year": 2048,
+            "month": 6,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-03",
+            "year": 2048,
+            "month": 6,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-04",
+            "year": 2048,
+            "month": 6,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-05",
+            "year": 2048,
+            "month": 6,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-06",
+            "year": 2048,
+            "month": 6,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-07",
+            "year": 2048,
+            "month": 6,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-08",
+            "year": 2048,
+            "month": 6,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-09",
+            "year": 2048,
+            "month": 6,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-10",
+            "year": 2048,
+            "month": 7,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-11",
+            "year": 2048,
+            "month": 7,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-12",
+            "year": 2048,
+            "month": 7,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-13",
+            "year": 2048,
+            "month": 7,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-14",
+            "year": 2048,
+            "month": 7,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-15",
+            "year": 2048,
+            "month": 7,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-16",
+            "year": 2048,
+            "month": 7,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-17",
+            "year": 2048,
+            "month": 7,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-18",
+            "year": 2048,
+            "month": 7,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-19",
+            "year": 2048,
+            "month": 7,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-20",
+            "year": 2048,
+            "month": 7,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-21",
+            "year": 2048,
+            "month": 7,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-22",
+            "year": 2048,
+            "month": 7,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-23",
+            "year": 2048,
+            "month": 7,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-24",
+            "year": 2048,
+            "month": 7,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-25",
+            "year": 2048,
+            "month": 7,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-26",
+            "year": 2048,
+            "month": 7,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-27",
+            "year": 2048,
+            "month": 7,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-28",
+            "year": 2048,
+            "month": 7,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-29",
+            "year": 2048,
+            "month": 7,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-30",
+            "year": 2048,
+            "month": 7,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-08-31",
+            "year": 2048,
+            "month": 7,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-01",
+            "year": 2048,
+            "month": 7,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-02",
+            "year": 2048,
+            "month": 7,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-03",
+            "year": 2048,
+            "month": 7,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-04",
+            "year": 2048,
+            "month": 7,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-05",
+            "year": 2048,
+            "month": 7,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-06",
+            "year": 2048,
+            "month": 7,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-07",
+            "year": 2048,
+            "month": 7,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-08",
+            "year": 2048,
+            "month": 8,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-09",
+            "year": 2048,
+            "month": 8,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-10",
+            "year": 2048,
+            "month": 8,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-11",
+            "year": 2048,
+            "month": 8,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-12",
+            "year": 2048,
+            "month": 8,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-13",
+            "year": 2048,
+            "month": 8,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-14",
+            "year": 2048,
+            "month": 8,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-15",
+            "year": 2048,
+            "month": 8,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-16",
+            "year": 2048,
+            "month": 8,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-17",
+            "year": 2048,
+            "month": 8,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-18",
+            "year": 2048,
+            "month": 8,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-19",
+            "year": 2048,
+            "month": 8,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-20",
+            "year": 2048,
+            "month": 8,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-21",
+            "year": 2048,
+            "month": 8,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-22",
+            "year": 2048,
+            "month": 8,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-23",
+            "year": 2048,
+            "month": 8,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-24",
+            "year": 2048,
+            "month": 8,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-25",
+            "year": 2048,
+            "month": 8,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-26",
+            "year": 2048,
+            "month": 8,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-27",
+            "year": 2048,
+            "month": 8,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-28",
+            "year": 2048,
+            "month": 8,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-29",
+            "year": 2048,
+            "month": 8,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-09-30",
+            "year": 2048,
+            "month": 8,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-01",
+            "year": 2048,
+            "month": 8,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-02",
+            "year": 2048,
+            "month": 8,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-03",
+            "year": 2048,
+            "month": 8,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-04",
+            "year": 2048,
+            "month": 8,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-05",
+            "year": 2048,
+            "month": 8,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-06",
+            "year": 2048,
+            "month": 8,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-07",
+            "year": 2048,
+            "month": 8,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-08",
+            "year": 2048,
+            "month": 9,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-09",
+            "year": 2048,
+            "month": 9,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-10",
+            "year": 2048,
+            "month": 9,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-11",
+            "year": 2048,
+            "month": 9,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-12",
+            "year": 2048,
+            "month": 9,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-13",
+            "year": 2048,
+            "month": 9,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-14",
+            "year": 2048,
+            "month": 9,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-15",
+            "year": 2048,
+            "month": 9,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-16",
+            "year": 2048,
+            "month": 9,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-17",
+            "year": 2048,
+            "month": 9,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-18",
+            "year": 2048,
+            "month": 9,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-19",
+            "year": 2048,
+            "month": 9,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-20",
+            "year": 2048,
+            "month": 9,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-21",
+            "year": 2048,
+            "month": 9,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-22",
+            "year": 2048,
+            "month": 9,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-23",
+            "year": 2048,
+            "month": 9,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-24",
+            "year": 2048,
+            "month": 9,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-25",
+            "year": 2048,
+            "month": 9,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-26",
+            "year": 2048,
+            "month": 9,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-27",
+            "year": 2048,
+            "month": 9,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-28",
+            "year": 2048,
+            "month": 9,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-29",
+            "year": 2048,
+            "month": 9,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-30",
+            "year": 2048,
+            "month": 9,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-10-31",
+            "year": 2048,
+            "month": 9,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-01",
+            "year": 2048,
+            "month": 9,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-02",
+            "year": 2048,
+            "month": 9,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-03",
+            "year": 2048,
+            "month": 9,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-04",
+            "year": 2048,
+            "month": 9,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-05",
+            "year": 2048,
+            "month": 9,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-06",
+            "year": 2048,
+            "month": 10,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-07",
+            "year": 2048,
+            "month": 10,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-08",
+            "year": 2048,
+            "month": 10,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-09",
+            "year": 2048,
+            "month": 10,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-10",
+            "year": 2048,
+            "month": 10,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-11",
+            "year": 2048,
+            "month": 10,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-12",
+            "year": 2048,
+            "month": 10,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-13",
+            "year": 2048,
+            "month": 10,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-14",
+            "year": 2048,
+            "month": 10,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-15",
+            "year": 2048,
+            "month": 10,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-16",
+            "year": 2048,
+            "month": 10,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-17",
+            "year": 2048,
+            "month": 10,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-18",
+            "year": 2048,
+            "month": 10,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-19",
+            "year": 2048,
+            "month": 10,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-20",
+            "year": 2048,
+            "month": 10,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-21",
+            "year": 2048,
+            "month": 10,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-22",
+            "year": 2048,
+            "month": 10,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-23",
+            "year": 2048,
+            "month": 10,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-24",
+            "year": 2048,
+            "month": 10,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-25",
+            "year": 2048,
+            "month": 10,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-26",
+            "year": 2048,
+            "month": 10,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-27",
+            "year": 2048,
+            "month": 10,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-28",
+            "year": 2048,
+            "month": 10,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-29",
+            "year": 2048,
+            "month": 10,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-11-30",
+            "year": 2048,
+            "month": 10,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-01",
+            "year": 2048,
+            "month": 10,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-02",
+            "year": 2048,
+            "month": 10,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-03",
+            "year": 2048,
+            "month": 10,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-04",
+            "year": 2048,
+            "month": 10,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-05",
+            "year": 2048,
+            "month": 10,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-06",
+            "year": 2048,
+            "month": 11,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-07",
+            "year": 2048,
+            "month": 11,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-08",
+            "year": 2048,
+            "month": 11,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-09",
+            "year": 2048,
+            "month": 11,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-10",
+            "year": 2048,
+            "month": 11,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-11",
+            "year": 2048,
+            "month": 11,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-12",
+            "year": 2048,
+            "month": 11,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-13",
+            "year": 2048,
+            "month": 11,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-14",
+            "year": 2048,
+            "month": 11,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-15",
+            "year": 2048,
+            "month": 11,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-16",
+            "year": 2048,
+            "month": 11,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-17",
+            "year": 2048,
+            "month": 11,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-18",
+            "year": 2048,
+            "month": 11,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-19",
+            "year": 2048,
+            "month": 11,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-20",
+            "year": 2048,
+            "month": 11,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-21",
+            "year": 2048,
+            "month": 11,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-22",
+            "year": 2048,
+            "month": 11,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-23",
+            "year": 2048,
+            "month": 11,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-24",
+            "year": 2048,
+            "month": 11,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-25",
+            "year": 2048,
+            "month": 11,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-26",
+            "year": 2048,
+            "month": 11,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-27",
+            "year": 2048,
+            "month": 11,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-28",
+            "year": 2048,
+            "month": 11,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-29",
+            "year": 2048,
+            "month": 11,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-30",
+            "year": 2048,
+            "month": 11,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2048-12-31",
+            "year": 2048,
+            "month": 11,
+            "day": 26,
+            "isLeapMonth": false
+        }
+    ]
+}

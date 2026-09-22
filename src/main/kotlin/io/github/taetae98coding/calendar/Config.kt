@@ -1,39 +1,30 @@
 package io.github.taetae98coding.calendar
 
 data class Config(
-    val startYear: Int,
-    val endInclusiveYear: Int,
-    val lunarStartYear: Int,
-    val lunarEndInclusiveYear: Int,
-    val lunarFetchBudget: Int,
-    val fetchEnforce: Boolean,
+    /** 한 번의 실행에서 서비스 하나에 보낼 수 있는 최대 요청 수. */
+    val fetchBudget: Int,
 ) {
-    val years: IntRange
-        get() = startYear..endInclusiveYear
-
-    val lunarYears: IntRange
-        get() = lunarStartYear..lunarEndInclusiveYear
-
     companion object {
+        /**
+         * 모든 API 가 제공하는 고정 범위.
+         *
+         * 원천 API 가 실제로 제공하는 범위는 서비스마다 다르고 언제 바뀔지 모른다.
+         * 제공 여부와 무관하게 이 범위로 고정해 두고, 없는 구간은 비어 있는 채로 둔다.
+         * 이 범위 밖의 캐시와 배포 문서는 [io.github.taetae98coding.calendar.Pruner] 가 지운다.
+         */
+        const val START_YEAR = 1998
+
+        /** @see START_YEAR */
+        const val END_INCLUSIVE_YEAR = 2050
+
+        val years: IntRange = START_YEAR..END_INCLUSIVE_YEAR
+
+        private const val DEFAULT_FETCH_BUDGET = 3000
+
         fun fromEnvironment(): Config {
             return Config(
-                startYear = requireEnv("START_YEAR").toInt(),
-                endInclusiveYear = requireEnv("END_INCLUSIVE_YEAR").toInt(),
-                lunarStartYear = maxOf(requireEnv("LUNAR_START_YEAR").toInt(), LUNAR_MIN_YEAR),
-                lunarEndInclusiveYear = minOf(requireEnv("LUNAR_END_INCLUSIVE_YEAR").toInt(), LUNAR_MAX_YEAR),
-                lunarFetchBudget = requireEnv("LUNAR_FETCH_BUDGET").toInt(),
-                fetchEnforce = System.getenv("FETCH_ENFORCE") == "true",
+                fetchBudget = System.getenv("FETCH_BUDGET")?.toIntOrNull() ?: DEFAULT_FETCH_BUDGET,
             )
         }
-
-        private fun requireEnv(name: String): String {
-            return requireNotNull(System.getenv(name)) { "환경 변수 $name 이(가) 필요합니다." }
-        }
-
-        /** 한국천문연구원 음양력 정보가 제공하는 최소 연도. (1391-02-05 부터) */
-        const val LUNAR_MIN_YEAR = 1391
-
-        /** 한국천문연구원 음양력 정보가 제공하는 최대 연도. (2050-12-31 까지) */
-        const val LUNAR_MAX_YEAR = 2050
     }
 }

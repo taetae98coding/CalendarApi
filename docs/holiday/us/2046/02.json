@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2046-02-19",
+        "endInclusive": "2046-02-19"
+    }
+]

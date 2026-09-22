@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2032-11-11",
+        "endInclusive": "2032-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2032-11-25",
+        "endInclusive": "2032-11-25"
+    }
+]

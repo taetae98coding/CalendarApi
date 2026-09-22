@@ -8,6 +8,7 @@ import io.ktor.client.call.body
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
+import io.ktor.http.HttpStatusCode
 import io.ktor.http.takeFrom
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -23,7 +24,7 @@ import kotlinx.serialization.json.decodeFromJsonElement
  * 한국천문연구원 OpenAPI 클라이언트.
  *
  * - 특일 정보: `SpcdeInfoService`
- * - 음양력 정보: `LrsrCldInfoService` (1391-02-05 ~ 2050-12-31)
+ * - 음양력 정보: `LrsrCldInfoService`
  *
  * 응답을 도메인 모델로 좁히지 않고 [JsonElement] 그대로 돌려준다.
  * 호출자가 원본을 캐시에 남기고, 필요한 필드만 뽑는 일은 [parseItems] 에서 따로 한다.
@@ -51,12 +52,12 @@ data object KasiDataSource {
         }
     }
 
-    suspend fun getSpcde(api: String, yearMonth: YearMonth): JsonElement {
+    suspend fun getSpcde(api: String, yearMonth: YearMonth): Result<JsonElement?> {
         return get("${KasiService.SPCDE.path}/$api", yearMonth)
     }
 
     /** solDay 를 생략하면 해당 양력 월 전체의 음력 정보를 한 번에 받는다. */
-    suspend fun getLunar(yearMonth: YearMonth): JsonElement {
+    suspend fun getLunar(yearMonth: YearMonth): Result<JsonElement?> {
         return get("${KasiService.LUNAR.path}/getLunCalInfo", yearMonth)
     }
 
@@ -80,35 +81,49 @@ data object KasiDataSource {
     }
 
     private suspend fun isRegistered(service: KasiService): Boolean {
-        val result = runCatching {
-            when (service) {
-                KasiService.SPCDE -> getSpcde("getRestDeInfo", probeYearMonth)
-                KasiService.LUNAR -> getLunar(probeYearMonth)
-            }
+        val result = when (service) {
+            KasiService.SPCDE -> getSpcde("getRestDeInfo", probeYearMonth)
+            KasiService.LUNAR -> getLunar(probeYearMonth)
         }
 
         // 활용신청 문제가 아닌 일시적인 실패라면 본 수집에서 다시 판단하게 둔다.
-        return result.exceptionOrNull().let { throwable -> (throwable as? OpenApiException)?.isNotRegistered != true }
+        return (result.exceptionOrNull() as? OpenApiException)?.isNotRegistered != true
     }
 
-    private suspend fun get(path: String, yearMonth: YearMonth): JsonElement {
+    /**
+     * 성공이면 응답 원본, 해당 구간에 자료가 없으면 null.
+     *
+     * 404 와 자료 없음(code=03)은 "요청은 정상적으로 처리됐고 항목이 없을 뿐"이므로 성공으로 본다.
+     * 존재하지 않는 범위를 요청해도 갱신 시각은 찍혀야 순번이 돌아간다.
+     */
+    private suspend fun get(path: String, yearMonth: YearMonth): Result<JsonElement?> {
         val description = "KASI $path $yearMonth"
 
-        val response = semaphore.withPermit {
-            rateLimiter.acquire()
+        return runCatching {
+            val response = semaphore.withPermit {
+                rateLimiter.acquire()
 
-            client.get(path) {
-                parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
-                parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
+                client.get(path) {
+                    parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
+                    parameter("solMonth", yearMonth.month.number.toString().padStart(2, '0'))
+                }
             }
+
+            if (response.status == HttpStatusCode.NotFound) return@runCatching null
+
+            val raw = runCatching { response.body<JsonElement>() }
+                .getOrElse { throwable -> throw IllegalStateException("$description 응답 해석 실패. status=${response.status}", throwable) }
+
+            // 오류 응답을 캐시에 남기지 않도록 여기서 검증만 하고, 원본은 그대로 돌려준다.
+            try {
+                OpenApiClient.json.decodeFromJsonElement<OpenApiResult<KasiBody>>(raw).bodyOrThrow(description)
+            } catch (exception: OpenApiException) {
+                if (exception.isNoData) return@runCatching null
+
+                throw exception
+            }
+
+            raw
         }
-
-        val raw = runCatching { response.body<JsonElement>() }
-            .getOrElse { throwable -> throw IllegalStateException("$description 응답 해석 실패. status=${response.status}", throwable) }
-
-        // 오류 응답을 캐시에 남기지 않도록 여기서 검증만 하고, 원본은 그대로 돌려준다.
-        OpenApiClient.json.decodeFromJsonElement<OpenApiResult<KasiBody>>(raw).bodyOrThrow(description)
-
-        return raw
     }
 }

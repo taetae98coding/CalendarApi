@@ -1,0 +1,217 @@
+{
+    "country": "kr",
+    "period": "2039-09",
+    "holidays": [],
+    "lunar": [
+        {
+            "solar": "2039-09-01",
+            "year": 2039,
+            "month": 7,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-02",
+            "year": 2039,
+            "month": 7,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-03",
+            "year": 2039,
+            "month": 7,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-04",
+            "year": 2039,
+            "month": 7,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-05",
+            "year": 2039,
+            "month": 7,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-06",
+            "year": 2039,
+            "month": 7,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-07",
+            "year": 2039,
+            "month": 7,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-08",
+            "year": 2039,
+            "month": 7,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-09",
+            "year": 2039,
+            "month": 7,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-10",
+            "year": 2039,
+            "month": 7,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-11",
+            "year": 2039,
+            "month": 7,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-12",
+            "year": 2039,
+            "month": 7,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-13",
+            "year": 2039,
+            "month": 7,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-14",
+            "year": 2039,
+            "month": 7,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-15",
+            "year": 2039,
+            "month": 7,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-16",
+            "year": 2039,
+            "month": 7,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-17",
+            "year": 2039,
+            "month": 7,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-18",
+            "year": 2039,
+            "month": 8,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-19",
+            "year": 2039,
+            "month": 8,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-20",
+            "year": 2039,
+            "month": 8,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-21",
+            "year": 2039,
+            "month": 8,
+            "day": 4,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-22",
+            "year": 2039,
+            "month": 8,
+            "day": 5,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-23",
+            "year": 2039,
+            "month": 8,
+            "day": 6,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-24",
+            "year": 2039,
+            "month": 8,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-25",
+            "year": 2039,
+            "month": 8,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-26",
+            "year": 2039,
+            "month": 8,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-27",
+            "year": 2039,
+            "month": 8,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-28",
+            "year": 2039,
+            "month": 8,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-29",
+            "year": 2039,
+            "month": 8,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2039-09-30",
+            "year": 2039,
+            "month": 8,
+            "day": 13,
+            "isLeapMonth": false
+        }
+    ]
+}

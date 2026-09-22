@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2038-10-11",
+        "endInclusive": "2038-10-11"
+    }
+]

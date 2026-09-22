@@ -1,0 +1,14 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2035-01-01",
+        "endInclusive": "2035-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2035-01-15",
+        "endInclusive": "2035-01-15"
+    }
+]

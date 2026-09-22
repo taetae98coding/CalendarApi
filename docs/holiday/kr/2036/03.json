@@ -1,0 +1,8 @@
+[
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2036-03-03",
+        "endInclusive": "2036-03-03"
+    }
+]

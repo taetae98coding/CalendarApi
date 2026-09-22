@@ -1,0 +1,68 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2036-01-01",
+        "endInclusive": "2036-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2036-01-21",
+        "endInclusive": "2036-01-21"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2036-02-18",
+        "endInclusive": "2036-02-18"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2036-05-26",
+        "endInclusive": "2036-05-26"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2036-06-19",
+        "endInclusive": "2036-06-19"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2036-07-04",
+        "endInclusive": "2036-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2036-09-01",
+        "endInclusive": "2036-09-01"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2036-10-13",
+        "endInclusive": "2036-10-13"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2036-11-11",
+        "endInclusive": "2036-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2036-11-27",
+        "endInclusive": "2036-11-27"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2036-12-25",
+        "endInclusive": "2036-12-25"
+    }
+]

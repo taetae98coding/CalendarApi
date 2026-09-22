@@ -1,0 +1,14 @@
+[
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2046-09-14",
+        "endInclusive": "2046-09-15"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2046-09-17",
+        "endInclusive": "2046-09-17"
+    }
+]

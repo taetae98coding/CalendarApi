@@ -1,6 +1,7 @@
 package io.github.taetae98coding.calendar
 
 import io.github.taetae98coding.calendar.openapi.OpenApiClient
+import io.github.taetae98coding.calendar.openapi.entity.OpenApiException
 import io.github.taetae98coding.calendar.openapi.entity.OpenApiResult
 import io.github.taetae98coding.calendar.openapi.kasi.KasiBody
 import kotlin.test.Test
@@ -41,5 +42,17 @@ class OpenApiResultTest {
         val exception = assertFailsWith<IllegalStateException> { result.bodyOrThrow("테스트") }
 
         assertTrue(exception.message.orEmpty().contains("LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS_ERROR"))
+    }
+
+    /** 요청은 정상이고 자료만 없는 경우. 404 와 같이 성공으로 취급해 갱신 시각을 찍는다. */
+    @Test
+    fun `자료 없음은 코드로 구분할 수 있다`() {
+        val result = decode(
+            """{"response":{"header":{"resultCode":"03","resultMsg":"NODATA_ERROR"},"body":{"items":"","numOfRows":100,"pageNo":1,"totalCount":0}}}""",
+        )
+
+        val exception = assertFailsWith<OpenApiException> { result.bodyOrThrow("테스트") }
+
+        assertTrue(exception.isNoData)
     }
 }

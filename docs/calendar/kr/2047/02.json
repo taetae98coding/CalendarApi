@@ -1,0 +1,203 @@
+{
+    "country": "kr",
+    "period": "2047-02",
+    "holidays": [],
+    "lunar": [
+        {
+            "solar": "2047-02-01",
+            "year": 2047,
+            "month": 1,
+            "day": 7,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-02",
+            "year": 2047,
+            "month": 1,
+            "day": 8,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-03",
+            "year": 2047,
+            "month": 1,
+            "day": 9,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-04",
+            "year": 2047,
+            "month": 1,
+            "day": 10,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-05",
+            "year": 2047,
+            "month": 1,
+            "day": 11,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-06",
+            "year": 2047,
+            "month": 1,
+            "day": 12,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-07",
+            "year": 2047,
+            "month": 1,
+            "day": 13,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-08",
+            "year": 2047,
+            "month": 1,
+            "day": 14,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-09",
+            "year": 2047,
+            "month": 1,
+            "day": 15,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-10",
+            "year": 2047,
+            "month": 1,
+            "day": 16,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-11",
+            "year": 2047,
+            "month": 1,
+            "day": 17,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-12",
+            "year": 2047,
+            "month": 1,
+            "day": 18,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-13",
+            "year": 2047,
+            "month": 1,
+            "day": 19,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-14",
+            "year": 2047,
+            "month": 1,
+            "day": 20,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-15",
+            "year": 2047,
+            "month": 1,
+            "day": 21,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-16",
+            "year": 2047,
+            "month": 1,
+            "day": 22,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-17",
+            "year": 2047,
+            "month": 1,
+            "day": 23,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-18",
+            "year": 2047,
+            "month": 1,
+            "day": 24,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-19",
+            "year": 2047,
+            "month": 1,
+            "day": 25,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-20",
+            "year": 2047,
+            "month": 1,
+            "day": 26,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-21",
+            "year": 2047,
+            "month": 1,
+            "day": 27,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-22",
+            "year": 2047,
+            "month": 1,
+            "day": 28,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-23",
+            "year": 2047,
+            "month": 1,
+            "day": 29,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-24",
+            "year": 2047,
+            "month": 1,
+            "day": 30,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-25",
+            "year": 2047,
+            "month": 2,
+            "day": 1,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-26",
+            "year": 2047,
+            "month": 2,
+            "day": 2,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-27",
+            "year": 2047,
+            "month": 2,
+            "day": 3,
+            "isLeapMonth": false
+        },
+        {
+            "solar": "2047-02-28",
+            "year": 2047,
+            "month": 2,
+            "day": 4,
+            "isLeapMonth": false
+        }
+    ]
+}

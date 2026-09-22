@@ -1,0 +1,68 @@
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2044-01-01",
+        "endInclusive": "2044-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2044-01-18",
+        "endInclusive": "2044-01-18"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2044-02-15",
+        "endInclusive": "2044-02-15"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2044-05-30",
+        "endInclusive": "2044-05-30"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2044-06-20",
+        "endInclusive": "2044-06-20"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2044-07-04",
+        "endInclusive": "2044-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2044-09-05",
+        "endInclusive": "2044-09-05"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2044-10-10",
+        "endInclusive": "2044-10-10"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2044-11-11",
+        "endInclusive": "2044-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2044-11-24",
+        "endInclusive": "2044-11-24"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2044-12-26",
+        "endInclusive": "2044-12-26"
+    }
+]

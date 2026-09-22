@@ -1,0 +1,80 @@
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2038-01-01",
+        "endInclusive": "2038-01-01"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2038-02-03",
+        "endInclusive": "2038-02-05"
+    },
+    {
+        "name": "삼일절",
+        "isHoliday": true,
+        "start": "2038-03-01",
+        "endInclusive": "2038-03-01"
+    },
+    {
+        "name": "노동절",
+        "isHoliday": true,
+        "start": "2038-05-03",
+        "endInclusive": "2038-05-03"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2038-05-05",
+        "endInclusive": "2038-05-05"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2038-05-11",
+        "endInclusive": "2038-05-11"
+    },
+    {
+        "name": "현충일",
+        "isHoliday": true,
+        "start": "2038-06-06",
+        "endInclusive": "2038-06-06"
+    },
+    {
+        "name": "제헌절",
+        "isHoliday": true,
+        "start": "2038-07-19",
+        "endInclusive": "2038-07-19"
+    },
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2038-08-16",
+        "endInclusive": "2038-08-16"
+    },
+    {
+        "name": "추석",
+        "isHoliday": true,
+        "start": "2038-09-13",
+        "endInclusive": "2038-09-15"
+    },
+    {
+        "name": "개천절",
+        "isHoliday": true,
+        "start": "2038-10-04",
+        "endInclusive": "2038-10-04"
+    },
+    {
+        "name": "한글날",
+        "isHoliday": true,
+        "start": "2038-10-11",
+        "endInclusive": "2038-10-11"
+    },
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2038-12-25",
+        "endInclusive": "2038-12-25"
+    }
+]

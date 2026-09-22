@@ -1,4 +1,3 @@
-import java.time.LocalDate
 import java.util.Properties
 
 plugins {
@@ -40,34 +39,20 @@ fun secret(name: String): String? = (env(name) ?: secretsProperties.getProperty(
 
 tasks.register<JavaExec>("updateCalendar") {
     group = "calendar"
-    description = "Collect holiday/lunar data and regenerate the static API under docs/"
+    description = "Refresh the response cache and regenerate the static API under docs/"
     classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("io.github.taetae98coding.calendar.AppKt")
 
-    val today = LocalDate.now()
+    // 제공 범위(1998 ~ 2050)는 Config 에 고정되어 있다. 환경 변수로 바꾸지 않는다.
+    // 한 번의 실행에서 다 받을 수는 없으므로, 서비스마다 이 개수만큼만 요청하고
+    // 가장 오래 갱신되지 않은 폴더부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
+    val fetchBudget = env("FETCH_BUDGET") ?: "3000"
 
-    val startYear = env("START_YEAR") ?: "1998"
-    val endInclusiveYear = env("END_INCLUSIVE_YEAR") ?: (today.year + 3).toString()
-
-    // 한국천문연구원 음양력 정보가 제공하는 전체 범위 (1391-02-05 ~ 2050-12-31)
-    val lunarStartYear = env("LUNAR_START_YEAR") ?: "1391"
-    val lunarEndInclusiveYear = env("LUNAR_END_INCLUSIVE_YEAR") ?: "2050"
-
-    // data.go.kr 개발 계정의 일일 트래픽 한도를 넘지 않도록 한 번의 실행에서 새로 호출할 음력 월의 상한.
-    // 이미 생성된 과거 월은 다시 호출하지 않으므로 여러 번의 스케줄 실행에 걸쳐 점진적으로 채워진다.
-    val lunarFetchBudget = env("LUNAR_FETCH_BUDGET") ?: "3000"
-
-    val fetchEnforce = env("FETCH_ENFORCE") ?: "false"
     val maxConcurrency = env("MAX_CONCURRENCY") ?: "8"
     val maxRequestsPerSecond = env("MAX_REQUESTS_PER_SECOND") ?: "20"
     val serviceKey = secret("DATA_GO_KR_SERVICE_KEY").orEmpty()
 
-    environment("START_YEAR", startYear)
-    environment("END_INCLUSIVE_YEAR", endInclusiveYear)
-    environment("LUNAR_START_YEAR", lunarStartYear)
-    environment("LUNAR_END_INCLUSIVE_YEAR", lunarEndInclusiveYear)
-    environment("LUNAR_FETCH_BUDGET", lunarFetchBudget)
-    environment("FETCH_ENFORCE", fetchEnforce)
+    environment("FETCH_BUDGET", fetchBudget)
     environment("MAX_CONCURRENCY", maxConcurrency)
     environment("MAX_REQUESTS_PER_SECOND", maxRequestsPerSecond)
     environment("DATA_GO_KR_SERVICE_KEY", serviceKey)

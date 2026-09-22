@@ -1,0 +1,14 @@
+[
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2034-02-18",
+        "endInclusive": "2034-02-18"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2034-02-20",
+        "endInclusive": "2034-02-21"
+    }
+]
