@@ -13,11 +13,13 @@ import kotlin.time.Clock
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.YearMonth
 import kotlinx.datetime.todayIn
+import kotlinx.datetime.yearMonth
 import kotlinx.serialization.json.JsonElement
 
 data object LunarUpdater {
@@ -64,20 +66,48 @@ data object LunarUpdater {
         return LunarResult(completedYears = completed.sorted(), missingYears = missing)
     }
 
+    /**
+     * 한국천문연구원은 그레고리력 도입 이전 구간을 율리우스력 기준의 월로 내려준다.
+     * 그래서 요청한 월과 실제 양력 날짜가 최대 열흘까지 어긋난다. (1500-02 요청 -> 1500-02-10 ~ 1500-03-10)
+     * 앞뒤 달을 함께 읽어 실제 양력 날짜로 다시 묶어야 월 파일이 이름과 맞는다.
+     */
     private suspend fun updateYear(year: Int, config: Config, budget: AtomicInteger, quotaExceeded: AtomicBoolean): Boolean {
-        val yearMonths = (1..12).map { month -> YearMonth(year, month) }
-            .filter { yearMonth -> yearMonth >= minYearMonth }
+        val ownYearMonths = (1..12).map { month -> YearMonth(year, month) }.filter(::isAvailable)
+        val neighbourYearMonths = listOf(YearMonth(year - 1, 12), YearMonth(year + 1, 1)).filter(::isAvailable)
 
-        val months = coroutineScope {
-            yearMonths.map { yearMonth -> async { loadYearMonth(yearMonth, config, budget, quotaExceeded) } }
+        val own = coroutineScope {
+            ownYearMonths.map { yearMonth -> async { loadYearMonth(yearMonth, config, budget, quotaExceeded) } }
                 .awaitAll()
         }
 
-        if (months.any { it == null }) return false
+        if (own.any { it == null }) return false
 
-        FileDataSource.write(months.filterNotNull().flatten(), Paths.lunarYear(year))
+        val neighbours = coroutineScope {
+            neighbourYearMonths.map { yearMonth -> async { loadYearMonth(yearMonth, config, budget, quotaExceeded) } }
+                .awaitAll()
+        }
+
+        val lunarDates = (own + neighbours).filterNotNull()
+            .flatten()
+            .sortedWith(compareBy(LunarDate::solar, LunarDate::year, LunarDate::month, LunarDate::day))
+            // 1582년 그레고리력 개혁으로 같은 양력 날짜가 두 번 나오는 구간이 있다.
+            .distinctBy(LunarDate::solar)
+            .filter { lunarDate -> lunarDate.solar.year == year }
+
+        if (lunarDates.isEmpty()) return false
+
+        coroutineScope {
+            launch { FileDataSource.write(lunarDates, Paths.lunarYear(year)) }
+
+            lunarDates.groupBy { lunarDate -> lunarDate.solar.yearMonth }
+                .forEach { (yearMonth, dates) -> launch { FileDataSource.write(dates, Paths.lunarYearMonth(yearMonth)) } }
+        }
 
         return true
+    }
+
+    private fun isAvailable(yearMonth: YearMonth): Boolean {
+        return yearMonth >= minYearMonth && yearMonth.year <= Config.LUNAR_MAX_YEAR
     }
 
     /** 캐시에 원본이 있으면 재사용하고, 없으면 예산 안에서 새로 호출한다. 예산이 없거나 실패하면 null. */
@@ -117,11 +147,7 @@ data object LunarUpdater {
                 return null
             }
 
-        if (lunarDates.isEmpty()) return null
-
-        FileDataSource.write(lunarDates, Paths.lunarYearMonth(yearMonth))
-
-        return lunarDates
+        return lunarDates.ifEmpty { null }
     }
 
     /**

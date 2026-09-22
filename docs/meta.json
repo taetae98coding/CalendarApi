@@ -1,5 +1,5 @@
 {
-    "updatedAt": "2026-09-22T07:21:41.132360Z",
+    "updatedAt": "2026-09-22T07:54:51.778486Z",
     "holiday": {
         "startYear": 1998,
         "endInclusiveYear": 2029,
@@ -28,13 +28,13 @@
     "lunar": {
         "startYear": 1391,
         "endInclusiveYear": 2050,
-        "generated": [],
-        "missing": [
+        "generated": [
             {
                 "start": 1391,
                 "endInclusive": 2050
             }
         ],
+        "missing": [],
         "source": "한국천문연구원 음양력 정보 (공공데이터포털)"
     }
 }
