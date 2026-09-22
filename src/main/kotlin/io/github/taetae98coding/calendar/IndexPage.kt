@@ -1,0 +1,66 @@
+package io.github.taetae98coding.calendar
+
+import io.github.taetae98coding.calendar.file.FileDataSource
+import java.io.File
+
+/** GitHub Pages 루트에 놓일 간단한 문서 페이지를 생성한다. */
+data object IndexPage {
+    suspend fun write(config: Config) {
+        FileDataSource.writeText("", File(Paths.docs, ".nojekyll"))
+        FileDataSource.writeText(html(config), File(Paths.docs, "index.html"))
+    }
+
+    private fun html(config: Config): String {
+        return """
+            <!DOCTYPE html>
+            <html lang="ko">
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>CalendarApi</title>
+                <style>
+                    :root { color-scheme: light dark; }
+                    body { margin: 0 auto; padding: 32px 20px 64px; max-width: 760px; line-height: 1.7; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+                    code { padding: 2px 6px; border-radius: 4px; background: rgba(127, 127, 127, 0.18); font-size: 0.92em; }
+                    h2 { margin-top: 40px; }
+                    table { width: 100%; border-collapse: collapse; }
+                    th, td { padding: 8px 6px; border-bottom: 1px solid rgba(127, 127, 127, 0.3); text-align: left; vertical-align: top; }
+                </style>
+            </head>
+            <body>
+            <h1>CalendarApi</h1>
+            <p>공휴일과 음력 정보를 정적 JSON 으로 제공하는 API 입니다. GitHub Actions 가 주기적으로 갱신합니다.</p>
+
+            <h2>공휴일</h2>
+            <p>제공 범위 : <code>${config.startYear}</code> ~ <code>${config.endInclusiveYear}</code>, 국가 : <code>kr</code>, <code>us</code></p>
+            <table>
+                <tr><th>설명</th><th>경로</th></tr>
+                <tr><td>연도별</td><td><code>holiday/{country}/{year}.json</code></td></tr>
+                <tr><td>월별</td><td><code>holiday/{country}/{year}-{month}.json</code></td></tr>
+            </table>
+
+            <h2>음력</h2>
+            <p>제공 범위 : <code>${config.lunarStartYear}</code> ~ <code>${config.lunarEndInclusiveYear}</code></p>
+            <table>
+                <tr><th>설명</th><th>경로</th></tr>
+                <tr><td>연도별</td><td><code>lunar/{year}.json</code></td></tr>
+                <tr><td>월별</td><td><code>lunar/{year}-{month}.json</code></td></tr>
+            </table>
+
+            <h2>통합</h2>
+            <p>공휴일과 음력을 한 번에 받습니다.</p>
+            <table>
+                <tr><th>설명</th><th>경로</th></tr>
+                <tr><td>연도별</td><td><code>calendar/{country}/{year}.json</code></td></tr>
+                <tr><td>월별</td><td><code>calendar/{country}/{year}-{month}.json</code></td></tr>
+            </table>
+
+            <h2>메타</h2>
+            <p><a href="meta.json">meta.json</a> 에서 갱신 시각과 실제 생성된 범위를 확인할 수 있습니다.</p>
+
+            <p><a href="https://github.com/taetae98coding/CalendarApi">GitHub 저장소</a></p>
+            </body>
+            </html>
+        """.trimIndent()
+    }
+}

@@ -1,0 +1,92 @@
+name: Update Calendar
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      START_YEAR:
+        required: false
+        description: 공휴일 시작 연도 (기본 1998)
+        type: string
+      END_INCLUSIVE_YEAR:
+        required: false
+        description: 공휴일 종료 연도 (기본 today + 3)
+        type: string
+      LUNAR_START_YEAR:
+        required: false
+        description: 음력 시작 연도 (기본 1391)
+        type: string
+      LUNAR_END_INCLUSIVE_YEAR:
+        required: false
+        description: 음력 종료 연도 (기본 2050)
+        type: string
+      LUNAR_FETCH_BUDGET:
+        required: false
+        description: 이번 실행에서 새로 호출할 음력 월의 최대 개수 (기본 3000)
+        type: string
+      FETCH_ENFORCE:
+        required: false
+        description: 캐시를 무시하고 모두 다시 호출
+        default: false
+        type: boolean
+
+concurrency:
+  group: update-calendar
+  cancel-in-progress: false
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Run Gradle Task
+        env:
+          SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+          START_YEAR: ${{ inputs.START_YEAR }}
+          END_INCLUSIVE_YEAR: ${{ inputs.END_INCLUSIVE_YEAR }}
+          LUNAR_START_YEAR: ${{ inputs.LUNAR_START_YEAR }}
+          LUNAR_END_INCLUSIVE_YEAR: ${{ inputs.LUNAR_END_INCLUSIVE_YEAR }}
+          LUNAR_FETCH_BUDGET: ${{ inputs.LUNAR_FETCH_BUDGET }}
+          FETCH_ENFORCE: ${{ inputs.FETCH_ENFORCE }}
+        run: ./gradlew updateCalendar
+
+      - name: Configure Git
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+              git commit -m "[TRIGGER] Update calendar"
+            else
+              git commit -m "[AUTOMATION] Update calendar"
+            fi
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Push changes
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          git pull --rebase
+          git push
