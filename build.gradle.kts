@@ -57,7 +57,7 @@ tasks.register<JavaExec>("updateCalendar") {
     val lunarFetchBudget = env("LUNAR_FETCH_BUDGET") ?: "3000"
 
     val fetchEnforce = env("FETCH_ENFORCE") ?: "false"
-    val serviceKey = secret("SERVICE_KEY").orEmpty()
+    val serviceKey = secret("DATA_GO_KR_SERVICE_KEY").orEmpty()
 
     environment("START_YEAR", startYear)
     environment("END_INCLUSIVE_YEAR", endInclusiveYear)
@@ -65,5 +65,5 @@ tasks.register<JavaExec>("updateCalendar") {
     environment("LUNAR_END_INCLUSIVE_YEAR", lunarEndInclusiveYear)
     environment("LUNAR_FETCH_BUDGET", lunarFetchBudget)
     environment("FETCH_ENFORCE", fetchEnforce)
-    environment("SERVICE_KEY", serviceKey)
+    environment("DATA_GO_KR_SERVICE_KEY", serviceKey)
 }

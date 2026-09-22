@@ -29,7 +29,13 @@ data object LunarUpdater {
      * 한 번의 실행에서 새로 호출할 월의 개수를 [Config.lunarFetchBudget] 으로 제한해,
      * 공공데이터포털 일일 트래픽 한도 안에서 여러 번의 스케줄 실행에 걸쳐 전체 범위를 채운다.
      */
-    suspend fun update(config: Config): LunarResult {
+    suspend fun update(config: Config, isRegistered: Boolean): LunarResult {
+        if (!isRegistered) {
+            println("[Lunar] 음양력 정보가 활용신청되지 않아 건너뜁니다.")
+
+            return LunarResult(completedYears = emptyList(), missingYears = config.lunarYears.toList())
+        }
+
         val budget = AtomicInteger(config.lunarFetchBudget)
         val today = Clock.System.todayIn(TimeZone.of("Asia/Seoul"))
 

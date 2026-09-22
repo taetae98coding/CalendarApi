@@ -16,12 +16,12 @@ data class OpenApiResult<T>(
 ) {
     fun bodyOrThrow(description: String): T {
         serviceError?.header?.let { header ->
-            error("$description 실패. code=${header.code}, message=${header.message}, auth=${header.authMessage}")
+            throw OpenApiException(header.code, "$description 실패. code=${header.code}, message=${header.message}, auth=${header.authMessage}")
         }
 
         val response = requireNotNull(response) { "$description 실패. 응답에 response 가 없습니다." }
         if (response.header.code != SUCCESS_CODE) {
-            error("$description 실패. code=${response.header.code}, message=${response.header.message}")
+            throw OpenApiException(response.header.code, "$description 실패. code=${response.header.code}, message=${response.header.message}")
         }
 
         return response.body

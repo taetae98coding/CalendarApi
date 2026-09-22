@@ -28,13 +28,13 @@ data object HolidayUpdater {
     )
 
     /** 국가 -> 연도 -> 공휴일 목록. 통합 API 생성에 재사용한다. */
-    suspend fun update(config: Config): Map<Country, Map<Int, List<Holiday>>> {
+    suspend fun update(config: Config, isSpcdeRegistered: Boolean): Map<Country, Map<Int, List<Holiday>>> {
         return coroutineScope {
             Country.entries
                 .map { country ->
                     async {
                         val byYear = config.years
-                            .map { year -> async { year to updateYear(country, year, config) } }
+                            .map { year -> async { year to updateYear(country, year, config, isSpcdeRegistered) } }
                             .awaitAll()
                             .toMap()
 
@@ -46,12 +46,12 @@ data object HolidayUpdater {
         }
     }
 
-    private suspend fun updateYear(country: Country, year: Int, config: Config): List<Holiday> {
+    private suspend fun updateYear(country: Country, year: Int, config: Config, isSpcdeRegistered: Boolean): List<Holiday> {
         val holidays = when (country) {
-            Country.KOREA -> koreaHolidays(year, config)
+            Country.KOREA -> koreaHolidays(year, config, isSpcdeRegistered)
             Country.UNITED_STATES -> nagerHolidays(country, year, config)
         }
-            .distinctBy { it.name.replace(" ", "") to it.start }
+            .holidayDistinct()
             .holidayFold()
             .holidaySorted()
 
@@ -71,14 +71,15 @@ data object HolidayUpdater {
      * 한국천문연구원 특일 정보를 우선 사용한다.
      * 특일 정보에 공휴일이 없는 연도(2004년 이전, 아직 고시되지 않은 미래 연도)는 Nager.Date 로 보완한다.
      */
-    private suspend fun koreaHolidays(year: Int, config: Config): List<Holiday> {
+    private suspend fun koreaHolidays(year: Int, config: Config, isSpcdeRegistered: Boolean): List<Holiday> {
+        if (!isSpcdeRegistered) return nagerHolidays(Country.KOREA, year, config)
+
         val items = coroutineScope {
             (1..12).map { month -> YearMonth(year, month) }
                 .flatMap { yearMonth -> spcdeApis.map { api -> yearMonth to api } }
                 .map { (yearMonth, api) -> async { spcdeItems(api, yearMonth, config) } }
                 .awaitAll()
                 .flatten()
-                .distinctBy { it.name.replace(" ", "") to it.date }
         }
 
         val kasiHolidays = items.map { item -> item.toHoliday() }
@@ -123,7 +124,7 @@ data object HolidayUpdater {
         return items.filter { it.counties == null }
             .map { item ->
                 Holiday(
-                    name = item.localName,
+                    name = if (country == Country.KOREA) HolidayName.normalize(item.localName) else item.localName,
                     isHoliday = item.isPublicHoliday && item.isGlobal,
                     start = item.date,
                     endInclusive = item.date,

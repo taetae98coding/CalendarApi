@@ -56,7 +56,7 @@ jobs:
 
       - name: Run Gradle Task
         env:
-          SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+          DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
           START_YEAR: ${{ inputs.START_YEAR }}
           END_INCLUSIVE_YEAR: ${{ inputs.END_INCLUSIVE_YEAR }}
           LUNAR_START_YEAR: ${{ inputs.LUNAR_START_YEAR }}
