@@ -7,7 +7,6 @@ import io.github.taetae98coding.calendar.meta.MetaWriter
 import kotlin.time.TimeSource
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
 
 suspend fun main() {
     require(!System.getenv("SERVICE_KEY").isNullOrBlank()) { "SERVICE_KEY(공공데이터포털 인증키) 환경 변수가 필요합니다." }
@@ -26,12 +25,13 @@ suspend fun main() {
         println("[CalendarApi] 공휴일 생성 완료 (${start.elapsedNow()})")
 
         val lunarResult = lunarJob.await()
-        println("[CalendarApi] 음력 생성 완료 (${start.elapsedNow()})")
+        println("[CalendarApi] 음력 생성 완료 ${lunarResult.completedYears.size}년, 남은 연도 ${lunarResult.missingYears.size}년 (${start.elapsedNow()})")
 
-        launch { CalendarUpdater.update(config, holidays) }
-        launch { MetaWriter.write(config, lunarResult) }
-        launch { IndexPage.write(config) }
+        CalendarUpdater.update(config, holidays)
     }
+
+    // 배포되어 있는 파일을 그대로 훑어 범위를 적는다. 범위를 좁혀 실행해도 문서가 줄어들지 않는다.
+    IndexPage.write(MetaWriter.write())
 
     println("[CalendarApi] 전체 완료 (${start.elapsedNow()})")
 }

@@ -1,4 +1,5 @@
 import java.time.LocalDate
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlin.jvm)
@@ -23,6 +24,16 @@ tasks.test {
 /** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */
 fun env(name: String): String? = System.getenv(name)?.takeIf(String::isNotBlank)
 
+/** 로컬 실행용. local.properties 는 .gitignore 에 있으므로 인증키를 여기에 둬도 커밋되지 않는다. */
+val localProperties = Properties().apply {
+    rootProject.file("local.properties")
+        .takeIf(File::exists)
+        ?.inputStream()
+        ?.use(::load)
+}
+
+fun secret(name: String): String? = (env(name) ?: localProperties.getProperty(name))?.takeIf(String::isNotBlank)
+
 tasks.register<JavaExec>("updateCalendar") {
     group = "calendar"
     description = "Collect holiday/lunar data and regenerate the static API under docs/"
@@ -43,7 +54,7 @@ tasks.register<JavaExec>("updateCalendar") {
     val lunarFetchBudget = env("LUNAR_FETCH_BUDGET") ?: "3000"
 
     val fetchEnforce = env("FETCH_ENFORCE") ?: "false"
-    val serviceKey = System.getenv("SERVICE_KEY").orEmpty()
+    val serviceKey = secret("SERVICE_KEY").orEmpty()
 
     environment("START_YEAR", startYear)
     environment("END_INCLUSIVE_YEAR", endInclusiveYear)

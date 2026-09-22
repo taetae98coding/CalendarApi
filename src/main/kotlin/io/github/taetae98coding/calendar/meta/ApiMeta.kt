@@ -16,9 +16,9 @@ data class ApiMeta(
 @Serializable
 data class HolidayMeta(
     @SerialName("startYear")
-    val startYear: Int,
+    val startYear: Int?,
     @SerialName("endInclusiveYear")
-    val endInclusiveYear: Int,
+    val endInclusiveYear: Int?,
     @SerialName("countries")
     val countries: List<CountryMeta>,
 )
@@ -29,6 +29,10 @@ data class CountryMeta(
     val code: String,
     @SerialName("name")
     val name: String,
+    @SerialName("startYear")
+    val startYear: Int?,
+    @SerialName("endInclusiveYear")
+    val endInclusiveYear: Int?,
     @SerialName("sources")
     val sources: List<String>,
 )
@@ -39,12 +43,18 @@ data class LunarMeta(
     val startYear: Int,
     @SerialName("endInclusiveYear")
     val endInclusiveYear: Int,
-    @SerialName("generatedStartYear")
-    val generatedStartYear: Int?,
-    @SerialName("generatedEndInclusiveYear")
-    val generatedEndInclusiveYear: Int?,
-    @SerialName("missingYears")
-    val missingYears: List<Int>,
+    @SerialName("generated")
+    val generated: List<YearRange>,
+    @SerialName("missing")
+    val missing: List<YearRange>,
     @SerialName("source")
     val source: String,
+)
+
+@Serializable
+data class YearRange(
+    @SerialName("start")
+    val start: Int,
+    @SerialName("endInclusive")
+    val endInclusive: Int,
 )

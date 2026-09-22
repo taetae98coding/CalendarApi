@@ -9,9 +9,13 @@ data object Paths {
     val docs = File("docs")
     val cache = File("cache")
 
+    fun holidayDirectory(country: Country): File = File(docs, "holiday/${country.code}")
+
     fun holidayYear(country: Country, year: Int): File = File(docs, "holiday/${country.code}/$year.json")
 
     fun holidayYearMonth(country: Country, yearMonth: YearMonth): File = File(docs, "holiday/${country.code}/$yearMonth.json")
+
+    val lunarDirectory = File(docs, "lunar")
 
     fun lunarYear(year: Int): File = File(docs, "lunar/$year.json")
 
