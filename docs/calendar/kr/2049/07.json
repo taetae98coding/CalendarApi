@@ -1,7 +1,14 @@
 {
     "country": "kr",
     "period": "2049-07",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2049-07-19",
+            "endInclusive": "2049-07-19"
+        }
+    ],
     "lunar": [
         {
             "solar": "2049-07-01",

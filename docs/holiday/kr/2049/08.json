@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "name": "광복절",
+        "isHoliday": true,
+        "start": "2049-08-16",
+        "endInclusive": "2049-08-16"
+    }
+]

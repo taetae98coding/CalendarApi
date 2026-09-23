@@ -3,6 +3,12 @@
     "period": "2039",
     "holidays": [
         {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2038-12-31",
+            "endInclusive": "2038-12-31"
+        },
+        {
             "name": "Martin Luther King, Jr. Day",
             "isHoliday": true,
             "start": "2039-01-17",

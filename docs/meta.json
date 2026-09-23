@@ -1,5 +1,5 @@
 {
-    "updatedAt": "2026-09-22T11:43:25.573279Z",
+    "updatedAt": "2026-09-23T02:09:04.373093574Z",
     "startYear": 1998,
     "endInclusiveYear": 2050,
     "apis": [
@@ -12,15 +12,10 @@
                     "generated": [
                         {
                             "start": 1998,
-                            "endInclusive": 2048
-                        }
-                    ],
-                    "missing": [
-                        {
-                            "start": 2049,
                             "endInclusive": 2050
                         }
                     ],
+                    "missing": [],
                     "sources": [
                         "한국천문연구원 특일 정보 (공공데이터포털)",
                         "Nager.Date (특일 정보에 공휴일이 없는 연도 보완)"
@@ -32,15 +27,10 @@
                     "generated": [
                         {
                             "start": 1998,
-                            "endInclusive": 2046
-                        }
-                    ],
-                    "missing": [
-                        {
-                            "start": 2047,
                             "endInclusive": 2050
                         }
                     ],
+                    "missing": [],
                     "sources": [
                         "Nager.Date"
                     ]

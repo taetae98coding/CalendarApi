@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2049-10",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Columbus Day",
+            "isHoliday": false,
+            "start": "2049-10-11",
+            "endInclusive": "2049-10-11"
+        }
+    ],
     "lunar": [
         {
             "solar": "2049-10-01",

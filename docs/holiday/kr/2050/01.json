@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "name": "신정",
+        "isHoliday": true,
+        "start": "2050-01-01",
+        "endInclusive": "2050-01-01"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2050-01-22",
+        "endInclusive": "2050-01-22"
+    },
+    {
+        "name": "설날",
+        "isHoliday": true,
+        "start": "2050-01-24",
+        "endInclusive": "2050-01-25"
+    }
+]

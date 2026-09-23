@@ -1,7 +1,92 @@
 {
     "country": "kr",
     "period": "2050",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "신정",
+            "isHoliday": true,
+            "start": "2050-01-01",
+            "endInclusive": "2050-01-01"
+        },
+        {
+            "name": "설날",
+            "isHoliday": true,
+            "start": "2050-01-22",
+            "endInclusive": "2050-01-22"
+        },
+        {
+            "name": "설날",
+            "isHoliday": true,
+            "start": "2050-01-24",
+            "endInclusive": "2050-01-25"
+        },
+        {
+            "name": "삼일절",
+            "isHoliday": true,
+            "start": "2050-03-01",
+            "endInclusive": "2050-03-01"
+        },
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2050-04-28",
+            "endInclusive": "2050-04-28"
+        },
+        {
+            "name": "노동절",
+            "isHoliday": true,
+            "start": "2050-05-02",
+            "endInclusive": "2050-05-02"
+        },
+        {
+            "name": "어린이날",
+            "isHoliday": true,
+            "start": "2050-05-05",
+            "endInclusive": "2050-05-05"
+        },
+        {
+            "name": "현충일",
+            "isHoliday": true,
+            "start": "2050-06-06",
+            "endInclusive": "2050-06-06"
+        },
+        {
+            "name": "제헌절",
+            "isHoliday": true,
+            "start": "2050-07-18",
+            "endInclusive": "2050-07-18"
+        },
+        {
+            "name": "광복절",
+            "isHoliday": true,
+            "start": "2050-08-15",
+            "endInclusive": "2050-08-15"
+        },
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2050-09-29",
+            "endInclusive": "2050-10-01"
+        },
+        {
+            "name": "개천절",
+            "isHoliday": true,
+            "start": "2050-10-03",
+            "endInclusive": "2050-10-03"
+        },
+        {
+            "name": "한글날",
+            "isHoliday": true,
+            "start": "2050-10-10",
+            "endInclusive": "2050-10-10"
+        },
+        {
+            "name": "크리스마스",
+            "isHoliday": true,
+            "start": "2050-12-25",
+            "endInclusive": "2050-12-25"
+        }
+    ],
     "lunar": [
         {
             "solar": "2050-01-01",

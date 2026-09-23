@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2047-07",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Independence Day",
+            "isHoliday": true,
+            "start": "2047-07-04",
+            "endInclusive": "2047-07-04"
+        }
+    ],
     "lunar": [
         {
             "solar": "2047-07-01",

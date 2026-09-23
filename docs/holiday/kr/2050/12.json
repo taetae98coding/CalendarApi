@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "name": "크리스마스",
+        "isHoliday": true,
+        "start": "2050-12-25",
+        "endInclusive": "2050-12-25"
+    }
+]

@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2049-06",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Juneteenth National Independence Day",
+            "isHoliday": true,
+            "start": "2049-06-18",
+            "endInclusive": "2049-06-18"
+        }
+    ],
     "lunar": [
         {
             "solar": "2049-06-01",

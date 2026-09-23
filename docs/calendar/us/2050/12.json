@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2050-12",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Christmas Day",
+            "isHoliday": true,
+            "start": "2050-12-26",
+            "endInclusive": "2050-12-26"
+        }
+    ],
     "lunar": [
         {
             "solar": "2050-12-01",

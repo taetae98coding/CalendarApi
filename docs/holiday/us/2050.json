@@ -1,1 +1,68 @@
-[]
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2049-12-31",
+        "endInclusive": "2049-12-31"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2050-01-17",
+        "endInclusive": "2050-01-17"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2050-02-21",
+        "endInclusive": "2050-02-21"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2050-05-30",
+        "endInclusive": "2050-05-30"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2050-06-20",
+        "endInclusive": "2050-06-20"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2050-07-04",
+        "endInclusive": "2050-07-04"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2050-09-05",
+        "endInclusive": "2050-09-05"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2050-10-10",
+        "endInclusive": "2050-10-10"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2050-11-11",
+        "endInclusive": "2050-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2050-11-24",
+        "endInclusive": "2050-11-24"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2050-12-26",
+        "endInclusive": "2050-12-26"
+    }
+]

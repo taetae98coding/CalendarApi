@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2050-01",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2050-01-17",
+            "endInclusive": "2050-01-17"
+        }
+    ],
     "lunar": [
         {
             "solar": "2050-01-01",

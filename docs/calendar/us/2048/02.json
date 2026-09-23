@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2048-02",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Washington's Birthday",
+            "isHoliday": true,
+            "start": "2048-02-17",
+            "endInclusive": "2048-02-17"
+        }
+    ],
     "lunar": [
         {
             "solar": "2048-02-01",

@@ -1,7 +1,14 @@
 {
     "country": "kr",
     "period": "2050-04",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "부처님오신날",
+            "isHoliday": true,
+            "start": "2050-04-28",
+            "endInclusive": "2050-04-28"
+        }
+    ],
     "lunar": [
         {
             "solar": "2050-04-01",

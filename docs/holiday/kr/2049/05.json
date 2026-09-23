@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "name": "노동절",
+        "isHoliday": true,
+        "start": "2049-05-03",
+        "endInclusive": "2049-05-03"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2049-05-05",
+        "endInclusive": "2049-05-05"
+    },
+    {
+        "name": "부처님오신날",
+        "isHoliday": true,
+        "start": "2049-05-10",
+        "endInclusive": "2049-05-10"
+    }
+]

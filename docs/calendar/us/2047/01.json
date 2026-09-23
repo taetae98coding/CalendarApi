@@ -1,7 +1,20 @@
 {
     "country": "us",
     "period": "2047-01",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "isHoliday": true,
+            "start": "2047-01-01",
+            "endInclusive": "2047-01-01"
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "isHoliday": true,
+            "start": "2047-01-21",
+            "endInclusive": "2047-01-21"
+        }
+    ],
     "lunar": [
         {
             "solar": "2047-01-01",

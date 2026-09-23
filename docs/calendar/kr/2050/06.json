@@ -1,7 +1,14 @@
 {
     "country": "kr",
     "period": "2050-06",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "현충일",
+            "isHoliday": true,
+            "start": "2050-06-06",
+            "endInclusive": "2050-06-06"
+        }
+    ],
     "lunar": [
         {
             "solar": "2050-06-01",

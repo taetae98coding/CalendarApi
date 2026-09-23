@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "name": "노동절",
+        "isHoliday": true,
+        "start": "2050-05-02",
+        "endInclusive": "2050-05-02"
+    },
+    {
+        "name": "어린이날",
+        "isHoliday": true,
+        "start": "2050-05-05",
+        "endInclusive": "2050-05-05"
+    }
+]

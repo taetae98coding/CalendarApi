@@ -1,1 +1,68 @@
-[]
+[
+    {
+        "name": "New Year's Day",
+        "isHoliday": true,
+        "start": "2048-01-01",
+        "endInclusive": "2048-01-01"
+    },
+    {
+        "name": "Martin Luther King, Jr. Day",
+        "isHoliday": true,
+        "start": "2048-01-20",
+        "endInclusive": "2048-01-20"
+    },
+    {
+        "name": "Washington's Birthday",
+        "isHoliday": true,
+        "start": "2048-02-17",
+        "endInclusive": "2048-02-17"
+    },
+    {
+        "name": "Memorial Day",
+        "isHoliday": true,
+        "start": "2048-05-25",
+        "endInclusive": "2048-05-25"
+    },
+    {
+        "name": "Juneteenth National Independence Day",
+        "isHoliday": true,
+        "start": "2048-06-19",
+        "endInclusive": "2048-06-19"
+    },
+    {
+        "name": "Independence Day",
+        "isHoliday": true,
+        "start": "2048-07-03",
+        "endInclusive": "2048-07-03"
+    },
+    {
+        "name": "Labor Day",
+        "isHoliday": true,
+        "start": "2048-09-07",
+        "endInclusive": "2048-09-07"
+    },
+    {
+        "name": "Columbus Day",
+        "isHoliday": false,
+        "start": "2048-10-12",
+        "endInclusive": "2048-10-12"
+    },
+    {
+        "name": "Veterans Day",
+        "isHoliday": true,
+        "start": "2048-11-11",
+        "endInclusive": "2048-11-11"
+    },
+    {
+        "name": "Thanksgiving Day",
+        "isHoliday": true,
+        "start": "2048-11-26",
+        "endInclusive": "2048-11-26"
+    },
+    {
+        "name": "Christmas Day",
+        "isHoliday": true,
+        "start": "2048-12-25",
+        "endInclusive": "2048-12-25"
+    }
+]

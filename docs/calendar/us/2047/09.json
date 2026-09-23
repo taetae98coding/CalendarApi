@@ -1,7 +1,14 @@
 {
     "country": "us",
     "period": "2047-09",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "Labor Day",
+            "isHoliday": true,
+            "start": "2047-09-02",
+            "endInclusive": "2047-09-02"
+        }
+    ],
     "lunar": [
         {
             "solar": "2047-09-01",

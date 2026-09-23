@@ -1,7 +1,20 @@
 {
     "country": "kr",
     "period": "2049-09",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2049-09-10",
+            "endInclusive": "2049-09-11"
+        },
+        {
+            "name": "추석",
+            "isHoliday": true,
+            "start": "2049-09-13",
+            "endInclusive": "2049-09-13"
+        }
+    ],
     "lunar": [
         {
             "solar": "2049-09-01",
