@@ -38,14 +38,14 @@ class CachedHolidayRepository(
      * 특일 정보에 공휴일이 없는 연도(2004년 이전, 아직 고시되지 않은 미래 연도)는 Nager.Date 로 보완한다.
      */
     private suspend fun korea(year: Int): List<Holiday> {
-        val items = coroutineScope {
+        // 어느 API 의 항목인지 알아야 API 별 후처리를 할 수 있으므로, 합치기 전에 API 단위로 매핑한다.
+        val kasiHolidays = coroutineScope {
             SourceApi.spcde.flatMap { api -> (1..12).map { month -> api to YearMonth(year, month) } }
-                .map { (api, yearMonth) -> async { spcdeItems(api, yearMonth) } }
+                .map { (api, yearMonth) -> async { HolidayMapper.fromKasi(api, spcdeItems(api, yearMonth)) } }
                 .awaitAll()
                 .flatten()
         }
 
-        val kasiHolidays = items.map(KasiHolidayMapper::toHoliday)
         if (kasiHolidays.any(Holiday::isHoliday)) return kasiHolidays
 
         val kasiDates = kasiHolidays.map(Holiday::start).toSet()
@@ -59,8 +59,9 @@ class CachedHolidayRepository(
 
     /** Nager.Date 는 연 단위 응답이라 캐시도 연 단위 파일 하나다. */
     private suspend fun nager(country: Country, year: Int): List<Holiday> {
-        val items = reader.items(SourceApi.nager(country), CachePeriod(year), NagerResponse::holidays)
+        val api = SourceApi.nager(country)
+        val items = reader.items(api, CachePeriod(year), NagerResponse::holidays)
 
-        return NagerHolidayMapper.toHolidays(items, country)
+        return HolidayMapper.fromNager(api, items)
     }
 }
