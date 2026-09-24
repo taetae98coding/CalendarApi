@@ -3,7 +3,7 @@ package io.github.taetae98coding.calendar.datasource
 /**
  * 원천 호출이 실패한 이유.
  *
- * 갱신 엔진은 어느 원천이 어떤 코드로 실패했는지 모른다. [kind] 만 보고 예산을 돌려줄지, 서비스를 멈출지 정한다.
+ * 갱신 엔진은 어느 원천이 어떤 코드로 실패했는지 모른다. [kind] 만 보고 요청으로 셀지, 서비스를 멈출지 정한다.
  * 원천마다 오류 표기가 다르므로 각 원천의 예외가 이 타입을 상속해 [kind] 로 옮겨 준다.
  */
 open class SourceException(
@@ -33,7 +33,7 @@ open class SourceException(
         QUOTA_EXCEEDED,
         NO_DATA,
 
-        /** 위 어느 것도 아닌 실패. 구간 하나의 문제로 보고 예산은 소비된 것으로 친다. */
+        /** 위 어느 것도 아닌 실패. 구간 하나의 문제로 보고 요청은 성립한 것으로 친다. */
         OTHER,
     }
 }

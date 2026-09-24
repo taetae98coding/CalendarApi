@@ -5,5 +5,6 @@ data class UpdateReport(
     val units: Int,
     val succeeded: Int,
     val requests: Int,
-    val remainingBudget: Int,
+    /** 전 구간을 돌기 전에 멈췄다면 그 이유. 끝까지 돌았으면 null. */
+    val stoppedBy: StopReason?,
 )

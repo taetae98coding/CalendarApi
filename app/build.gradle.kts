@@ -43,10 +43,10 @@ tasks.register<JavaExec>("updateCalendar") {
     workingDir = rootProject.projectDir
 
     // 제공 범위(1998 ~ 2050)는 CalendarYears 에 고정되어 있다. 환경 변수로 바꾸지 않는다.
-    // 한 번의 실행에서 다 받을 수는 없으므로, 서비스마다 예산만큼만 요청하고
+    // 한 번의 실행에서 받을 요청 수도 정하지 않는다. 원천이 일일 한도를 알려줄 때까지
     // 가장 오래 갱신되지 않은 구간부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
     // 기본값은 Config 가 가진다. 여기서는 정해진 값만 넘긴다.
-    listOf("FETCH_BUDGET", "MAX_CONCURRENCY", "MAX_REQUESTS_PER_SECOND").forEach { name ->
+    listOf("MAX_CONCURRENCY", "MAX_REQUESTS_PER_SECOND").forEach { name ->
         env(name)?.let { value -> environment(name, value) }
     }
     secret("DATA_GO_KR_SERVICE_KEY")?.let { value -> environment("DATA_GO_KR_SERVICE_KEY", value) }

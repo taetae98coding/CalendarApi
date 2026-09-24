@@ -5,10 +5,6 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
-      FETCH_BUDGET:
-        required: false
-        description: 서비스 하나에 보낼 최대 요청 수 (기본 3000)
-        type: string
       MAX_REQUESTS_PER_SECOND:
         required: false
         description: 외부 API 한 곳으로 나가는 초당 요청 수 (기본 20)
@@ -40,7 +36,6 @@ jobs:
       - name: Run Gradle Task
         env:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
-          FETCH_BUDGET: ${{ inputs.FETCH_BUDGET }}
           MAX_REQUESTS_PER_SECOND: ${{ inputs.MAX_REQUESTS_PER_SECOND }}
         run: ./gradlew updateCalendar
 

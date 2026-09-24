@@ -3,10 +3,10 @@ package io.github.taetae98coding.calendar.data.source
 import io.github.taetae98coding.calendar.datasource.kasi.KasiService
 
 /**
- * 트래픽 한도와 예산이 따로 잡히는 단위.
+ * 트래픽 한도와 중단이 따로 잡히는 단위.
  *
  * 공공데이터포털은 인증키가 하나여도 서비스마다 한도를 따로 세고 활용신청도 따로 해야 한다.
- * Nager.Date 는 인증이 없지만 같은 방식으로 예산을 걸어 한 곳이 느려도 나머지가 진행되게 한다.
+ * Nager.Date 는 인증이 없지만 같은 단위로 묶어 한 곳이 느려도 나머지가 진행되게 한다.
  */
 enum class FetchService(
     val displayName: String,

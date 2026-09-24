@@ -6,7 +6,7 @@ import io.github.taetae98coding.calendar.domain.Country
 /**
  * 요청이 어디로 나가는가.
  *
- * 캐시 경로([provider], [id]), 예산 단위([service]), 구간 단위([granularity])가 전부 여기서 결정된다.
+ * 캐시 경로([provider], [id]), 중단 단위([service]), 구간 단위([granularity])가 전부 여기서 결정된다.
  * 원천을 부르는 쪽은 타입으로 분기하므로 "KASI 인데 국가가 없다" 같은 nullable 조합이 생기지 않는다.
  */
 sealed interface Remote {

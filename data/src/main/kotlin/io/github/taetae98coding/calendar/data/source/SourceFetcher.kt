@@ -6,7 +6,7 @@ import kotlinx.serialization.json.JsonElement
 /**
  * 원천에서 구간 하나를 받아 온다.
  *
- * 갱신 엔진은 예산·순서·동시성만 맡고 어느 원천을 어떻게 부르는지는 여기에 맡긴다.
+ * 갱신 엔진은 순서·동시성·중단만 맡고 어느 원천을 어떻게 부르는지는 여기에 맡긴다.
  * 테스트에서는 네트워크 없이 가짜로 바꿔 끼운다.
  */
 interface SourceFetcher {

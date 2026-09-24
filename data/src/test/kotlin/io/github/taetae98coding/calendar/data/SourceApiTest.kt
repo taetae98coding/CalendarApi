@@ -18,7 +18,7 @@ class SourceApiTest {
     }
 
     @Test
-    fun `예산 단위는 공공데이터포털 서비스와 같다`() {
+    fun `중단 단위는 공공데이터포털 서비스와 같다`() {
         assertEquals(setOf(FetchService.KASI_SPCDE), SourceApi.spcde.map(SourceApi::service).toSet())
         assertEquals(FetchService.KASI_LUNAR, SourceApi.KASI_LUN_CAL.service)
         assertEquals(FetchService.NAGER, SourceApi.NAGER_KOREA.service)
