@@ -3,7 +3,6 @@ package io.github.taetae98coding.calendar.data.holiday
 import io.github.taetae98coding.calendar.datasource.nager.NagerHoliday
 import io.github.taetae98coding.calendar.domain.Country
 import io.github.taetae98coding.calendar.domain.holiday.Holiday
-import io.github.taetae98coding.calendar.domain.holiday.HolidayName
 
 /** @see KasiHolidayMapper */
 object NagerHolidayMapper {

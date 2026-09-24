@@ -1,5 +1,7 @@
 package io.github.taetae98coding.calendar.data
 
+import io.github.taetae98coding.calendar.core.RecordingLogger
+import io.github.taetae98coding.calendar.core.file.tempDirectory
 import io.github.taetae98coding.calendar.data.cache.CachePaths
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
 import io.github.taetae98coding.calendar.data.cache.CacheReader
@@ -8,7 +10,6 @@ import io.github.taetae98coding.calendar.data.holiday.CachedHolidayRepository
 import io.github.taetae98coding.calendar.data.source.SourceApi
 import io.github.taetae98coding.calendar.domain.Country
 import io.github.taetae98coding.calendar.domain.holiday.Holiday
-import java.io.File
 import kotlin.test.AfterTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -68,10 +69,10 @@ class CachedHolidayRepositoryTest {
 
     @Test
     fun `캐시가 없거나 깨진 구간은 비어 있는 것으로 보고 알린다`() = runTest {
-        File(paths.file(SourceApi.NAGER_UNITED_STATES, CachePeriod(2026)).apply { parentFile.mkdirs() }.path).writeText("{not json")
+        paths.file(SourceApi.NAGER_UNITED_STATES, CachePeriod(2026)).apply { parentFile.mkdirs() }.writeText("{not json")
 
         assertTrue(repository.get(Country.UNITED_STATES, 2026).isEmpty())
         assertTrue(repository.get(Country.UNITED_STATES, 2027).isEmpty())
-        assertEquals(1, logger.messages.count { message -> "해석 실패" in message })
+        assertEquals(1, logger.count("해석 실패"))
     }
 }

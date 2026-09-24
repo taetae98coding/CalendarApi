@@ -1,5 +1,8 @@
 package io.github.taetae98coding.calendar.data
 
+import io.github.taetae98coding.calendar.core.FixedClock
+import io.github.taetae98coding.calendar.core.RecordingLogger
+import io.github.taetae98coding.calendar.core.file.tempDirectory
 import io.github.taetae98coding.calendar.data.cache.CacheMeta
 import io.github.taetae98coding.calendar.data.cache.CachePaths
 import io.github.taetae98coding.calendar.data.cache.CachePeriod
@@ -121,7 +124,7 @@ class CacheUpdaterTest {
         assertEquals(0, report.succeeded)
         assertEquals(StopReason.QUOTA_EXCEEDED, report.stoppedBy)
         assertTrue(fetcher.count.get() < 24, "멈추지 않고 ${fetcher.count.get()}건을 보냈습니다.")
-        assertEquals(1, logger.messages.count { message -> "일일 트래픽" in message })
+        assertEquals(1, logger.count("일일 트래픽"))
         assertTrue(store.meta(SourceApi.KASI_LUN_CAL).lastUpdatedAt.isEmpty())
     }
 
@@ -135,7 +138,7 @@ class CacheUpdaterTest {
 
         assertEquals(StopReason.REPEATED_FAILURE, report.stoppedBy)
         assertTrue(fetcher.count.get() < 24, "멈추지 않고 ${fetcher.count.get()}건을 보냈습니다.")
-        assertEquals(1, logger.messages.count { message -> "연속 3건" in message })
+        assertEquals(1, logger.count("연속 3건"))
     }
 
     /** 원천이 과거 자료를 고치는 일이 실제로 있다. 받아 둔 구간이라고 건너뛰면 그 변경을 영영 못 본다. */
@@ -159,7 +162,7 @@ class CacheUpdaterTest {
         updater(fetcher).update(skip = setOf(FetchService.KASI_SPCDE, FetchService.NAGER)).getValue(FetchService.KASI_LUNAR)
 
         assertEquals(24, fetcher.count.get())
-        assertEquals(1, logger.messages.count { message -> "속도 초과" in message })
+        assertEquals(1, logger.count("속도 초과"))
     }
 
     @Test

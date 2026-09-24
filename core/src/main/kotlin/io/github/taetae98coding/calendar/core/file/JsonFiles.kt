@@ -44,13 +44,6 @@ class JsonFiles(
         return read<T>(file)
     }
 
-    suspend fun writeText(text: String, file: File) {
-        withContext(Dispatchers.IO) {
-            file.parentFile?.mkdirs()
-            file.writeText(text)
-        }
-    }
-
     companion object {
         val pretty: JsonFiles = JsonFiles(
             Json {

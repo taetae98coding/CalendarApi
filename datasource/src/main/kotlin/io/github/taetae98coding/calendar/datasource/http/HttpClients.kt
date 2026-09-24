@@ -1,5 +1,6 @@
 package io.github.taetae98coding.calendar.datasource.http
 
+import io.github.taetae98coding.calendar.datasource.SourceJson
 import io.ktor.client.HttpClient
 import io.ktor.client.HttpClientConfig
 import io.ktor.client.engine.HttpClientEngine
@@ -11,25 +12,24 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.serialization.kotlinx.json.json
 import kotlin.time.Duration.Companion.seconds
 import kotlinx.coroutines.CancellationException
-import kotlinx.serialization.json.Json
 
-/** 원천 API 클라이언트가 공유하는 Ktor 설정. 엔진을 바꿔 끼울 수 있어 테스트에서는 MockEngine 을 쓴다. */
+/**
+ * 원천 API 클라이언트가 공유하는 Ktor 설정.
+ *
+ * [engine] 을 넘기지 않으면 OkHttp 엔진을 클라이언트가 직접 만들어 소유하므로 [HttpClient.close] 가 엔진까지 닫는다.
+ * 엔진 인스턴스를 넘기면(테스트의 MockEngine) Ktor 규칙대로 넘긴 쪽이 소유하고 닫는다.
+ * 운영 경로에서 이 구분이 중요하다. OkHttp 의 스레드 풀은 데몬이 아니라서 닫히지 않으면 main 이 끝나고도 프로세스가 1분 가까이 남는다.
+ */
 object HttpClients {
     private const val MAX_RETRIES = 5
 
-    /** 원천 응답은 필드가 자주 늘고 숫자가 문자열로 오기도 해서 느슨하게 읽는다. */
-    val json: Json = Json {
-        ignoreUnknownKeys = true
-        isLenient = true
-    }
-
-    fun create(engine: HttpClientEngine = OkHttp.create(), block: HttpClientConfig<*>.() -> Unit = {}): HttpClient {
-        return HttpClient(engine) {
+    fun create(engine: HttpClientEngine? = null, block: HttpClientConfig<*>.() -> Unit = {}): HttpClient {
+        val config: HttpClientConfig<*>.() -> Unit = {
             // 오류 응답도 본문을 읽어 원인을 알려주기 위해 예외로 바꾸지 않는다.
             expectSuccess = false
 
             install(ContentNegotiation) {
-                json(json)
+                json(SourceJson.lenient)
             }
 
             install(HttpTimeout) {
@@ -48,5 +48,7 @@ object HttpClients {
 
             block()
         }
+
+        return if (engine == null) HttpClient(OkHttp, config) else HttpClient(engine, config)
     }
 }

@@ -7,7 +7,7 @@ import java.io.File
 /**
  * 캐시 경로 규칙. `cache/{provider}/{api}/{year}/{month}.json` (연 단위 응답은 `cache/{provider}/{api}/{year}.json`)
  *
- * 배포 경로는 `:app` 의 DocPaths 가 따로 관리한다. 캐시는 수집의 사정, 배포는 공개 규격이라 같이 바뀌지 않는다.
+ * 배포 경로는 `:publish` 의 DocPaths 가 따로 관리한다. 캐시는 수집의 사정, 배포는 공개 규격이라 같이 바뀌지 않는다.
  */
 class CachePaths(
     val root: File,

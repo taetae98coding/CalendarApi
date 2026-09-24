@@ -1,14 +1,14 @@
 package io.github.taetae98coding.calendar.publish
 
-import io.github.taetae98coding.calendar.core.file.JsonFiles
+import io.github.taetae98coding.calendar.core.file.TextFiles
 
 /** GitHub Pages 루트에 놓일 간단한 문서 페이지를 생성한다. */
 class IndexPage(
     private val paths: DocPaths,
 ) {
     suspend fun write(meta: ApiMeta) {
-        JsonFiles.pretty.writeText("", paths.noJekyll)
-        JsonFiles.pretty.writeText(html(meta), paths.index)
+        TextFiles.write("", paths.noJekyll)
+        TextFiles.write(html(meta), paths.index)
     }
 
     private fun html(meta: ApiMeta): String {

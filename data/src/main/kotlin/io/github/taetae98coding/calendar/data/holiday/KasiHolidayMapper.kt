@@ -2,7 +2,6 @@ package io.github.taetae98coding.calendar.data.holiday
 
 import io.github.taetae98coding.calendar.datasource.kasi.KasiSpcdeItem
 import io.github.taetae98coding.calendar.domain.holiday.Holiday
-import io.github.taetae98coding.calendar.domain.holiday.HolidayName
 
 /**
  * 출처의 표기를 도메인 어휘로 옮긴다.

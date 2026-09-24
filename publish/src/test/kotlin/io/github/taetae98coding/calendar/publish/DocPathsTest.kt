@@ -1,5 +1,6 @@
 package io.github.taetae98coding.calendar.publish
 
+import io.github.taetae98coding.calendar.core.file.invariantPath
 import io.github.taetae98coding.calendar.domain.Country
 import java.io.File
 import kotlin.test.Test
@@ -24,6 +25,4 @@ class DocPathsTest {
         assertEquals("docs/index.html", paths.index.invariantPath())
         assertEquals("docs/.nojekyll", paths.noJekyll.invariantPath())
     }
-
-    private fun File.invariantPath(): String = path.replace(File.separatorChar, '/')
 }

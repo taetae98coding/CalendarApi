@@ -5,6 +5,10 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
+      MAX_CONCURRENCY:
+        required: false
+        description: 외부 API 한 곳으로 동시에 나갈 수 있는 요청 수 (기본 8)
+        type: string
       MAX_REQUESTS_PER_SECOND:
         required: false
         description: 외부 API 한 곳으로 나가는 초당 요청 수 (기본 20)
@@ -36,6 +40,7 @@ jobs:
       - name: Run Gradle Task
         env:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
+          MAX_CONCURRENCY: ${{ inputs.MAX_CONCURRENCY }}
           MAX_REQUESTS_PER_SECOND: ${{ inputs.MAX_REQUESTS_PER_SECOND }}
         run: ./gradlew updateCalendar
 

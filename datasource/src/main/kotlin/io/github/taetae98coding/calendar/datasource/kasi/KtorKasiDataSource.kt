@@ -1,12 +1,12 @@
 package io.github.taetae98coding.calendar.datasource.kasi
 
+import io.github.taetae98coding.calendar.core.runSuspendCatching
 import io.github.taetae98coding.calendar.datasource.SourceException
 import io.github.taetae98coding.calendar.datasource.http.HttpClients
 import io.github.taetae98coding.calendar.datasource.http.Throttle
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.HttpClientEngine
-import io.ktor.client.engine.okhttp.OkHttp
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
@@ -23,7 +23,7 @@ class KtorKasiDataSource(
     override suspend fun get(api: KasiApi, yearMonth: YearMonth): Result<JsonElement?> {
         val description = "KASI ${api.route} $yearMonth"
 
-        return runCatching {
+        return runSuspendCatching {
             val response = throttle.withPermit {
                 client.get(api.route) {
                     parameter("solYear", yearMonth.year.toString().padStart(4, '0'))
@@ -31,16 +31,16 @@ class KtorKasiDataSource(
                 }
             }
 
-            if (response.status == HttpStatusCode.NotFound) return@runCatching null
+            if (response.status == HttpStatusCode.NotFound) return@runSuspendCatching null
 
-            val raw = runCatching { response.body<JsonElement>() }
+            val raw = runSuspendCatching { response.body<JsonElement>() }
                 .getOrElse { throwable -> throw IllegalStateException("$description 응답 해석 실패. status=${response.status}", throwable) }
 
             // 오류 응답을 캐시에 남기지 않도록 여기서 검증한다. 원본은 그대로 돌려준다.
             val body = try {
                 KasiResponse.body(raw, description)
             } catch (exception: OpenApiException) {
-                if (exception.isNoData) return@runCatching null
+                if (exception.isNoData) return@runSuspendCatching null
 
                 throw exception
             }
@@ -61,7 +61,8 @@ class KtorKasiDataSource(
         /** 활용신청 여부를 확인할 때 쓰는 아무 월. 두 서비스 모두 제공하는 구간이면 된다. */
         private val PROBE_YEAR_MONTH = YearMonth(2025, 1)
 
-        fun client(serviceKey: String, engine: HttpClientEngine = OkHttp.create()): HttpClient {
+        /** [engine] 은 테스트용이다. 넘기지 않으면 OkHttp 를 쓰고 [HttpClient.close] 가 엔진까지 닫는다. */
+        fun client(serviceKey: String, engine: HttpClientEngine? = null): HttpClient {
             return HttpClients.create(engine) {
                 install(DefaultRequest) {
                     url.takeFrom(BASE_URL)

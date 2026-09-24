@@ -1,9 +1,12 @@
-package io.github.taetae98coding.calendar.domain.holiday
+package io.github.taetae98coding.calendar.data.holiday
 
 /**
  * 같은 공휴일이 출처와 연도에 따라 다른 이름으로 내려온다.
  * (KASI: 석가탄신일 / 부처님오신날, Nager: 새해 / 3·1절)
  * 클라이언트가 연도 경계에서 다른 이름을 보지 않도록 한 가지로 맞춘다.
+ *
+ * 출처별 표기의 차이를 아는 일이라 `:domain` 이 아니라 여기, 매퍼([KasiHolidayMapper] · [NagerHolidayMapper]) 옆에 둔다.
+ * 도메인은 정리된 이름만 본다.
  */
 object HolidayName {
     private val whitespace = "\\s+".toRegex()

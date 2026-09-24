@@ -1,12 +1,12 @@
 package io.github.taetae98coding.calendar.publish
 
+import io.github.taetae98coding.calendar.core.file.relativeFilePaths
+import io.github.taetae98coding.calendar.core.file.tempDirectory
 import io.github.taetae98coding.calendar.domain.Country
 import io.github.taetae98coding.calendar.domain.holiday.Holiday
 import io.github.taetae98coding.calendar.domain.holiday.HolidayRepository
 import io.github.taetae98coding.calendar.domain.lunar.LunarDate
 import io.github.taetae98coding.calendar.domain.lunar.LunarRepository
-import java.io.File
-import kotlin.io.path.createTempDirectory
 import kotlin.test.AfterTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -17,7 +17,7 @@ import kotlinx.datetime.YearMonth
 import kotlinx.serialization.json.Json
 
 class DocsUpdaterTest {
-    private val root = createTempDirectory("calendar-api-docs").toFile()
+    private val root = tempDirectory()
     private val paths = DocPaths(root)
     private val json = Json { ignoreUnknownKeys = true }
 
@@ -44,10 +44,8 @@ class DocsUpdaterTest {
     fun `범위 전체에 연 파일과 월 파일을 국가별로 만든다`() = runTest {
         DocsUpdater(paths, holidayRepository, lunarRepository, years = 2025..2026).update()
 
-        val files = root.walk().filter(File::isFile).count()
-
         // API 3 × 국가 2 × 연도 2 × (연 1 + 월 12)
-        assertEquals(3 * 2 * 2 * 13, files)
+        assertEquals(3 * 2 * 2 * 13, root.relativeFilePaths().size)
         assertEquals("[]", paths.year(DocApi.HOLIDAY, Country.UNITED_STATES, 2026).readText().trim())
     }
 

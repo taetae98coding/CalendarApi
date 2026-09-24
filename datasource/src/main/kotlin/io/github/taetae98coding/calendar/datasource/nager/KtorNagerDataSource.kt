@@ -1,11 +1,11 @@
 package io.github.taetae98coding.calendar.datasource.nager
 
+import io.github.taetae98coding.calendar.core.runSuspendCatching
 import io.github.taetae98coding.calendar.datasource.http.HttpClients
 import io.github.taetae98coding.calendar.datasource.http.Throttle
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.HttpClientEngine
-import io.ktor.client.engine.okhttp.OkHttp
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.request.get
 import io.ktor.http.HttpStatusCode
@@ -18,7 +18,7 @@ class KtorNagerDataSource(
     private val throttle: Throttle,
 ) : NagerDataSource {
     override suspend fun getHolidays(year: Int, countryCode: String): Result<JsonElement?> {
-        return runCatching {
+        return runSuspendCatching {
             val response = throttle.withPermit { client.get("$year/$countryCode") }
 
             when {
@@ -32,7 +32,8 @@ class KtorNagerDataSource(
     companion object {
         private const val BASE_URL = "https://date.nager.at/api/v3/PublicHolidays/"
 
-        fun client(engine: HttpClientEngine = OkHttp.create()): HttpClient {
+        /** [engine] 은 테스트용이다. 넘기지 않으면 OkHttp 를 쓰고 [HttpClient.close] 가 엔진까지 닫는다. */
+        fun client(engine: HttpClientEngine? = null): HttpClient {
             return HttpClients.create(engine) {
                 install(DefaultRequest) {
                     url.takeFrom(BASE_URL)

@@ -1,6 +1,6 @@
-package io.github.taetae98coding.calendar.domain
+package io.github.taetae98coding.calendar.data
 
-import io.github.taetae98coding.calendar.domain.holiday.HolidayName
+import io.github.taetae98coding.calendar.data.holiday.HolidayName
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

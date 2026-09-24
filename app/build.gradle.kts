@@ -17,21 +17,27 @@ dependencies {
     runtimeOnly(libs.slf4j.nop)
 }
 
-/** GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다. */
-fun env(name: String): String? = System.getenv(name)?.takeIf(String::isNotBlank)
+/**
+ * 환경 변수 하나. GitHub Actions 는 값이 없는 input 을 빈 문자열로 넘기므로 공백도 미지정으로 본다.
+ * `providers` 를 거쳐야 Gradle 이 값을 설정 캐시의 입력으로 기록해, 값이 바뀌면 다시 설정한다.
+ */
+fun env(name: String): Provider<String> = providers.environmentVariable(name).filter(String::isNotBlank)
 
 /**
  * CI 는 환경 변수(저장소 시크릿)로, 로컬은 secrets.properties 로 인증키를 넘긴다.
  * secrets.properties 는 .gitignore 대상이라 커밋되지 않는다. 템플릿은 secrets.properties.example 참고.
  */
-val secretsProperties = Properties().apply {
-    rootProject.file("secrets.properties")
-        .takeIf(File::exists)
-        ?.inputStream()
-        ?.use(::load)
-}
+val secretsProperties: Provider<Properties> = providers
+    .fileContents(rootProject.layout.projectDirectory.file("secrets.properties"))
+    .asText
+    .map { text -> Properties().apply { load(text.reader()) } }
+    .orElse(Properties())
 
-fun secret(name: String): String? = (env(name) ?: secretsProperties.getProperty(name))?.takeIf(String::isNotBlank)
+fun secret(name: String): Provider<String> {
+    val fromFile = secretsProperties.map { properties -> properties.getProperty(name) }.filter(String::isNotBlank)
+
+    return env(name).orElse(fromFile)
+}
 
 tasks.register<JavaExec>("updateCalendar") {
     group = "calendar"
@@ -47,7 +53,7 @@ tasks.register<JavaExec>("updateCalendar") {
     // 가장 오래 갱신되지 않은 구간부터 처리해 여러 번의 실행에 걸쳐 골고루 채운다.
     // 기본값은 Config 가 가진다. 여기서는 정해진 값만 넘긴다.
     listOf("MAX_CONCURRENCY", "MAX_REQUESTS_PER_SECOND").forEach { name ->
-        env(name)?.let { value -> environment(name, value) }
+        env(name).orNull?.let { value -> environment(name, value) }
     }
-    secret("DATA_GO_KR_SERVICE_KEY")?.let { value -> environment("DATA_GO_KR_SERVICE_KEY", value) }
+    secret("DATA_GO_KR_SERVICE_KEY").orNull?.let { value -> environment("DATA_GO_KR_SERVICE_KEY", value) }
 }
