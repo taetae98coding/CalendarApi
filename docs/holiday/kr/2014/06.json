@@ -12,7 +12,7 @@
         "endInclusive": "2014-06-02"
     },
     {
-        "name": "전국동시지방선거",
+        "name": "전국 동시 지방 선거",
         "isHoliday": true,
         "start": "2014-06-04",
         "endInclusive": "2014-06-04"
@@ -36,7 +36,7 @@
         "endInclusive": "2014-06-06"
     },
     {
-        "name": "6·10 민주항쟁기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2014-06-10",
         "endInclusive": "2014-06-10"

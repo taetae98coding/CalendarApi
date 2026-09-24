@@ -87,6 +87,12 @@
             "endInclusive": "2013-04-05"
         },
         {
+            "name": "예비군의 날",
+            "isHoliday": false,
+            "start": "2013-04-05",
+            "endInclusive": "2013-04-05"
+        },
+        {
             "name": "청명",
             "isHoliday": false,
             "start": "2013-04-05",
@@ -99,19 +105,13 @@
             "endInclusive": "2013-04-05"
         },
         {
-            "name": "향토예비군의 날",
-            "isHoliday": false,
-            "start": "2013-04-05",
-            "endInclusive": "2013-04-05"
-        },
-        {
             "name": "보건의 날",
             "isHoliday": false,
             "start": "2013-04-07",
             "endInclusive": "2013-04-07"
         },
         {
-            "name": "임시정부수립기념일",
+            "name": "대한민국 임시정부 수립 기념일",
             "isHoliday": false,
             "start": "2013-04-13",
             "endInclusive": "2013-04-13"
@@ -165,7 +165,7 @@
             "endInclusive": "2013-04-28"
         },
         {
-            "name": "근로자의 날",
+            "name": "노동절",
             "isHoliday": false,
             "start": "2013-05-01",
             "endInclusive": "2013-05-01"
@@ -201,7 +201,7 @@
             "endInclusive": "2013-05-17"
         },
         {
-            "name": "5·18 민주화운동기념일",
+            "name": "5·18 민주화 운동 기념일",
             "isHoliday": false,
             "start": "2013-05-18",
             "endInclusive": "2013-05-18"
@@ -255,7 +255,7 @@
             "endInclusive": "2013-06-06"
         },
         {
-            "name": "6·10 민주항쟁기념일",
+            "name": "6·10 민주 항쟁 기념일",
             "isHoliday": false,
             "start": "2013-06-10",
             "endInclusive": "2013-06-10"
@@ -387,7 +387,7 @@
             "endInclusive": "2013-10-03"
         },
         {
-            "name": "세계한인의 날",
+            "name": "세계 한인의 날",
             "isHoliday": false,
             "start": "2013-10-05",
             "endInclusive": "2013-10-05"
@@ -411,7 +411,7 @@
             "endInclusive": "2013-10-09"
         },
         {
-            "name": "체육의 날",
+            "name": "스포츠의 날",
             "isHoliday": false,
             "start": "2013-10-15",
             "endInclusive": "2013-10-15"
@@ -453,19 +453,19 @@
             "endInclusive": "2013-10-28"
         },
         {
-            "name": "저축의 날",
+            "name": "금융의 날",
             "isHoliday": false,
             "start": "2013-10-29",
             "endInclusive": "2013-10-29"
         },
         {
-            "name": "지방자치의 날",
+            "name": "지방자치 및 균형발전의 날",
             "isHoliday": false,
             "start": "2013-10-29",
             "endInclusive": "2013-10-29"
         },
         {
-            "name": "학생독립운동기념일",
+            "name": "학생독립운동 기념일",
             "isHoliday": false,
             "start": "2013-11-03",
             "endInclusive": "2013-11-03"
@@ -525,7 +525,7 @@
             "endInclusive": "2013-12-25"
         },
         {
-            "name": "원자력의 날",
+            "name": "원자력 안전 및 진흥의 날",
             "isHoliday": false,
             "start": "2013-12-27",
             "endInclusive": "2013-12-27"

@@ -18,7 +18,7 @@
         "endInclusive": "2011-10-03"
     },
     {
-        "name": "세계한인의 날",
+        "name": "세계 한인의 날",
         "isHoliday": false,
         "start": "2011-10-05",
         "endInclusive": "2011-10-05"
@@ -48,7 +48,7 @@
         "endInclusive": "2011-10-15"
     },
     {
-        "name": "체육의 날",
+        "name": "스포츠의 날",
         "isHoliday": false,
         "start": "2011-10-15",
         "endInclusive": "2011-10-15"
@@ -78,7 +78,7 @@
         "endInclusive": "2011-10-24"
     },
     {
-        "name": "저축의 날",
+        "name": "금융의 날",
         "isHoliday": false,
         "start": "2011-10-25",
         "endInclusive": "2011-10-25"

@@ -27,7 +27,7 @@
             "endInclusive": "2023-10-03"
         },
         {
-            "name": "세계한인의 날",
+            "name": "세계 한인의 날",
             "isHoliday": false,
             "start": "2023-10-05",
             "endInclusive": "2023-10-05"
@@ -63,7 +63,7 @@
             "endInclusive": "2023-10-10"
         },
         {
-            "name": "체육의 날",
+            "name": "스포츠의 날",
             "isHoliday": false,
             "start": "2023-10-15",
             "endInclusive": "2023-10-15"
@@ -105,7 +105,7 @@
             "endInclusive": "2023-10-28"
         },
         {
-            "name": "지방자치의 날",
+            "name": "지방자치 및 균형발전의 날",
             "isHoliday": false,
             "start": "2023-10-29",
             "endInclusive": "2023-10-29"

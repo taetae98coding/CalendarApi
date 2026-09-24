@@ -78,7 +78,7 @@
         "endInclusive": "2027-03-06"
     },
     {
-        "name": "3·8민주의거 기념일",
+        "name": "3·8 민주 의거 기념일",
         "isHoliday": false,
         "start": "2027-03-08",
         "endInclusive": "2027-03-08"
@@ -132,7 +132,7 @@
         "endInclusive": "2027-04-02"
     },
     {
-        "name": "4·3희생자 추념일",
+        "name": "4·3 희생자 추념일",
         "isHoliday": false,
         "start": "2027-04-03",
         "endInclusive": "2027-04-03"
@@ -168,7 +168,7 @@
         "endInclusive": "2027-04-10"
     },
     {
-        "name": "대한민국임시정부 수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2027-04-11",
         "endInclusive": "2027-04-11"
@@ -186,7 +186,7 @@
         "endInclusive": "2027-04-16"
     },
     {
-        "name": "4·19혁명 기념일",
+        "name": "4·19 혁명 기념일",
         "isHoliday": false,
         "start": "2027-04-19",
         "endInclusive": "2027-04-19"
@@ -336,7 +336,7 @@
         "endInclusive": "2027-05-17"
     },
     {
-        "name": "5·18민주화운동 기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2027-05-18",
         "endInclusive": "2027-05-18"
@@ -444,13 +444,13 @@
         "endInclusive": "2027-06-09"
     },
     {
-        "name": "6·10만세운동 기념일",
+        "name": "6·10 만세 운동 기념일",
         "isHoliday": false,
         "start": "2027-06-10",
         "endInclusive": "2027-06-10"
     },
     {
-        "name": "6·10민주항쟁 기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2027-06-10",
         "endInclusive": "2027-06-10"
@@ -480,7 +480,7 @@
         "endInclusive": "2027-06-24"
     },
     {
-        "name": "6·25전쟁일",
+        "name": "6·25 전쟁일",
         "isHoliday": false,
         "start": "2027-06-25",
         "endInclusive": "2027-06-25"
@@ -906,7 +906,7 @@
         "endInclusive": "2027-11-18"
     },
     {
-        "name": "아동학대 예방의 날",
+        "name": "아동 학대 예방의 날",
         "isHoliday": false,
         "start": "2027-11-19",
         "endInclusive": "2027-11-19"

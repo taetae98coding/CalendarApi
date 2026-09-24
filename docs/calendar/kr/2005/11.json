@@ -3,7 +3,7 @@
     "period": "2005-11",
     "holidays": [
         {
-            "name": "학생의 날",
+            "name": "학생독립운동 기념일",
             "isHoliday": false,
             "start": "2005-11-03",
             "endInclusive": "2005-11-03"

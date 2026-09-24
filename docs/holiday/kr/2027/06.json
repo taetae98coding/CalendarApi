@@ -42,13 +42,13 @@
         "endInclusive": "2027-06-09"
     },
     {
-        "name": "6·10만세운동 기념일",
+        "name": "6·10 만세 운동 기념일",
         "isHoliday": false,
         "start": "2027-06-10",
         "endInclusive": "2027-06-10"
     },
     {
-        "name": "6·10민주항쟁 기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2027-06-10",
         "endInclusive": "2027-06-10"
@@ -78,7 +78,7 @@
         "endInclusive": "2027-06-24"
     },
     {
-        "name": "6·25전쟁일",
+        "name": "6·25 전쟁일",
         "isHoliday": false,
         "start": "2027-06-25",
         "endInclusive": "2027-06-25"

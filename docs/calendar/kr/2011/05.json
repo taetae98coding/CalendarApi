@@ -3,7 +3,7 @@
     "period": "2011-05",
     "holidays": [
         {
-            "name": "근로자의 날",
+            "name": "노동절",
             "isHoliday": false,
             "start": "2011-05-01",
             "endInclusive": "2011-05-01"
@@ -45,7 +45,7 @@
             "endInclusive": "2011-05-16"
         },
         {
-            "name": "5·18 민주화운동기념일",
+            "name": "5·18 민주화 운동 기념일",
             "isHoliday": false,
             "start": "2011-05-18",
             "endInclusive": "2011-05-18"

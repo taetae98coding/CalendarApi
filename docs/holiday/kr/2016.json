@@ -84,7 +84,7 @@
         "endInclusive": "2016-03-20"
     },
     {
-        "name": "향토예비군의 날",
+        "name": "예비군의 날",
         "isHoliday": false,
         "start": "2016-04-01",
         "endInclusive": "2016-04-01"
@@ -120,13 +120,13 @@
         "endInclusive": "2016-04-07"
     },
     {
-        "name": "국회의원선거",
+        "name": "국회의원 선거",
         "isHoliday": true,
         "start": "2016-04-13",
         "endInclusive": "2016-04-13"
     },
     {
-        "name": "임시정부수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2016-04-13",
         "endInclusive": "2016-04-13"
@@ -180,7 +180,7 @@
         "endInclusive": "2016-04-28"
     },
     {
-        "name": "근로자의 날",
+        "name": "노동절",
         "isHoliday": false,
         "start": "2016-05-01",
         "endInclusive": "2016-05-01"
@@ -228,7 +228,7 @@
         "endInclusive": "2016-05-16"
     },
     {
-        "name": "5·18 민주화운동기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2016-05-18",
         "endInclusive": "2016-05-18"
@@ -282,7 +282,7 @@
         "endInclusive": "2016-06-09"
     },
     {
-        "name": "6·10 민주항쟁기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2016-06-10",
         "endInclusive": "2016-06-10"
@@ -408,7 +408,7 @@
         "endInclusive": "2016-10-03"
     },
     {
-        "name": "세계한인의 날",
+        "name": "세계 한인의 날",
         "isHoliday": false,
         "start": "2016-10-05",
         "endInclusive": "2016-10-05"
@@ -438,7 +438,7 @@
         "endInclusive": "2016-10-15"
     },
     {
-        "name": "체육의 날",
+        "name": "스포츠의 날",
         "isHoliday": false,
         "start": "2016-10-15",
         "endInclusive": "2016-10-15"
@@ -468,7 +468,7 @@
         "endInclusive": "2016-10-24"
     },
     {
-        "name": "저축의 날",
+        "name": "금융의 날",
         "isHoliday": false,
         "start": "2016-10-25",
         "endInclusive": "2016-10-25"
@@ -480,13 +480,13 @@
         "endInclusive": "2016-10-28"
     },
     {
-        "name": "지방자치의 날",
+        "name": "지방자치 및 균형발전의 날",
         "isHoliday": false,
         "start": "2016-10-29",
         "endInclusive": "2016-10-29"
     },
     {
-        "name": "학생독립운동기념일",
+        "name": "학생독립운동 기념일",
         "isHoliday": false,
         "start": "2016-11-03",
         "endInclusive": "2016-11-03"
@@ -546,7 +546,7 @@
         "endInclusive": "2016-12-25"
     },
     {
-        "name": "원자력의 날",
+        "name": "원자력 안전 및 진흥의 날",
         "isHoliday": false,
         "start": "2016-12-27",
         "endInclusive": "2016-12-27"

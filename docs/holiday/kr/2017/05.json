@@ -1,6 +1,6 @@
 [
     {
-        "name": "근로자의 날",
+        "name": "노동절",
         "isHoliday": false,
         "start": "2017-05-01",
         "endInclusive": "2017-05-01"
@@ -30,7 +30,7 @@
         "endInclusive": "2017-05-08"
     },
     {
-        "name": "대통령선거",
+        "name": "대통령 선거",
         "isHoliday": true,
         "start": "2017-05-09",
         "endInclusive": "2017-05-09"
@@ -48,7 +48,7 @@
         "endInclusive": "2017-05-15"
     },
     {
-        "name": "5·18 민주화운동기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2017-05-18",
         "endInclusive": "2017-05-18"

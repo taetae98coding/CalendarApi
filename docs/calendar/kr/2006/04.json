@@ -3,7 +3,7 @@
     "period": "2006-04",
     "holidays": [
         {
-            "name": "향토예비군의 날",
+            "name": "예비군의 날",
             "isHoliday": false,
             "start": "2006-04-01",
             "endInclusive": "2006-04-01"
@@ -33,7 +33,7 @@
             "endInclusive": "2006-04-07"
         },
         {
-            "name": "임시정부수립기념일",
+            "name": "대한민국 임시정부 수립 기념일",
             "isHoliday": false,
             "start": "2006-04-13",
             "endInclusive": "2006-04-13"

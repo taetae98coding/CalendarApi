@@ -66,13 +66,13 @@
         "endInclusive": "2022-03-05"
     },
     {
-        "name": "3·8 민주의거 기념일",
+        "name": "3·8 민주 의거 기념일",
         "isHoliday": false,
         "start": "2022-03-08",
         "endInclusive": "2022-03-08"
     },
     {
-        "name": "대통령선거",
+        "name": "대통령 선거",
         "isHoliday": true,
         "start": "2022-03-09",
         "endInclusive": "2022-03-09"
@@ -108,7 +108,7 @@
         "endInclusive": "2022-04-01"
     },
     {
-        "name": "4·3희생자 추념일",
+        "name": "4·3 희생자 추념일",
         "isHoliday": false,
         "start": "2022-04-03",
         "endInclusive": "2022-04-03"
@@ -138,7 +138,7 @@
         "endInclusive": "2022-04-07"
     },
     {
-        "name": "대한민국임시정부 수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2022-04-11",
         "endInclusive": "2022-04-11"
@@ -192,7 +192,7 @@
         "endInclusive": "2022-04-28"
     },
     {
-        "name": "근로자의 날",
+        "name": "노동절",
         "isHoliday": false,
         "start": "2022-05-01",
         "endInclusive": "2022-05-01"
@@ -252,7 +252,7 @@
         "endInclusive": "2022-05-16"
     },
     {
-        "name": "5·18 민주화운동 기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2022-05-18",
         "endInclusive": "2022-05-18"
@@ -288,7 +288,7 @@
         "endInclusive": "2022-06-01"
     },
     {
-        "name": "전국동시지방선거",
+        "name": "전국 동시 지방 선거",
         "isHoliday": true,
         "start": "2022-06-01",
         "endInclusive": "2022-06-01"
@@ -324,7 +324,7 @@
         "endInclusive": "2022-06-09"
     },
     {
-        "name": "6·10 민주항쟁 기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2022-06-10",
         "endInclusive": "2022-06-10"
@@ -498,7 +498,7 @@
         "endInclusive": "2022-10-03"
     },
     {
-        "name": "세계한인의 날",
+        "name": "세계 한인의 날",
         "isHoliday": false,
         "start": "2022-10-05",
         "endInclusive": "2022-10-05"
@@ -546,7 +546,7 @@
         "endInclusive": "2022-10-15"
     },
     {
-        "name": "체육의 날",
+        "name": "스포츠의 날",
         "isHoliday": false,
         "start": "2022-10-15",
         "endInclusive": "2022-10-15"
@@ -588,7 +588,7 @@
         "endInclusive": "2022-10-28"
     },
     {
-        "name": "지방자치의 날",
+        "name": "지방자치 및 균형발전의 날",
         "isHoliday": false,
         "start": "2022-10-29",
         "endInclusive": "2022-10-29"
@@ -624,7 +624,7 @@
         "endInclusive": "2022-11-17"
     },
     {
-        "name": "아동학대예방의 날",
+        "name": "아동 학대 예방의 날",
         "isHoliday": false,
         "start": "2022-11-19",
         "endInclusive": "2022-11-19"

@@ -3,7 +3,7 @@
     "period": "2025-04",
     "holidays": [
         {
-            "name": "4·3희생자 추념일",
+            "name": "4·3 희생자 추념일",
             "isHoliday": false,
             "start": "2025-04-03",
             "endInclusive": "2025-04-03"
@@ -39,7 +39,7 @@
             "endInclusive": "2025-04-07"
         },
         {
-            "name": "대한민국임시정부 수립기념일",
+            "name": "대한민국 임시정부 수립 기념일",
             "isHoliday": false,
             "start": "2025-04-11",
             "endInclusive": "2025-04-11"
@@ -51,7 +51,7 @@
             "endInclusive": "2025-04-11"
         },
         {
-            "name": "4·19혁명 기념일",
+            "name": "4·19 혁명 기념일",
             "isHoliday": false,
             "start": "2025-04-19",
             "endInclusive": "2025-04-19"

@@ -3,7 +3,7 @@
     "period": "2004-12",
     "holidays": [
         {
-            "name": "소비자 보호의 날",
+            "name": "소비자의 날",
             "isHoliday": false,
             "start": "2004-12-03",
             "endInclusive": "2004-12-03"

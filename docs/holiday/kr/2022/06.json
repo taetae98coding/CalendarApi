@@ -6,7 +6,7 @@
         "endInclusive": "2022-06-01"
     },
     {
-        "name": "전국동시지방선거",
+        "name": "전국 동시 지방 선거",
         "isHoliday": true,
         "start": "2022-06-01",
         "endInclusive": "2022-06-01"
@@ -42,7 +42,7 @@
         "endInclusive": "2022-06-09"
     },
     {
-        "name": "6·10 민주항쟁 기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2022-06-10",
         "endInclusive": "2022-06-10"

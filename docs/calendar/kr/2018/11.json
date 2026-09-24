@@ -3,7 +3,7 @@
     "period": "2018-11",
     "holidays": [
         {
-            "name": "학생독립운동기념일",
+            "name": "학생독립운동 기념일",
             "isHoliday": false,
             "start": "2018-11-03",
             "endInclusive": "2018-11-03"

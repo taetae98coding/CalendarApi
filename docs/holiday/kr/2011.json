@@ -78,7 +78,7 @@
         "endInclusive": "2011-03-21"
     },
     {
-        "name": "향토예비군의 날",
+        "name": "예비군의 날",
         "isHoliday": false,
         "start": "2011-04-01",
         "endInclusive": "2011-04-01"
@@ -108,7 +108,7 @@
         "endInclusive": "2011-04-07"
     },
     {
-        "name": "임시정부수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2011-04-13",
         "endInclusive": "2011-04-13"
@@ -162,7 +162,7 @@
         "endInclusive": "2011-04-28"
     },
     {
-        "name": "근로자의 날",
+        "name": "노동절",
         "isHoliday": false,
         "start": "2011-05-01",
         "endInclusive": "2011-05-01"
@@ -204,7 +204,7 @@
         "endInclusive": "2011-05-16"
     },
     {
-        "name": "5·18 민주화운동기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2011-05-18",
         "endInclusive": "2011-05-18"
@@ -252,7 +252,7 @@
         "endInclusive": "2011-06-06"
     },
     {
-        "name": "6·10 민주항쟁기념일",
+        "name": "6·10 민주 항쟁 기념일",
         "isHoliday": false,
         "start": "2011-06-10",
         "endInclusive": "2011-06-10"
@@ -372,7 +372,7 @@
         "endInclusive": "2011-10-03"
     },
     {
-        "name": "세계한인의 날",
+        "name": "세계 한인의 날",
         "isHoliday": false,
         "start": "2011-10-05",
         "endInclusive": "2011-10-05"
@@ -402,7 +402,7 @@
         "endInclusive": "2011-10-15"
     },
     {
-        "name": "체육의 날",
+        "name": "스포츠의 날",
         "isHoliday": false,
         "start": "2011-10-15",
         "endInclusive": "2011-10-15"
@@ -432,7 +432,7 @@
         "endInclusive": "2011-10-24"
     },
     {
-        "name": "저축의 날",
+        "name": "금융의 날",
         "isHoliday": false,
         "start": "2011-10-25",
         "endInclusive": "2011-10-25"
@@ -444,7 +444,7 @@
         "endInclusive": "2011-10-28"
     },
     {
-        "name": "학생독립운동기념일",
+        "name": "학생독립운동 기념일",
         "isHoliday": false,
         "start": "2011-11-03",
         "endInclusive": "2011-11-03"

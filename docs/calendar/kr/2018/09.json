@@ -27,7 +27,7 @@
             "endInclusive": "2018-09-25"
         },
         {
-            "name": "대체공휴일",
+            "name": "대체휴무일",
             "isHoliday": true,
             "start": "2018-09-26",
             "endInclusive": "2018-09-26"

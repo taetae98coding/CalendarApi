@@ -96,13 +96,13 @@
         "endInclusive": "2007-04-05"
     },
     {
-        "name": "한식",
+        "name": "예비군의 날",
         "isHoliday": false,
         "start": "2007-04-06",
         "endInclusive": "2007-04-06"
     },
     {
-        "name": "향토예비군의 날",
+        "name": "한식",
         "isHoliday": false,
         "start": "2007-04-06",
         "endInclusive": "2007-04-06"
@@ -114,7 +114,7 @@
         "endInclusive": "2007-04-07"
     },
     {
-        "name": "임시정부수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2007-04-13",
         "endInclusive": "2007-04-13"
@@ -168,7 +168,7 @@
         "endInclusive": "2007-04-28"
     },
     {
-        "name": "근로자의 날",
+        "name": "노동절",
         "isHoliday": false,
         "start": "2007-05-01",
         "endInclusive": "2007-05-01"
@@ -204,7 +204,7 @@
         "endInclusive": "2007-05-15"
     },
     {
-        "name": "5·18 민주화운동기념일",
+        "name": "5·18 민주화 운동 기념일",
         "isHoliday": false,
         "start": "2007-05-18",
         "endInclusive": "2007-05-18"
@@ -402,7 +402,7 @@
         "endInclusive": "2007-10-09"
     },
     {
-        "name": "체육의 날",
+        "name": "스포츠의 날",
         "isHoliday": false,
         "start": "2007-10-15",
         "endInclusive": "2007-10-15"
@@ -444,13 +444,13 @@
         "endInclusive": "2007-10-28"
     },
     {
-        "name": "저축의 날",
+        "name": "금융의 날",
         "isHoliday": false,
         "start": "2007-10-30",
         "endInclusive": "2007-10-30"
     },
     {
-        "name": "학생독립운동기념일",
+        "name": "학생독립운동 기념일",
         "isHoliday": false,
         "start": "2007-11-03",
         "endInclusive": "2007-11-03"

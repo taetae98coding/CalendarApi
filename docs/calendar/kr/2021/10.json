@@ -27,7 +27,7 @@
             "endInclusive": "2021-10-04"
         },
         {
-            "name": "세계한인의 날",
+            "name": "세계 한인의 날",
             "isHoliday": false,
             "start": "2021-10-05",
             "endInclusive": "2021-10-05"
@@ -69,7 +69,7 @@
             "endInclusive": "2021-10-11"
         },
         {
-            "name": "체육의 날",
+            "name": "스포츠의 날",
             "isHoliday": false,
             "start": "2021-10-15",
             "endInclusive": "2021-10-15"
@@ -117,7 +117,7 @@
             "endInclusive": "2021-10-28"
         },
         {
-            "name": "지방자치의 날",
+            "name": "지방자치 및 균형발전의 날",
             "isHoliday": false,
             "start": "2021-10-29",
             "endInclusive": "2021-10-29"

@@ -21,13 +21,13 @@
             "endInclusive": "2022-03-05"
         },
         {
-            "name": "3·8 민주의거 기념일",
+            "name": "3·8 민주 의거 기념일",
             "isHoliday": false,
             "start": "2022-03-08",
             "endInclusive": "2022-03-08"
         },
         {
-            "name": "대통령선거",
+            "name": "대통령 선거",
             "isHoliday": true,
             "start": "2022-03-09",
             "endInclusive": "2022-03-09"

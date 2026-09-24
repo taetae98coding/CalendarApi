@@ -45,7 +45,7 @@
             "endInclusive": "2006-10-09"
         },
         {
-            "name": "체육의 날",
+            "name": "스포츠의 날",
             "isHoliday": false,
             "start": "2006-10-15",
             "endInclusive": "2006-10-15"
@@ -87,7 +87,7 @@
             "endInclusive": "2006-10-28"
         },
         {
-            "name": "저축의 날",
+            "name": "금융의 날",
             "isHoliday": false,
             "start": "2006-10-31",
             "endInclusive": "2006-10-31"

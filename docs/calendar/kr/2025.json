@@ -81,7 +81,7 @@
             "endInclusive": "2025-03-05"
         },
         {
-            "name": "3·8민주의거 기념일",
+            "name": "3·8 민주 의거 기념일",
             "isHoliday": false,
             "start": "2025-03-08",
             "endInclusive": "2025-03-08"
@@ -117,7 +117,7 @@
             "endInclusive": "2025-03-28"
         },
         {
-            "name": "4·3희생자 추념일",
+            "name": "4·3 희생자 추념일",
             "isHoliday": false,
             "start": "2025-04-03",
             "endInclusive": "2025-04-03"
@@ -153,7 +153,7 @@
             "endInclusive": "2025-04-07"
         },
         {
-            "name": "대한민국임시정부 수립기념일",
+            "name": "대한민국 임시정부 수립 기념일",
             "isHoliday": false,
             "start": "2025-04-11",
             "endInclusive": "2025-04-11"
@@ -165,7 +165,7 @@
             "endInclusive": "2025-04-11"
         },
         {
-            "name": "4·19혁명 기념일",
+            "name": "4·19 혁명 기념일",
             "isHoliday": false,
             "start": "2025-04-19",
             "endInclusive": "2025-04-19"
@@ -213,7 +213,7 @@
             "endInclusive": "2025-04-28"
         },
         {
-            "name": "근로자의 날",
+            "name": "노동절",
             "isHoliday": false,
             "start": "2025-05-01",
             "endInclusive": "2025-05-01"
@@ -279,7 +279,7 @@
             "endInclusive": "2025-05-15"
         },
         {
-            "name": "5·18민주화운동 기념일",
+            "name": "5·18 민주화 운동 기념일",
             "isHoliday": false,
             "start": "2025-05-18",
             "endInclusive": "2025-05-18"
@@ -339,7 +339,7 @@
             "endInclusive": "2025-06-01"
         },
         {
-            "name": "대통령선거",
+            "name": "임시공휴일(제21대 대통령 선거)",
             "isHoliday": true,
             "start": "2025-06-03",
             "endInclusive": "2025-06-03"
@@ -369,13 +369,13 @@
             "endInclusive": "2025-06-09"
         },
         {
-            "name": "6·10만세운동 기념일",
+            "name": "6·10 만세 운동 기념일",
             "isHoliday": false,
             "start": "2025-06-10",
             "endInclusive": "2025-06-10"
         },
         {
-            "name": "6·10민주항쟁 기념일",
+            "name": "6·10 민주 항쟁 기념일",
             "isHoliday": false,
             "start": "2025-06-10",
             "endInclusive": "2025-06-10"
@@ -393,7 +393,7 @@
             "endInclusive": "2025-06-24"
         },
         {
-            "name": "6·25전쟁일",
+            "name": "6·25 전쟁일",
             "isHoliday": false,
             "start": "2025-06-25",
             "endInclusive": "2025-06-25"
@@ -711,7 +711,7 @@
             "endInclusive": "2025-11-17"
         },
         {
-            "name": "아동학대 예방의 날",
+            "name": "아동 학대 예방의 날",
             "isHoliday": false,
             "start": "2025-11-19",
             "endInclusive": "2025-11-19"

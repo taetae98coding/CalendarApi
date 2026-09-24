@@ -36,13 +36,13 @@
         "endInclusive": "2020-04-07"
     },
     {
-        "name": "대한민국임시정부 수립기념일",
+        "name": "대한민국 임시정부 수립 기념일",
         "isHoliday": false,
         "start": "2020-04-11",
         "endInclusive": "2020-04-11"
     },
     {
-        "name": "국회의원선거",
+        "name": "국회의원 선거",
         "isHoliday": true,
         "start": "2020-04-15",
         "endInclusive": "2020-04-15"
