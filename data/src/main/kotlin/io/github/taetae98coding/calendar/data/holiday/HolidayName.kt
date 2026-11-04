@@ -13,10 +13,13 @@ package io.github.taetae98coding.calendar.data.holiday
  */
 object HolidayName {
     private val whitespace = "\\s+".toRegex()
-    private val ordinalPrefix = "^제\\s*\\d+\\s*대\\s*".toRegex()
 
-    /** 이 표기로 시작하면 무엇을 대신하는지까지 출처가 적어 주므로 손대지 않는다. (대체공휴일(설날), 임시공휴일(제21대 대통령 선거)) */
+    /**
+     * 이 표기로 시작하면 무엇을 대신하는지까지 출처가 적어 주므로 앞부분은 그대로 둔다.
+     * 괄호 안의 공휴일 이름만 같은 규칙으로 맞춘다. (대체공휴일(기독탄신일) → 대체공휴일(크리스마스))
+     */
     private val providedAsIs = listOf("임시공휴일", "대체공휴일", "대체휴무일")
+    private val parenthesized = "^([^(]*)\\((.+)\\)$".toRegex()
 
     /** 명절은 연휴의 앞뒤 날을 따로 부르지 않고 명절 이름 하나로 모은다. */
     private val festivals = listOf(
@@ -77,15 +80,21 @@ object HolidayName {
 
     fun normalize(raw: String): String {
         val trimmed = raw.trim().replace(whitespace, " ")
-        if (providedAsIs.any { prefix -> compact(trimmed).startsWith(prefix) }) return raw
+        if (providedAsIs.any { prefix -> compact(trimmed).startsWith(prefix) }) return normalizeParenthesized(trimmed)
 
-        // 제21대 대통령 선거 -> 대통령 선거
-        val withoutOrdinal = trimmed.replace(ordinalPrefix, "")
-        val key = compact(withoutOrdinal)
+        val key = compact(trimmed)
 
         festivals.firstOrNull { (pattern, _) -> pattern.matches(key) }?.let { (_, name) -> return name }
 
-        return renamed[key] ?: aliases[key] ?: spellings[key] ?: withoutOrdinal
+        return renamed[key] ?: aliases[key] ?: spellings[key] ?: trimmed
+    }
+
+    /** 대체공휴일(기독탄신일) → 대체공휴일(크리스마스). 괄호가 없으면 그대로 둔다. */
+    private fun normalizeParenthesized(name: String): String {
+        val match = parenthesized.matchEntire(name) ?: return name
+        val (prefix, inner) = match.destructured
+
+        return "${prefix.trim()}(${normalize(inner)})"
     }
 
     private fun compact(name: String): String = name.replace(whitespace, "")

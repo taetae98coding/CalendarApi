@@ -42,15 +42,23 @@ class HolidayNameTest {
     }
 
     @Test
+    fun `임시공휴일과 대체공휴일의 괄호 안 이름은 같은 규칙으로 맞춘다`() {
+        assertEquals("대체공휴일(크리스마스)", HolidayName.normalize("대체공휴일(기독탄신일)"))
+        assertEquals("대체공휴일(삼일절)", HolidayName.normalize("대체공휴일(3·1절)"))
+        assertEquals("대체공휴일(부처님오신날)", HolidayName.normalize("대체공휴일(석가탄신일)"))
+        assertEquals("대체공휴일(설날)", HolidayName.normalize("대체공휴일(설날 다음날)"))
+    }
+
+    @Test
     fun `명절은 명절 이름 하나로 모은다`() {
         listOf("설날", "설", "구정", "설날 연휴", "설날 전날", "설날 다음날").forEach { raw -> assertEquals("설날", HolidayName.normalize(raw)) }
         listOf("추석", "한가위", "추석 연휴", "추석 전날", "추석 다음날").forEach { raw -> assertEquals("추석", HolidayName.normalize(raw)) }
     }
 
     @Test
-    fun `선거 이름에서 대수를 뗀다`() {
-        assertEquals("대통령 선거", HolidayName.normalize("제21대 대통령 선거"))
-        assertEquals("국회의원 선거", HolidayName.normalize("제21대 국회의원선거"))
+    fun `선거 이름은 한 가지 표기로 맞추고 대수는 그대로 둔다`() {
+        assertEquals("제21대 대통령 선거", HolidayName.normalize("제21대 대통령 선거"))
+        assertEquals("국회의원 선거", HolidayName.normalize("국회의원선거"))
         assertEquals("국회의원 선거", HolidayName.normalize("국회의원선거일"))
         assertEquals("전국 동시 지방 선거", HolidayName.normalize("동시지방선거일"))
         assertEquals("전국 동시 지방 선거", HolidayName.normalize("지방 선거일"))
