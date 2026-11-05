@@ -18,6 +18,12 @@
         "endInclusive": "2027-08-08"
     },
     {
+        "name": "말복",
+        "isHoliday": false,
+        "start": "2027-08-09",
+        "endInclusive": "2027-08-09"
+    },
+    {
         "name": "일본군위안부 피해자 기림의 날",
         "isHoliday": false,
         "start": "2027-08-14",
