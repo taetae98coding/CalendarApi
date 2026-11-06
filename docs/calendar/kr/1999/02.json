@@ -3,10 +3,22 @@
     "period": "1999-02",
     "holidays": [
         {
+            "name": "입춘",
+            "isHoliday": false,
+            "start": "1999-02-04",
+            "endInclusive": "1999-02-04"
+        },
+        {
             "name": "설날",
             "isHoliday": true,
             "start": "1999-02-15",
             "endInclusive": "1999-02-17"
+        },
+        {
+            "name": "우수",
+            "isHoliday": false,
+            "start": "1999-02-19",
+            "endInclusive": "1999-02-19"
         }
     ],
     "lunar": [

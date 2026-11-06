@@ -1,7 +1,20 @@
 {
     "country": "kr",
     "period": "1998-02",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "입춘",
+            "isHoliday": false,
+            "start": "1998-02-04",
+            "endInclusive": "1998-02-04"
+        },
+        {
+            "name": "우수",
+            "isHoliday": false,
+            "start": "1998-02-19",
+            "endInclusive": "1998-02-19"
+        }
+    ],
     "lunar": [
         {
             "solar": "1998-02-01",

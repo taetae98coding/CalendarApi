@@ -1,7 +1,20 @@
 {
     "country": "kr",
     "period": "1999-04",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "청명",
+            "isHoliday": false,
+            "start": "1999-04-05",
+            "endInclusive": "1999-04-05"
+        },
+        {
+            "name": "곡우",
+            "isHoliday": false,
+            "start": "1999-04-20",
+            "endInclusive": "1999-04-20"
+        }
+    ],
     "lunar": [
         {
             "solar": "1999-04-01",

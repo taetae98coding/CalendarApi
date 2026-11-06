@@ -1,8 +1,14 @@
 [
     {
-        "name": "현충일",
-        "isHoliday": true,
+        "name": "망종",
+        "isHoliday": false,
         "start": "1998-06-06",
         "endInclusive": "1998-06-06"
+    },
+    {
+        "name": "하지",
+        "isHoliday": false,
+        "start": "1998-06-21",
+        "endInclusive": "1998-06-21"
     }
 ]

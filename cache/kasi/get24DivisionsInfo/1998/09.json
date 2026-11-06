@@ -1,1 +1,1 @@
-{"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":"","numOfRows":100,"pageNo":1,"totalCount":0}}}
+{"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":{"item":[{"dateKind":"03","dateName":"백로","isHoliday":"N","kst":"0516      ","locdate":19980908,"seq":1},{"dateKind":"03","dateName":"추분","isHoliday":"N","kst":"1437      ","locdate":19980923,"seq":1}]},"numOfRows":100,"pageNo":1,"totalCount":2}}}

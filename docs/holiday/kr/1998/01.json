@@ -6,6 +6,18 @@
         "endInclusive": "1998-01-01"
     },
     {
+        "name": "소한",
+        "isHoliday": false,
+        "start": "1998-01-05",
+        "endInclusive": "1998-01-05"
+    },
+    {
+        "name": "대한",
+        "isHoliday": false,
+        "start": "1998-01-20",
+        "endInclusive": "1998-01-20"
+    },
+    {
         "name": "설날",
         "isHoliday": true,
         "start": "1998-01-27",

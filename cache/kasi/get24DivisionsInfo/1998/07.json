@@ -1,1 +1,1 @@
-{"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":"","numOfRows":100,"pageNo":1,"totalCount":0}}}
+{"response":{"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."},"body":{"items":{"item":[{"dateKind":"03","dateName":"소서","isHoliday":"N","kst":"1630      ","locdate":19980707,"seq":1},{"dateKind":"03","dateName":"대서","isHoliday":"N","kst":"0955      ","locdate":19980723,"seq":1}]},"numOfRows":100,"pageNo":1,"totalCount":2}}}

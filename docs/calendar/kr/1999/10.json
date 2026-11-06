@@ -9,10 +9,16 @@
             "endInclusive": "1999-10-03"
         },
         {
-            "name": "한글날",
-            "isHoliday": true,
+            "name": "한로",
+            "isHoliday": false,
             "start": "1999-10-09",
             "endInclusive": "1999-10-09"
+        },
+        {
+            "name": "상강",
+            "isHoliday": false,
+            "start": "1999-10-24",
+            "endInclusive": "1999-10-24"
         }
     ],
     "lunar": [

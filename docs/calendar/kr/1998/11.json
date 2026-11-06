@@ -1,7 +1,20 @@
 {
     "country": "kr",
     "period": "1998-11",
-    "holidays": [],
+    "holidays": [
+        {
+            "name": "입동",
+            "isHoliday": false,
+            "start": "1998-11-08",
+            "endInclusive": "1998-11-08"
+        },
+        {
+            "name": "소설",
+            "isHoliday": false,
+            "start": "1998-11-22",
+            "endInclusive": "1998-11-22"
+        }
+    ],
     "lunar": [
         {
             "solar": "1998-11-01",

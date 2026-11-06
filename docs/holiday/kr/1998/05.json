@@ -10,5 +10,17 @@
         "isHoliday": true,
         "start": "1998-05-05",
         "endInclusive": "1998-05-05"
+    },
+    {
+        "name": "입하",
+        "isHoliday": false,
+        "start": "1998-05-06",
+        "endInclusive": "1998-05-06"
+    },
+    {
+        "name": "소만",
+        "isHoliday": false,
+        "start": "1998-05-21",
+        "endInclusive": "1998-05-21"
     }
 ]
